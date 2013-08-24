@@ -1,0 +1,120 @@
+package edu.umass.cs.pig.z3.model;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.apache.pig.data.DataType;
+import org.apache.pig.newplan.logical.relational.LogicalSchema;
+
+import edu.umass.cs.pig.z3.ConstraintSolution;
+import edu.umass.cs.pig.z3.Z3SolutionImpl;
+import gnu.trove.TObjectIntHashMap;
+import gnu.trove.TObjectDoubleHashMap;
+import gnu.trove.TObjectFloatHashMap;
+import gnu.trove.TObjectLongHashMap;
+
+public class ModelConstants {
+	TObjectIntHashMap<String> intStr;
+	TObjectDoubleHashMap<String> doubleStr;
+//	TObjectFloatHashMap<String> floatStr;
+	TObjectLongHashMap<String> longStr;
+	
+	public ModelConstants(TObjectIntHashMap<String> intStr,
+			TObjectDoubleHashMap<String> doubleStr,
+			TObjectLongHashMap<String> longStr) {
+		super();
+		this.intStr = intStr;
+		this.doubleStr = doubleStr;
+		this.longStr = longStr;
+	}
+	
+	public boolean isEmpty() {
+		return
+				intStr.isEmpty() && doubleStr.isEmpty() && longStr.isEmpty();
+	}
+	
+	public Object getSolution(String name) {
+		if(intStr.containsKey(name))
+			return intStr.get(name);
+		else if(doubleStr.containsKey(name))
+			return doubleStr.get(name);
+//		else if(floatStr.contains(name))
+//			return floatStr.get(name);
+		else if(longStr.contains(name))
+			return longStr.get(name);
+		else
+			return null;
+	}
+
+	public TObjectIntHashMap<String> getIntStr() {
+		return intStr;
+	}
+
+	public void setIntStr(TObjectIntHashMap<String> intStr) {
+		this.intStr = intStr;
+	}
+
+	public TObjectDoubleHashMap<String> getDoubleStr() {
+		return doubleStr;
+	}
+
+	public void setDoubleStr(TObjectDoubleHashMap<String> doubleStr) {
+		this.doubleStr = doubleStr;
+	}
+
+	public TObjectLongHashMap<String> getLongStr() {
+		return longStr;
+	}
+
+	public void setLongStr(TObjectLongHashMap<String> longStr) {
+		this.longStr = longStr;
+	}
+	
+	public Object get(String name, byte ty) {
+		Object value;
+		switch(ty) {
+		case DataType.INTEGER:
+			value = intStr.get(name);
+			break;
+		case DataType.LONG:
+			value = longStr.get(name);
+			break;
+		case DataType.DOUBLE:
+			value = doubleStr.get(name);
+			break;
+		default:
+			value = null;
+		}
+				
+		
+		return value;
+	}
+	
+	
+	public Map<String, Object> getStrValMap(ConstraintSolution c) {
+		Map<String, Object> ret = new HashMap<String, Object>();
+    	if(!intStr.isEmpty()) {
+    		for (String name: intStr.keys(new String[intStr.size()])) {
+          		int value = intStr.get(name);
+    			ret.put(name, value);
+    		}
+    	}
+    	
+    	
+    	if(!longStr.isEmpty()) {
+    		for (String name: longStr.keys(new String[longStr.size()])) {
+          		long value = longStr.get(name);
+    			ret.put(name, value);
+    		}
+    	}
+    	
+    	if(!doubleStr.isEmpty()) {
+    		for (String name: doubleStr.keys(new String[doubleStr.size()])) {
+          		double value = doubleStr.get(name);
+    			ret.put(name, value);
+    		}
+    	}
+    	
+    	return ret;
+    }
+}

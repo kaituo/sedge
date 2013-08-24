@@ -1,0 +1,54 @@
+#-----------------------------------------------
+# New Logical Plan:
+#-----------------------------------------------
+D: (Name: LOFilter Schema: group#49:chararray,xx#56:long,yy#59:long)
+|   |
+|   (Name: And Type: boolean Uid: 64)
+|   |
+|   |---(Name: GreaterThan Type: boolean Uid: 61)
+|   |   |
+|   |   |---xx:(Name: Project Type: long Uid: 56 Input: 0 Column: 1)
+|   |   |
+|   |   |---(Name: Cast Type: long Uid: 60)
+|   |       |
+|   |       |---(Name: Constant Type: int Uid: 60)
+|   |
+|   |---(Name: GreaterThan Type: boolean Uid: 63)
+|       |
+|       |---yy:(Name: Project Type: long Uid: 59 Input: 0 Column: 2)
+|       |
+|       |---(Name: Cast Type: long Uid: 62)
+|           |
+|           |---(Name: Constant Type: int Uid: 62)
+|
+|---C: (Name: LOForEach Schema: group#49:chararray,xx#56:long,yy#59:long)
+    |   |
+    |   (Name: LOGenerate[false,false,false] Schema: group#49:chararray,xx#56:long,yy#59:long)
+    |   |   |
+    |   |   group:(Name: Project Type: chararray Uid: 49 Input: 0 Column: (*))
+    |   |   |
+    |   |   (Name: UserFunc(org.apache.pig.builtin.LongSum) Type: long Uid: 56)
+    |   |   |
+    |   |   |---(Name: Dereference Type: bag Uid: 55 Column:[1])
+    |   |       |
+    |   |       |---A:(Name: Project Type: bag Uid: 52 Input: 1 Column: (*))
+    |   |   |
+    |   |   (Name: UserFunc(org.apache.pig.builtin.LongSum) Type: long Uid: 59)
+    |   |   |
+    |   |   |---(Name: Dereference Type: bag Uid: 58 Column:[2])
+    |   |       |
+    |   |       |---A:(Name: Project Type: bag Uid: 52 Input: 2 Column: (*))
+    |   |
+    |   |---(Name: LOInnerLoad[0] Schema: group#49:chararray)
+    |   |
+    |   |---A: (Name: LOInnerLoad[1] Schema: name#49:chararray,x#50:int,y#51:int)
+    |   |
+    |   |---A: (Name: LOInnerLoad[1] Schema: name#49:chararray,x#50:int,y#51:int)
+    |
+    |---B: (Name: LOCogroup Schema: group#49:chararray,A#52:bag{#66:tuple(name#49:chararray,x#50:int,y#51:int)})
+        |   |
+        |   name:(Name: Project Type: chararray Uid: 49 Input: 0 Column: 0)
+        |
+        |---A: (Name: LOLoad Schema: name#49:chararray,x#50:int,y#51:int)RequiredFields:null
+
+

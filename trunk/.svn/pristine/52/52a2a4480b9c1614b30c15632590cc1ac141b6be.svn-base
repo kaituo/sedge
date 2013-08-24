@@ -1,0 +1,187 @@
+package edu.umass.cs.pig.vm;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import org.apache.pig.backend.executionengine.ExecException;
+import org.apache.pig.impl.logicalLayer.FrontendException;
+import org.apache.pig.newplan.logical.relational.LogicalSchema;
+import org.apache.pig.pen.util.ExampleTuple;
+
+
+import edu.umass.cs.pig.dataflow.CntrComposer;
+import edu.umass.cs.pig.dataflow.LoadArgs;
+import edu.umass.cs.pig.dataflow.ParentEncapSol;
+import edu.umass.cs.pig.dataflow.ParentEncapsulation;
+import edu.umass.cs.pig.dataflow.Relation;
+
+/**
+ * We have an arraylist of pathlist for an operator.  One pathlist 
+ * represents one tuple to be generated.  For join, we need to remember 
+ * which fields between different pathlist are equal.  I introduce a parent 
+ * and child relationship between different path lists.  We generate example 
+ * tuple for the parent path list first.  Then for the children path lists, 
+ * we retrieve the values of fields from tuples generated for the parent 
+ * path list since those fields in the child pathlist have to be equal with 
+ * the corresponding fields in the parent path list.
+
+ * We use a path branch to represent constraints such as x==3 and y > x.  
+ * Path branches are combined by taking their conjunction.  The combined
+ *  path branches in a path is a path list.  For example, x==3 && y > x 
+ *  is a path list.  During the process of the upstream dynamic symbolic 
+ *  execution (upstream is from output to one of the inputs), a path list 
+ *  is updated until it reaches one of the output.  For example, for the 
+ *  following Pig script,
+ * 		A= Load 'File.txt' as (x:int, y:int);
+ *		B = Filter A by x==3;
+ * 		C = Filter B by y>x;
+
+ *	In the path from C-->A, first y>x is put into the path list, then 
+ *  x==3 is put into the path list by taking the conjunction: y>x && x==3, 
+ *  then it reaches A, the input.  Note  there can be paths 
+ *  from B-->A, A ( Some input data can be blocked between A and B, 
+ *  and between B and C).  Also note there can be more than 
+ *  one input (load).  Once all path lists are collected, we send them to 
+ *  Z3.  One pathlist will produce one input tuple (test case).  
+ *  For example, the path list C--> A with its conjunct y>x && x==3 will 
+ *  produce an input tuple say x=3, y=4.  The path list B-->A with its 
+ *  conjunct x==3 && y<=x will  produce an input tuple say x=3, y<=x.  
+ *  The path list A with its conjunct x!=3 && y<=x will produce an input 
+ *  say x=2, y=2.  
+ *  
+ * @author kaituo
+ *
+ */
+
+public class PathList implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
+	
+	private ArrayList<PathBranch> mainConstraints;
+	//private ArrayList<ExampleTuple> duplicateTuples;
+	
+	// the load schema that the pathlist associates with
+//	private LogicalSchema loadSchema = null;
+	
+	/** All children relations in the variable/ppt hierarchy. */
+	public List<Relation> children = new ArrayList<Relation>();
+
+	/** All parent relations in the variable/ppt hierarchy. */
+	public List<Relation> parents = new ArrayList<Relation>();
+	
+	ExampleTuple tOut;
+	boolean leftouterjoin;
+	
+	public PathList() {
+		mainConstraints = new ArrayList<PathBranch>();
+		//duplicateTuples = new ArrayList<ExampleTuple>();
+		leftouterjoin = false;
+	}
+	
+	public PathList(boolean left) {
+		mainConstraints = new ArrayList<PathBranch>();
+		//duplicateTuples = new ArrayList<ExampleTuple>();
+		leftouterjoin = left;
+	}
+
+	public ArrayList<PathBranch> getMainConstraints() {
+		return mainConstraints;
+	}
+
+	public void setMainConstraints(ArrayList<PathBranch> mainConstraints) {
+		this.mainConstraints = mainConstraints;
+	}
+
+	/**
+	 * used for debugging and logging.
+	 */
+	public void printMainConstraints() {
+		for (int prefix = 0; prefix < mainConstraints.size(); prefix++) {
+            System.out.println(mainConstraints.get(prefix).toString());
+        }
+	}
+	
+	public Set<PathList> getParentPathLists() {
+		Set<PathList> ret = new HashSet<PathList>();
+        for(Iterator<Relation> piter = parents.iterator(); piter.hasNext();) {
+        	Relation pElm = piter.next();
+        	PathList pInRel = pElm.parent;
+        	ret.add(pInRel);
+        }
+        return ret;
+	}
+	
+	
+
+	/**
+	 * TODO: Need to work out how to generate SumConstraint.
+	 * 
+	 * @param pMap
+	 * @param cInRel
+	 * @param larg
+	 * @param pSol
+	 * @throws FrontendException
+	 * @throws ExecException 
+	 */
+	public void mergeTuls(Map<PathList, ParentEncapsulation> pMap, PathList cInRel, 
+			LoadArgs larg, Map<PathList, ParentEncapSol> pSol,
+			List<LogicalSchema> allSchema, ExampleTuple out) throws FrontendException {//, Map<PathList, List<ParentEncapsulation>> pMapDuo
+//		LogicalSchema cSchema = larg.getSchema();
+//		LogicalSchema cuidSchema = larg.getUidOnlySchema();
+        List<Relation> p = cInRel.parents;
+        CntrComposer cp = new CntrComposer();
+        for(Iterator<Relation> piter = p.iterator(); piter.hasNext();) {
+        	Relation pElm = piter.next();
+        	PathList pInRel = pElm.parent;
+        	cp.composeCntr(pMap, larg, pSol, pInRel, pElm, mainConstraints, allSchema, out);//, pMapDuo
+//        	if(pMap.containsKey(pInRel) || pSol.containsKey(pInRel)) {
+//        		ParentEncapsulation pTuple = pMap.get(pInRel);
+//        		ParentEncapSol pListSol = pSol.get(pInRel);
+//        		for(Entry<VarInfo, VarInfo> entry4var : pElm.child_to_parent_map.entrySet()) {
+//        			VarInfo childVar = entry4var.getKey();
+//        			VarInfo parentVar = entry4var.getValue();
+//        			ParentValueTNype value4Parent = extract.extractsGenVal(pTuple, parentVar);
+//        			
+//        			if(value4Parent == null) {
+//        				//FIXME:
+//            			// There is a possibility that either one of or both of variables in the dataflow 
+//            			// hierarchy are intermediate variable (i.e. don't appear in load's schema).  Although
+//            			// we have values in the parent pathlist, we need to transform those values into intermediate
+//            			// values in the parent path, make the corresponding variable in the child pathlist equal to 
+//            			// the parent variable value. There are two cases:
+//            			// 1) if the variable of the parent pathlist in the dataflow hierarchy appear in Z3 solution, we could
+//            			// remember it;
+//            			// 2) else, the variable of the parent pathlist isn't involved in any symbolic constraints.  That
+//            			// is, it could be random.  I suspect this case is impossible.  An intermediate variable has to 
+//            			// be produced based on input variable and therefore has to be involved in some symbolic constraints.
+//            			// the variable in the dataflow hierarchy appears in the load's schema  
+//        				value4Parent = extract.extractsGenVal(pListSol, parentVar);
+//        				if(value4Parent == null) {
+//        	        		throw new FrontendException("Cannot find values of variables matching the name!");
+//        				}
+//        			}
+//        			Object value = value4Parent.getVal();
+//        			byte type = value4Parent.getType();
+//        			EqualConstraint eqctr = new EqualConstraint(value, childVar, cSchema, type);
+//        			PathBranch pbr = new PathBranch(eqctr);
+//        			mainConstraints.add(pbr);
+//        		}
+//        	} else {
+//        		throw new FrontendException("A child path list doesn't have corresponding parent path list.");
+//        	}
+        }
+	}
+
+	public boolean isLeftouterjoin() {
+		return leftouterjoin;
+	}
+
+	public void setLeftouterjoin(boolean leftouterjoin) {
+		this.leftouterjoin = leftouterjoin;
+	}
+}

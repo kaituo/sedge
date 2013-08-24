@@ -1,0 +1,287 @@
+package edu.umass.cs.pig.vm;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+import org.apache.pig.backend.executionengine.ExecException;
+import org.apache.pig.data.DataBag;
+import org.apache.pig.data.Tuple;
+import org.apache.pig.impl.logicalLayer.FrontendException;
+import org.apache.pig.newplan.logical.relational.LogicalSchema;
+import org.apache.pig.newplan.logical.relational.LogicalSchema.LogicalFieldSchema;
+import org.apache.pig.pen.util.ExampleTuple;
+
+import edu.umass.cs.pig.dataflow.LoadArgs;
+import edu.umass.cs.pig.dataflow.ParentEncapSol;
+import edu.umass.cs.pig.dataflow.ParentEncapsulation;
+import edu.umass.cs.pig.dataflow.ValueExtractor;
+import edu.umass.cs.pig.util.TupleMutation;
+import edu.umass.cs.pig.z3.ConstraintSolution;
+import edu.umass.cs.pig.z3.Z3Context;
+import edu.umass.cs.pig.z3.Z3SolutionImpl;
+import gnu.trove.TObjectIntHashMap;
+
+public class ComputeSolution {
+	ValueExtractor extr;
+	
+	public ComputeSolution() {
+		extr = new ValueExtractor();
+	}
+
+	public void compute(ArrayList<PathList> outputConstraints, DataBag inputD, QueryManager q, LogicalSchema schema, 
+			DataBag newInputData, DataBag inputData, Map<PathList, LoadArgs> childrenPathlistMap,
+			Map<PathList, ParentEncapsulation> parentTupleMap, Map<PathList, 
+			ParentEncapSol> parentSolMap, List<LogicalSchema> allSchema) throws FrontendException {
+		// first of all, we are required to guarantee that there is at least one
+        // output tuple
+        if (outputConstraints == null || outputConstraints.size() == 0) {
+        	return;
+        }
+
+        
+
+        // run through output constraints; for each one synthesize a tuple and
+        // add it to the base data
+        // (while synthesizing individual fields, try to match fields that exist
+        // in the real data)
+//        boolean newInput = false;
+        Iterator<Tuple> inputDItr = inputD.iterator();
+        Tuple exampleTuple = null;
+        boolean realDataEnd = false;
+        
+        for (Iterator<PathList> it = outputConstraints.iterator(); it.hasNext();) {
+        	
+        	PathList pl = it.next();
+        	if (pl.isLeftouterjoin()) {
+        		TupleMutation tm = new TupleMutation(schema, allSchema);
+        		exampleTuple = tm.mutate(inputD.iterator().next());
+        	} else if(inputDItr.hasNext() && !realDataEnd) {
+        		exampleTuple = inputDItr.next();
+        	} else {
+        		if(!realDataEnd)
+        			realDataEnd = true;
+        		TupleMutation tm = new TupleMutation(schema, allSchema);
+        		exampleTuple = tm.mutate(inputD.iterator().next());
+        	}
+        	// create example tuple to steal values from when we encounter
+            // "don't care" fields (i.e. null fields)
+            System.out.println(exampleTuple.toString());
+        	
+        	if(pl.parents.size() != 0) {
+        		LoadArgs la = new LoadArgs(exampleTuple, q, schema, 
+        				newInputData, inputData);
+        		childrenPathlistMap.put(pl, la);
+        		continue;
+        	}
+        	ArrayList<PathBranch> outputConstraint = pl.getMainConstraints();
+//        	ArrayList<ExampleTuple> duplicateConstraint = pl.getDuplicateTuples();
+        	q.getC().resettOut();
+        	q.getC().resetNullPos();
+
+//            Tuple inputT = TupleFactory.getInstance().newTuple(
+//                    outputConstraint.size());
+//            ExampleTuple inputTuple = new ExampleTuple(inputT);
+
+            // Generate concrete value by sending constraints to a constraint solver  
+            System.out.println(outputConstraint.toString());
+            ConstraintSolution solution = q.solve(outputConstraint);
+ //           Map<Integer, Integer> index2val = null;
+            Map<Integer, Object> index2val = null;
+            if(solution != null && ((Z3SolutionImpl)solution).getModel() != null)
+            	index2val = extr.extractsGenVal(schema, solution);
+            ExampleTuple inputTuple = q.getC().gettOut();
+            List<Integer> nullPos = q.getC().getNullPos();
+            
+//            if(outputConstraint.size()==0 && duplicateConstraint.size()>0) {
+//            	for(Iterator<ExampleTuple> t = duplicateConstraint.iterator(); t.hasNext();) {
+//            		ExampleTuple newadd = t.next();
+//            		ParentEncapsulation penc = new ParentEncapsulation(newadd, schema);
+//                	newInputData.add(newadd);
+//                	parentTupleMap.put(pl, penc);
+//                }
+//            }
+//            else {
+            	try {
+                	int nullnum = 0;
+                	
+                    for (int i = 0; i < inputTuple.size(); i++) {
+                    	Object d = null;
+                    	//if there are values that are already set in inputTuple,
+                    	//and index2val has some value for that,
+                    	//the following will reset it.
+                    	if(index2val != null && index2val.containsKey(i)) {
+                    		d = index2val.get(i);
+                    		inputTuple.set(i, d);
+                    	} else if (inputTuple.get(i) != null) {
+                    		//d = inputTuple.get(i);
+                    		continue;
+                    	} else if (inputTuple.get(i) == null && nullPos.contains(i)) {
+                    		continue;
+                    	}
+                    	else if (i<exampleTuple.size()) {
+                    		d = exampleTuple.get(i);
+                            nullnum++;
+                            inputTuple.set(i, d);
+                    	}
+                        
+                        
+                        
+                    }
+                    
+                    
+                    ParentEncapsulation penc = new ParentEncapsulation(inputTuple, schema);
+                    parentTupleMap.put(pl, penc);
+                    
+                    if(solution != null) {
+                    	ParentEncapSol pens = new ParentEncapSol(((Z3SolutionImpl)solution).getVariablesAry1());
+                    	parentSolMap.put(pl, pens);
+                    }
+                    
+                    if (nullnum != inputTuple.size())
+                        inputTuple.synthetic = true;
+                } catch (ExecException e) {
+                    throw new FrontendException(
+                            "Error visiting Load during Augmentation phase of Example Generator! "
+                                    + e.getMessage());
+
+                }
+            	
+//            	if(solution != null) {
+//            		
+//            	}
+            	try {
+                    if (inputTuple.synthetic || !inInput(inputTuple, inputData, schema))
+                    {
+                        inputTuple.synthetic = true;
+
+                        newInputData.add(inputTuple);
+                        
+                        if(solution != null && ((Z3SolutionImpl)solution).isDuplicate())
+                        	newInputData.add(inputTuple);
+                		
+//                        if (!newInput)
+//                            newInput = true;
+                    } else if (!inputTuple.synthetic && solution != null && ((Z3SolutionImpl)solution).isDuplicate()) {
+                    	//FIXME: this else if branch is wrote especially for cogroup
+                    	newInputData.add(inputTuple);
+
+                    } 
+                } catch (ExecException e) {
+                    throw new FrontendException(
+                      "Error visiting Load during Augmentation phase of Example Generator! "
+                              + e.getMessage());
+                }
+//            }
+            
+            if(solution != null)
+            	solution.deleteModel(); // clean up
+            Z3Context.get().pop(1);
+        }
+	}
+	
+	public void compute(PathList pl, Tuple exampleTuple, QueryManager q, LogicalSchema schema, 
+			DataBag newInputData, DataBag inputData) throws FrontendException {
+		boolean newInput = false;
+    	ArrayList<PathBranch> outputConstraint = pl.getMainConstraints();
+//    	ArrayList<ExampleTuple> duplicateConstraint = pl.getDuplicateTuples();
+//    	q.getC().resettOut();
+
+//        Tuple inputT = TupleFactory.getInstance().newTuple(
+//                outputConstraint.size());
+//        ExampleTuple inputTuple = new ExampleTuple(inputT);
+
+        // Generate concrete value by sending constraints to a constraint solver  
+        System.out.println(outputConstraint.toString());    	
+    	
+        ConstraintSolution solution = q.solve(outputConstraint);
+//        Map<Integer, Integer> index2val = null;
+        Map<Integer, Object> index2val = null;
+        if(solution != null && solution.getVariablesAry1() != null)
+        	index2val = extr.extractsGenVal(schema, solution);
+        ExampleTuple inputTuple = q.getC().gettOut();
+        List<Integer> nullPos = q.getC().getNullPos();
+
+//        if(outputConstraint.size()==0 && duplicateConstraint.size()>0) {
+//        	for(Iterator<ExampleTuple> t = duplicateConstraint.iterator(); t.hasNext();) {
+//        		ExampleTuple newadd = t.next();
+//            	newInputData.add(newadd);
+//            }
+//        }
+//        else {
+        	try {
+            	int nullnum = 0;
+            	
+                for (int i = 0; i < inputTuple.size(); i++) {
+                	Object d = null;
+                	if(index2val != null && index2val.containsKey(i)) {
+                		d = index2val.get(i);
+                		inputTuple.set(i, d);
+                	} else if (inputTuple.get(i) != null) {
+                		//d = inputTuple.get(i);
+                		continue;
+                	} else if (inputTuple.get(i) == null && nullPos.contains(i)) {
+                		continue;
+                	} else if (i<exampleTuple.size()) {
+                		d = exampleTuple.get(i);
+                        nullnum++;
+                        inputTuple.set(i, d);
+                	}
+                    
+                    
+                    
+                }
+                if (nullnum != inputTuple.size())
+                    inputTuple.synthetic = true;
+            } catch (ExecException e) {
+                throw new FrontendException(
+                        "Error visiting Load during Augmentation phase of Example Generator! "
+                                + e.getMessage());
+
+            }
+            try {
+                if (inputTuple.synthetic || !inInput(inputTuple, inputData, schema))
+                {
+                    inputTuple.synthetic = true;
+
+                    newInputData.add(inputTuple);
+                    
+                    if(solution != null && ((Z3SolutionImpl)solution).isDuplicate())
+                    	newInputData.add(inputTuple);
+                    
+                    
+                    if (!newInput)
+                        newInput = true;
+                }
+            } catch (ExecException e) {
+                throw new FrontendException(
+                  "Error visiting Load during Augmentation phase of Example Generator! "
+                          + e.getMessage());
+            }
+        //}
+        
+        if(solution != null)
+        	solution.deleteModel(); // clean up
+        Z3Context.get().pop(1);
+	}
+	
+	private boolean inInput(Tuple newTuple, DataBag input, LogicalSchema schema) throws ExecException {
+        boolean result;
+        for (Iterator<Tuple> iter = input.iterator(); iter.hasNext();) {
+            result = true;
+            Tuple tmp = iter.next();
+            for (int i = 0; i < schema.size(); ++i)
+                if (!newTuple.get(i).equals(tmp.get(i)))
+                {
+                    result = false;
+                    break;
+                }
+            if (result)
+                return true;
+        }
+        return false;
+    }
+
+}

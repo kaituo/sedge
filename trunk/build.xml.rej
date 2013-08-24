@@ -1,0 +1,10 @@
+--- build.xml
++++ build.xml
+@@ -237,6 +237,7 @@
+         <fileset dir="${ivy.lib.dir}" includes="hadoop*.jar"/>
+         <path refid="classpath"/>
+         <path refid="test-classpath"/>
++        <fileset file="${lib.dir}/sdsuLibJKD12.jar"/>
+     </path>
+ 
+     <target name="init" depends="ivy-compile" >

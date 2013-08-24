@@ -1,0 +1,176 @@
+package edu.umass.cs.pig.util;
+
+import java.util.List;
+import java.util.Random;
+
+import org.apache.pig.backend.executionengine.ExecException;
+import org.apache.pig.data.DataByteArray;
+import org.apache.pig.data.DataType;
+import org.apache.pig.data.Tuple;
+import org.apache.pig.data.TupleFactory;
+import org.apache.pig.impl.logicalLayer.FrontendException;
+import org.apache.pig.newplan.logical.relational.LogicalSchema;
+import org.apache.pig.newplan.logical.relational.LogicalSchema.LogicalFieldSchema;
+import org.apache.pig.pen.util.ExampleTuple;
+
+public class TupleMutation {
+	Random r = new Random();
+	LogicalSchema schema;
+	List<LogicalSchema> schemas;
+	DataByteArrayConverter converter;
+	
+	public TupleMutation(LogicalSchema schema, List<LogicalSchema> schemas) {
+		r = new Random();
+		this.schema = schema;
+		this.schemas = schemas;
+		converter = new DataByteArrayConverter();
+	}
+
+	public Tuple mutate(Tuple old) throws FrontendException {
+		Tuple newTuple = TupleFactory.getInstance()
+				.newTuple(old.size()); 
+		Tuple nExampleTpl = new ExampleTuple(newTuple);
+		int i = 0;
+		for(LogicalFieldSchema f: schema.getFields()) {
+			try {
+				Object d = old.get(i);
+				if(d != null) {
+					String alias = f.alias;
+					byte type = -1;
+					for (LogicalSchema s : schemas) {
+						LogicalFieldSchema fmatch = s.getFieldSubNameMatch(alias);
+			            if(fmatch != null)
+			            	type = fmatch.type;
+			        }
+					if(type == -1)
+						throw new FrontendException("Cannot find matching field from all known schemas!");
+		            switch (type) {
+		                case DataType.INTEGER:
+		                	// All data are encoded as DataByteArray by Pig
+		                	int ds = converter.toInt((DataByteArray)d);
+		                	int newVal = mutateInt(ds);
+		                	DataByteArray da = converter.toDataByteArray(newVal);
+			        		nExampleTpl.set(i, da);
+		                    break;
+		                case DataType.LONG:
+		                	long ds2 = converter.toLong((DataByteArray)d);
+		                	long newVal2 = mutateLong(ds2);
+		                	DataByteArray da2 = converter.toDataByteArray(newVal2);
+			        		nExampleTpl.set(i, da2);
+		                    break;
+		                case DataType.FLOAT:
+		                	float ds4 = converter.toFloat((DataByteArray)d);
+		                	float newVal4 = mutateFloat(ds4);
+		                	DataByteArray da4 = converter.toDataByteArray(newVal4);
+			        		nExampleTpl.set(i, da4);
+		                    break;
+		                case DataType.DOUBLE:
+		                	double ds3 = converter.toDouble((DataByteArray)d);
+		                	double newVal3 = mutateDouble(ds3);
+		                	DataByteArray da3 = converter.toDataByteArray(newVal3);
+			        		nExampleTpl.set(i, da3);
+		                    break;
+		                case DataType.CHARARRAY:
+		                	String ds5 = converter.toString((DataByteArray)d);
+		                	String newVal5 = mutateString(ds5);
+		                	DataByteArray da5 = converter.toDataByteArray(newVal5);
+							nExampleTpl.set(i, da5);
+		                	break;
+		                case DataType.BYTEARRAY:
+		                	String str = ((DataByteArray) d).toString();
+			        		nExampleTpl.set(i, new DataByteArray(mutateString(str)));
+		                	break;
+		                case DataType.BOOLEAN:
+		                	nExampleTpl.set(i, Boolean.FALSE);
+		                	break;
+		                default:
+		                    throw new FrontendException("Unsupported number type");
+		            }
+		            i++;
+				} else {
+					throw new FrontendException("Unsupported number format!");
+				}
+			} catch (ExecException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+            
+        }
+		
+//		for (int i = 0; i < old.size(); i++) {
+//        	Object d = null;
+//			try {
+//				d = old.get(i);
+//				if(d != null) {
+//					if(d instanceof String) {
+//						String ds = (String)d;
+//						nExampleTpl.set(i, mutateString(ds));
+//		        	} else if(d instanceof Integer) {
+//		        		int newVal = ((Integer)d).intValue() + r.nextInt();
+//		        		nExampleTpl.set(i, newVal);
+//		        	} else if(d instanceof Long) {
+//		        		long newVal2 = ((Integer)d).longValue() + r.nextLong();
+//		        		nExampleTpl.set(i, newVal2);
+//		        	} else if(d instanceof Double) {
+//		        		double newVal3 = ((Double)d).doubleValue() + r.nextDouble();
+//		        		nExampleTpl.set(i, newVal3);
+//		        	} else if(d instanceof Float) {
+//		        		float newVal4 = ((Float)d).floatValue() + r.nextFloat();
+//		        		nExampleTpl.set(i, newVal4);
+//		        	} else if(d instanceof DataByteArray) {
+//		        		String str = ((DataByteArray) d).toString();
+//		        		nExampleTpl.set(i, new DataByteArray(mutateString(str)));
+//		        	} else 
+//		        		throw new FrontendException("Unsupported number format!");
+//				} else {
+//					throw new FrontendException("Unsupported number format!");
+//				}
+//			} catch (ExecException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+
+		return nExampleTpl;
+	}
+	
+	private int mutateInt(int d) {
+		int ret = d + r.nextInt(10);
+		return ret;
+	}
+	
+	private double mutateDouble(double d) {
+		double ret = d + r.nextDouble();
+		return ret;
+	}
+	
+	private float mutateFloat(float d) {
+		float ret = d + r.nextFloat();
+		return ret;
+	}
+	
+	private long mutateLong(long d) {
+		long ret = d + nextLong(r, 10);
+		return ret;
+	}
+	
+	private String mutateString(String ds) {
+		char c = (char)(r.nextInt(26) + 'a');
+		StringBuilder sb = new StringBuilder(ds);
+		int idex = r.nextInt(ds.length());
+		sb.setCharAt(idex, c);
+		return sb.toString();
+	}
+	
+
+	private long nextLong(Random rng, long n) {
+		// error checking and 2^x checking removed for simplicity.
+		long bits, val;
+		do {
+			bits = (rng.nextLong() << 1) >>> 1;
+			val = bits % n;
+		} while (bits - val + (n - 1) < 0L);
+		return val;
+	}
+
+}

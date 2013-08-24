@@ -1,0 +1,34 @@
+package edu.umass.cs.pig.dataflow;
+
+import java.io.Serializable;
+import java.util.LinkedHashMap;
+
+import edu.umass.cs.pig.vm.PathList;
+
+public class Relation implements Serializable {
+	/** Parent of relation. **/
+	  public PathList parent;
+
+	  /** Child of relation. **/
+	  public PathList child;
+	  
+	  public Relation(PathList parent, PathList child) {
+
+		    this.parent = parent;
+		    this.child = child;
+		    
+		    connect();
+		  }
+	  
+	  /**
+	   * Adds this relation to its child's parent list and its parent's
+	   * children list.
+	   */
+	  private void connect() {
+	    assert !child.parents.contains(this);
+	    assert !parent.children.contains(this);
+	    child.parents.add(this);
+	    parent.children.add(this);
+	  }
+
+}

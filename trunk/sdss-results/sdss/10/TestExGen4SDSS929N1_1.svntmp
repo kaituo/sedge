@@ -1,0 +1,376 @@
+13/05/07 18:38:53 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testBasic
+13/05/07 18:38:53 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/05/07 18:38:54 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/05/07 18:38:54 ERROR pen.ExampleGenerator: Error reading data. Cannot find matching field from all known schemas!
+java.lang.RuntimeException: Cannot find matching field from all known schemas!
+	at org.apache.pig.pen.ExampleGenerator.getExamples(ExampleGenerator.java:174)
+	at org.apache.pig.PigServer.getExamples(PigServer.java:1209)
+	at edu.umass.cs.pig.test.sdss.TestExGen4SDSS929N1.testBasic(TestExGen4SDSS929N1.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:73)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+0.368408844 passed.
+13/05/07 18:38:54 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testGalaxies2Criteria
+13/05/07 18:38:54 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/05/07 18:38:54 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/05/07 18:38:54 ERROR pen.ExampleGenerator: Error reading data. Cannot find matching field from all known schemas!
+java.lang.RuntimeException: Cannot find matching field from all known schemas!
+	at org.apache.pig.pen.ExampleGenerator.getExamples(ExampleGenerator.java:174)
+	at org.apache.pig.PigServer.getExamples(PigServer.java:1209)
+	at edu.umass.cs.pig.test.sdss.TestExGen4SDSS929N1.testGalaxies2Criteria(TestExGen4SDSS929N1.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:73)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+0.111994164 passed.
+13/05/07 18:38:54 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testUnclassifiedSpectra
+13/05/07 18:38:54 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/05/07 18:38:54 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/05/07 18:38:54 ERROR pen.ExampleGenerator: Error reading data. Cannot find matching field from all known schemas!
+java.lang.RuntimeException: Cannot find matching field from all known schemas!
+	at org.apache.pig.pen.ExampleGenerator.getExamples(ExampleGenerator.java:174)
+	at org.apache.pig.PigServer.getExamples(PigServer.java:1209)
+	at edu.umass.cs.pig.test.sdss.TestExGen4SDSS929N1.testUnclassifiedSpectra(TestExGen4SDSS929N1.java:226)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:73)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+0.194336679 passed.
+13/05/07 18:38:54 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testMultipleCriteria
+13/05/07 18:38:54 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+13/05/07 18:38:55 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/05/07 18:38:55 ERROR pen.ExampleGenerator: Error reading data. Cannot find matching field from all known schemas!
+java.lang.RuntimeException: Cannot find matching field from all known schemas!
+	at org.apache.pig.pen.ExampleGenerator.getExamples(ExampleGenerator.java:174)
+	at org.apache.pig.PigServer.getExamples(PigServer.java:1209)
+	at edu.umass.cs.pig.test.sdss.TestExGen4SDSS929N1.testMultipleCriteria(TestExGen4SDSS929N1.java:265)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:73)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+0.198916302 passed.
+13/05/07 18:38:55 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testSpatialUnitVectors
+13/05/07 18:38:55 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+13/05/07 18:38:55 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+13/05/07 18:38:55 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/05/07 18:38:55 ERROR pen.ExampleGenerator: Error reading data. Cannot find matching field from all known schemas!
+java.lang.RuntimeException: Cannot find matching field from all known schemas!
+	at org.apache.pig.pen.ExampleGenerator.getExamples(ExampleGenerator.java:174)
+	at org.apache.pig.PigServer.getExamples(PigServer.java:1209)
+	at edu.umass.cs.pig.test.sdss.TestExGen4SDSS929N1.testSpatialUnitVectors(TestExGen4SDSS929N1.java:300)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:73)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+0.116497037 passed.
+13/05/07 18:38:55 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testCVs
+13/05/07 18:38:55 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/05/07 18:38:55 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/05/07 18:38:55 ERROR pen.ExampleGenerator: Error reading data. Cannot find matching field from all known schemas!
+java.lang.RuntimeException: Cannot find matching field from all known schemas!
+	at org.apache.pig.pen.ExampleGenerator.getExamples(ExampleGenerator.java:174)
+	at org.apache.pig.PigServer.getExamples(PigServer.java:1209)
+	at edu.umass.cs.pig.test.sdss.TestExGen4SDSS929N1.testCVs(TestExGen4SDSS929N1.java:356)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:73)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+0.160290264 passed.
+13/05/07 18:38:55 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testLowzQSOs
+13/05/07 18:38:55 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/05/07 18:38:55 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/05/07 18:38:55 ERROR pen.ExampleGenerator: Error reading data. Cannot find matching field from all known schemas!
+java.lang.RuntimeException: Cannot find matching field from all known schemas!
+	at org.apache.pig.pen.ExampleGenerator.getExamples(ExampleGenerator.java:174)
+	at org.apache.pig.PigServer.getExamples(PigServer.java:1209)
+	at edu.umass.cs.pig.test.sdss.TestExGen4SDSS929N1.testLowzQSOs(TestExGen4SDSS929N1.java:410)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:73)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+0.211395196 passed.
+13/05/07 18:38:55 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testVelocitiesErrors
+13/05/07 18:38:56 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/05/07 18:38:56 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+java.lang.RuntimeException: Cannot find matching field from all known schemas!13/05/07 18:38:56 ERROR pen.ExampleGenerator: Error reading data. Cannot find matching field from all known schemas!
+
+	at org.apache.pig.pen.ExampleGenerator.getExamples(ExampleGenerator.java:174)
+	at org.apache.pig.PigServer.getExamples(PigServer.java:1209)
+	at edu.umass.cs.pig.test.sdss.TestExGen4SDSS929N1.testVelocitiesErrors(TestExGen4SDSS929N1.java:479)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:73)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+0.166084363 passed.
+13/05/07 18:38:56 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testBETWEEN
+13/05/07 18:38:56 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/05/07 18:38:56 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/05/07 18:38:56 ERROR pen.ExampleGenerator: Error reading data. Cannot find matching field from all known schemas!
+java.lang.RuntimeException: Cannot find matching field from all known schemas!
+	at org.apache.pig.pen.ExampleGenerator.getExamples(ExampleGenerator.java:174)
+	at org.apache.pig.PigServer.getExamples(PigServer.java:1209)
+	at edu.umass.cs.pig.test.sdss.TestExGen4SDSS929N1.testBETWEEN(TestExGen4SDSS929N1.java:520)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:73)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+0.081613007 passed.
+13/05/07 18:38:56 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testMovingAsteroids
+13/05/07 18:38:56 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/05/07 18:38:56 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/05/07 18:38:56 ERROR pen.ExampleGenerator: Error reading data. Cannot find matching field from all known schemas!
+java.lang.RuntimeException: Cannot find matching field from all known schemas!
+	at org.apache.pig.pen.ExampleGenerator.getExamples(ExampleGenerator.java:174)
+	at org.apache.pig.PigServer.getExamples(PigServer.java:1209)
+	at edu.umass.cs.pig.test.sdss.TestExGen4SDSS929N1.testMovingAsteroids(TestExGen4SDSS929N1.java:559)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:73)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+0.077305442 passed.

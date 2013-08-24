@@ -1,0 +1,883 @@
+12/10/23 06:48:57 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testBasic
+12/10/23 06:48:57 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/10/23 06:48:57 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/10/23 06:48:57 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:57 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:57 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:57 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:57 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:58 INFO input.FileInputFormat: Total input paths to process : 1
+12/10/23 06:48:58 INFO util.MapRedUtil: Total input paths to process : 1
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:58 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:58 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:58 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+(587729149846946432,197,151.63429336,-2.67882396,2188)
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:58 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:58 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+---------------------------------------------------------------------------------------
+| A     | objID:long         | field:int    | ra:float    | dec:float    | run:int    | 
+---------------------------------------------------------------------------------------
+|       | 587729149846946432 | 11           | 151.6343    | -2.678824    | 1336       | 
+|       | 587729149846946432 | 197          | 151.6343    | -2.678824    | 2188       | 
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+| B     | objID:long         | field:int    | ra:float    | dec:float    | run:int    | 
+---------------------------------------------------------------------------------------
+|       | 587729149846946432 | 11           | 151.6343    | -2.678824    | 1336       | 
+---------------------------------------------------------------------------------------
+
+12/10/23 06:48:58 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testGalaxies2Criteria
+12/10/23 06:48:58 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/10/23 06:48:58 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:58 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:58 INFO input.FileInputFormat: Total input paths to process : 1
+12/10/23 06:48:58 INFO util.MapRedUtil: Total input paths to process : 1
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:58 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:58 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:58 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+(587729149846946419,151.62429819,-2.67301661,26.31139,24.77476,22.20748,21.80104,21.14703,0.5921307,2.96956,4.584053,1.760779,1.888609,0.8657882,-1000,23.20435)
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:58 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:58 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+---------------------------------------------------------------------
+| A     | objID:long         | extinction_r:double    | r:double    | 
+---------------------------------------------------------------------
+|       | 587729149846946419 | 0.0                    | -2.67301661 | 
+|       | 587729149846946419 | 151.62429819           | -2.67301661 | 
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+| B     | objID:long         | extinction_r:double    | r:double    | 
+---------------------------------------------------------------------
+|       | 587729149846946419 | 151.62429819           | -2.67301661 | 
+---------------------------------------------------------------------
+
+12/10/23 06:48:58 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testUnclassifiedSpectra
+12/10/23 06:48:58 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/10/23 06:48:58 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 2
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 2
+12/10/23 06:48:58 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:58 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:58 INFO input.FileInputFormat: Total input paths to process : 1
+12/10/23 06:48:58 INFO util.MapRedUtil: Total input paths to process : 1
+12/10/23 06:48:58 INFO input.FileInputFormat: Total input paths to process : 1
+12/10/23 06:48:58 INFO util.MapRedUtil: Total input paths to process : 1
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler$LastInputStreamingOptimizer: Rewrite: POPackage->POForEach to POJoinPackage
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:58 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=267
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: Neither PARALLEL nor default parallelism is set for this job. Setting number of reducers to 1
+12/10/23 06:48:58 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Unable to interpret value [71, 65, 76, 95, 69, 77] in field being converted to long, caught NumberFormatException <For input string: "GAL_EM"> field discarded
+12/10/23 06:48:58 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Unable to interpret value [71, 65, 76, 65, 88, 89] in field being converted to long, caught NumberFormatException <For input string: "GALAXY"> field discarded
+12/10/23 06:48:58 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Unable to interpret value [72, 73, 90, 95, 81, 83, 79] in field being converted to long, caught NumberFormatException <For input string: "HIZ_QSO"> field discarded
+12/10/23 06:48:58 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Unable to interpret value [81, 83, 79] in field being converted to long, caught NumberFormatException <For input string: "QSO"> field discarded
+12/10/23 06:48:58 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Unable to interpret value [83, 75, 89] in field being converted to long, caught NumberFormatException <For input string: "SKY"> field discarded
+12/10/23 06:48:58 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Unable to interpret value [83, 84, 65, 82] in field being converted to long, caught NumberFormatException <For input string: "STAR"> field discarded
+12/10/23 06:48:58 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Unable to interpret value [83, 84, 65, 82, 95, 76, 65, 84, 69] in field being converted to long, caught NumberFormatException <For input string: "STAR_LATE"> field discarded
+12/10/23 06:48:58 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Unable to interpret value [85, 78, 75, 78, 79, 87, 78] in field being converted to long, caught NumberFormatException <For input string: "UNKNOWN"> field discarded
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler$LastInputStreamingOptimizer: Rewrite: POPackage->POForEach to POJoinPackage
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:58 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=267
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: Neither PARALLEL nor default parallelism is set for this job. Setting number of reducers to 1
+12/10/23 06:48:58 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Unable to interpret value [71, 65, 76, 95, 69, 77] in field being converted to long, caught NumberFormatException <For input string: "GAL_EM"> field discarded
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler$LastInputStreamingOptimizer: Rewrite: POPackage->POForEach to POJoinPackage
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:58 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=267
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: Neither PARALLEL nor default parallelism is set for this job. Setting number of reducers to 1
+12/10/23 06:48:58 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Unable to interpret value [71, 65, 76, 95, 69, 77] in field being converted to long, caught NumberFormatException <For input string: "GAL_EM"> field discarded
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler$LastInputStreamingOptimizer: Rewrite: POPackage->POForEach to POJoinPackage
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:58 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=267
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: Neither PARALLEL nor default parallelism is set for this job. Setting number of reducers to 1
+12/10/23 06:48:58 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Unable to interpret value [71, 65, 76, 95, 69, 77] in field being converted to long, caught NumberFormatException <For input string: "GAL_EM"> field discarded
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler$LastInputStreamingOptimizer: Rewrite: POPackage->POForEach to POJoinPackage
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:58 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=267
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: Neither PARALLEL nor default parallelism is set for this job. Setting number of reducers to 1
+12/10/23 06:48:58 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Unable to interpret value [71, 65, 76, 95, 69, 77] in field being converted to long, caught NumberFormatException <For input string: "GAL_EM"> field discarded
+(75094093578895360,2)
+(GAL_EM,7)
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:58 INFO mapReduceLayer.MRCompiler$LastInputStreamingOptimizer: Rewrite: POPackage->POForEach to POJoinPackage
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:58 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:58 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=267
+12/10/23 06:48:58 INFO mapReduceLayer.JobControlCompiler: Neither PARALLEL nor default parallelism is set for this job. Setting number of reducers to 1
+12/10/23 06:48:58 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Unable to interpret value [71, 65, 76, 95, 69, 77] in field being converted to long, caught NumberFormatException <For input string: "GAL_EM"> field discarded
+12/10/23 06:48:58 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Unable to interpret value [71, 65, 76, 95, 69, 77] in field being converted to long, caught NumberFormatException <For input string: "GAL_EM"> field discarded
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler$LastInputStreamingOptimizer: Rewrite: POPackage->POForEach to POJoinPackage
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=267
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: Neither PARALLEL nor default parallelism is set for this job. Setting number of reducers to 1
+12/10/23 06:48:59 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Unable to interpret value [71, 65, 76, 95, 69, 77] in field being converted to long, caught NumberFormatException <For input string: "GAL_EM"> field discarded
+12/10/23 06:48:59 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Unable to interpret value [71, 65, 76, 95, 69, 77] in field being converted to long, caught NumberFormatException <For input string: "GAL_EM"> field discarded
+--------------------------------------------
+| A     | name:chararray    | value:int    | 
+--------------------------------------------
+|       | UNKNOWN           | 2            | 
+|       | 75094093578895360 | 2            | 
+--------------------------------------------
+--------------------------------------------
+| B     | name:chararray    | value:int    | 
+--------------------------------------------
+|       | UNKNOWN           | 2            | 
+--------------------------------------------
+------------------------------------------------
+| C     | specObjID:long    | SpecClass:int    | 
+------------------------------------------------
+|       |                   | 2                | 
+|       |                   | 7                | 
+------------------------------------------------
+-----------------------------------------------------------------------------------------------
+| D     | B::name:chararray    | B::value:int    | C::specObjID:long    | C::SpecClass:int    | 
+-----------------------------------------------------------------------------------------------
+|       | UNKNOWN              | 2               |                      | 2                   | 
+-----------------------------------------------------------------------------------------------
+--------------------------------
+| E     | C::specObjID:long    | 
+--------------------------------
+|       |                      | 
+--------------------------------
+
+12/10/23 06:48:59 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testMultipleCriteria
+12/10/23 06:48:59 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/10/23 06:48:59 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO input.FileInputFormat: Total input paths to process : 1
+12/10/23 06:48:59 INFO util.MapRedUtil: Total input paths to process : 1
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+(588848900971299362,145.52366174,0.65364368,22.99505,2.363302)
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+-------------------------------------------------------------------------------------------
+| A     | objID:long         | ra:float     | dec:float     | g:float     | rho:float     | 
+-------------------------------------------------------------------------------------------
+|       | 588848900971299362 | 250.0        | 51.0          | 0.0         | 23.0          | 
+|       | 588848900971299362 | 145.52367    | 0.65364367    | 22.99505    | 2.363302      | 
+|       | 588848900971299427 | 145.4167     | 0.66922104    | 23.28917    | 1.698274      | 
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+| B     | objID:long         | ra:float     | dec:float     | g:float     | rho:float     | 
+-------------------------------------------------------------------------------------------
+|       | 588848900971299362 | 250.0        | 51.0          | 0.0         | 23.0          | 
+-------------------------------------------------------------------------------------------
+
+12/10/23 06:48:59 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testSpatialUnitVectors
+12/10/23 06:48:59 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+12/10/23 06:48:59 WARN pig.PigServer: float is implicitly cast to double under MultiplyExpression Operator
+12/10/23 06:48:59 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO input.FileInputFormat: Total input paths to process : 1
+12/10/23 06:48:59 INFO util.MapRedUtil: Total input paths to process : 1
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+(427.2227,427.3683,-0.82324571,0.56756504)
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+-----------------------------------------------------------------------------
+| A     | colc_g:float     | colc_r:float     | cx:float     | cy:float     | 
+-----------------------------------------------------------------------------
+|       | 427.2227         | 427.3683         | 0.88455206   | 0.74223423   | 
+|       | 427.2227         | 427.3683         | -0.8232457   | 0.567565     | 
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+| B     | colc_g:float     | colc_r:float     | cx:float     | cy:float     | 
+-----------------------------------------------------------------------------
+|       | 427.2227         | 427.3683         | 0.88455206   | 0.74223423   | 
+-----------------------------------------------------------------------------
+
+12/10/23 06:48:59 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testCVs
+12/10/23 06:48:59 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/10/23 06:48:59 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO input.FileInputFormat: Total input paths to process : 1
+12/10/23 06:48:59 INFO util.MapRedUtil: Total input paths to process : 1
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+(756,5,44,198,588848900971299348,23.4416,21.63629,20.56082,20.20437,19.93742,145.51069493,0.76008402)
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| A     | run:int     | camcol:int     | rerun:int     | field:int     | objID:long         | u:double     | g:double     | r:double     | i:double     | z:double     | ra:float     | dec:float     | 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|       | 756         | 5              | 44            | 198           | 588848900971299348 | 0.0          | 0.0          | 0.0          | -0.8         | -1.6         | 145.5107     | 0.76008403    | 
+|       | 756         | 5              | 44            | 198           | 588848900971299348 | 23.4416      | 21.63629     | 20.56082     | 20.20437     | 19.93742     | 145.5107     | 0.76008403    | 
+|       | 756         | 5              | 44            | 198           | 588848900971299314 | 26.01395     | 21.8112      | 20.34277     | 19.59262     | 19.27628     | 145.48988    | 0.8190653     | 
+|       | 756         | 5              | 44            | 198           | 588848900971299371 | 24.42073     | 22.46383     | 21.95002     | 22.27146     | 21.4034      | 145.53369    | 0.69376457    | 
+|       | 756         | 5              | 44            | 198           | 588848900971299376 | 22.7391      | 22.38043     | 21.29219     | 20.91273     | 20.28859     | 145.53593    | 0.7416372     | 
+|       | 756         | 5              | 44            | 198           | 588848900971299380 | 23.37186     | 22.43864     | 21.26264     | 20.71757     | 20.09599     | 145.53888    | 0.7494371     | 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| B     | run:int     | camcol:int     | rerun:int     | field:int     | objID:long         | u:double     | g:double     | r:double     | i:double     | z:double     | ra:float     | dec:float     | 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|       | 756         | 5              | 44            | 198           | 588848900971299348 | 0.0          | 0.0          | 0.0          | -0.8         | -1.6         | 145.5107     | 0.76008403    | 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+12/10/23 06:48:59 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testLowzQSOs
+12/10/23 06:48:59 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/10/23 06:48:59 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 INFO input.FileInputFormat: Total input paths to process : 1
+12/10/23 06:48:59 INFO util.MapRedUtil: Total input paths to process : 1
+12/10/23 06:48:59 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:48:59 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:48:59 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:48:59 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:48:59 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8772914984694643E17 too large for integer
+12/10/23 06:48:59 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129933E17 too large for integer
+12/10/23 06:48:59 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129933E17 too large for integer
+12/10/23 06:48:59 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129933E17 too large for integer
+12/10/23 06:48:59 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129933E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8772914984694643E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129933E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129933E17 too large for integer
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129933E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129933E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8772914984694643E17 too large for integer
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129933E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8772914984694643E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129933E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8772914984694643E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8772914984694643E17 too large for integer
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8772914984694643E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8772914984694643E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129933E17 too large for integer
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8772914984694643E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129933E17 too large for integer
+(23.49414,756,44,5,198,588848900971299444,23.35308,21.27679,21.28481,20.72615)
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8772914984694643E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129933E17 too large for integer
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8772914984694643E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129946E17 too large for integer
+12/10/23 06:49:00 WARN mapReduceLayer.PigHadoopLogger: org.apache.pig.builtin.Utf8StorageConverter: Value 5.8884890097129933E17 too large for integer
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| A     | g:double     | run:int     | rerun:int     | camcol:int     | field:int     | objID:int     | u:double     | r:double     | i:double     | z:double     | 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|       | 0.0          | 756         | 44            | 5              | 198           |               | 0.0          | 0.0          | 0.0          | 0.0          | 
+|       | 23.49414     | 756         | 44            | 5              | 198           |               | 23.35308     | 21.27679     | 21.28481     | 20.72615     | 
+|       | 23.94106     | 756         | 44            | 5              | 198           |               | 23.79838     | 22.42077     | 23.41146     | 22.56224     | 
+|       | 23.38815     | 2188        | 40            | 2              | 197           |               | 25.3464      | 21.73034     | 20.79726     | 20.1146      | 
+|       | 23.17939     | 756         | 44            | 5              | 198           |               | 23.22724     | 21.25282     | 20.44345     | 19.97673     | 
+|       | 22.88839     | 756         | 44            | 5              | 198           |               | 23.79659     | 22.18909     | 22.02524     | 21.60788     | 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| B     | g:double     | run:int     | rerun:int     | camcol:int     | field:int     | objID:int     | u:double     | r:double     | i:double     | z:double     | 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|       | 0.0          | 756         | 44            | 5              | 198           |               | 0.0          | 0.0          | 0.0          | 0.0          | 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+12/10/23 06:49:00 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testVelocitiesErrors
+12/10/23 06:49:00 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/10/23 06:49:00 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 INFO input.FileInputFormat: Total input paths to process : 1
+12/10/23 06:49:00 INFO util.MapRedUtil: Total input paths to process : 1
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:49:00 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:49:00 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:49:00 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:49:00 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| A     | run:int     | camCol:int     | field:int     | objID:long         | rowC:double     | colC:double     | rowV:double     | colV:double     | rowvErr:double     | colvErr:double     | flags:long     | psfMag_u:double     | psfMag_g:double     | psfMag_r:double     | psfMag_i:double     | psfMag_z:double     | psfMagErr_u:double     | psfMagErr_g:double     | psfMagErr_r:double     | psfMagErr_i:double     | psfMagErr_z:double     | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|       | 756         | 5              | 198           | 588848900971299289 | 616.7959        | 159.3795        | -0.004729803    | -0.01393504     | 0.008519164        | 0.006784845        | 68987912448    | 24.73783            | 23.02054            | 21.64406            | 20.35284            | 19.53173            | 0.8581694              | 0.1775864              | 0.08442213             | 0.04039473             | 0.06084682             | 
+|       | 756         | 5              | 198           | 588848900971299284 | 568.4194        | 986.0116        | 0.005712666     | -0.007330846    | 0.00758261         | 0.006899847        | 68987912960    | 23.94748            | 22.48162            | 21.42763            | 20.21987            | 19.51569            | 0.7256233              | 0.1155952              | 0.0711972              | 0.03844286             | 0.06292358             | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| B     | run:int     | camCol:int     | field:int     | objID:long         | rowC:double     | colC:double     | rowV:double     | colV:double     | rowvErr:double     | colvErr:double     | flags:long     | psfMag_u:double     | psfMag_g:double     | psfMag_r:double     | psfMag_i:double     | psfMag_z:double     | psfMagErr_u:double     | psfMagErr_g:double     | psfMagErr_r:double     | psfMagErr_i:double     | psfMagErr_z:double     | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|       | 756         | 5              | 198           | 588848900971299289 | 616.7959        | 159.3795        | -0.004729803    | -0.01393504     | 0.008519164        | 0.006784845        | 68987912448    | 24.73783            | 23.02054            | 21.64406            | 20.35284            | 19.53173            | 0.8581694              | 0.1775864              | 0.08442213             | 0.04039473             | 0.06084682             | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/10/23 06:50:41 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testBETWEEN
+12/10/23 06:50:42 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/10/23 06:50:42 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/10/23 06:50:42 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:50:42 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:50:42 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:50:42 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:50:42 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:50:42 INFO input.FileInputFormat: Total input paths to process : 1
+12/10/23 06:50:42 INFO util.MapRedUtil: Total input paths to process : 1
+12/10/23 06:50:42 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:50:42 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:50:42 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:50:42 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:50:42 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:50:43 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:50:43 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:50:43 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:50:43 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:50:43 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:50:43 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:50:43 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:50:43 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:50:43 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:50:43 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:50:43 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:50:43 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:50:43 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:50:43 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:50:43 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:50:43 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:50:43 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:50:43 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:50:43 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:50:43 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:50:43 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:50:43 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:50:43 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:50:43 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:50:43 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:50:43 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:50:43 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:50:43 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:50:43 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:50:43 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:50:43 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:50:43 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:50:43 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:50:43 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:50:43 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:50:43 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:50:43 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:50:43 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:50:43 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:50:43 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+(588848900971299321,22.86767,0.08476958,-9999,-1.129911,-0.3718712)
+12/10/23 06:50:43 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:50:43 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:50:43 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:50:43 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:50:43 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:50:43 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:50:43 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:50:43 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:50:43 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:50:43 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+---------------------------------------------------------------------------------------------------------------------------
+| A     | ObjID:long         | r:double    | rho:double    | isoA_r:double    | q_r:double          | u_r:double          | 
+---------------------------------------------------------------------------------------------------------------------------
+|       | 588848900971299321 | 0.0         | 0.0           | 75.0             | -1.1299093655589123 | 0.08174386920980926 | 
+|       | 588848900971299321 | 22.86767    | 0.08476958    | -9999.0          | -1.129911           | -0.3718712          | 
+|       | 588848900971299301 | 21.04421    | 0.8216865     | 4.894411         | -0.09423522         | -0.0575157          | 
+|       | 588848900971299370 | 21.71674    | 2.363302      | 5.038977         | -0.04485764         | -0.01416757         | 
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+| B     | ObjID:long         | r:double    | rho:double    | isoA_r:double    | q_r:double          | u_r:double          | 
+---------------------------------------------------------------------------------------------------------------------------
+|       | 588848900971299321 | 0.0         | 0.0           | 75.0             | -1.1299093655589123 | 0.08174386920980926 | 
+---------------------------------------------------------------------------------------------------------------------------
+12/10/23 06:51:49 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testMovingAsteroids
+12/10/23 06:51:49 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/10/23 06:51:49 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/10/23 06:51:50 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:51:50 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:51:50 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:51:50 INFO input.FileInputFormat: Total input paths to process : 1
+12/10/23 06:51:50 INFO util.MapRedUtil: Total input paths to process : 1
+12/10/23 06:51:50 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:51:50 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:51:50 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:51:50 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:51:50 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:51:50 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:51:50 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:51:50 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:51:50 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:51:50 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:51:50 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:51:50 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:51:50 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:51:50 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:51:50 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:51:50 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:51:50 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:51:50 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:51:50 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:51:50 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:51:50 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:51:50 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:51:50 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:51:50 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:51:50 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:51:50 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:51:50 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:51:50 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:51:50 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:51:50 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:51:50 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:51:50 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:51:50 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:51:50 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:51:50 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:51:50 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+(588848900971299345,-0.01026339,0.00287687)
+12/10/23 06:51:50 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:51:50 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:51:50 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/10/23 06:51:50 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/10/23 06:51:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/10/23 06:51:50 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/10/23 06:51:50 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+----------------------------------------------------------------
+| A     | objID:long         | rowv:double    | colv:double    | 
+----------------------------------------------------------------
+|       | 588848900971299345 | -0.01026339    | 0.00287687     | 
+|       | 587729149846946423 | 0.0            | 0.0            | 
+|       | 588848900971299351 | -0.01299347    | -0.003731566   | 
+|       | 588848900971299284 | 0.005712666    | -0.007330846   | 
+----------------------------------------------------------------
+-----------------------------------------------------------
+| B     | objID:long    | rowv:double    | colv:double    | 
+-----------------------------------------------------------
+-----------------------------------------------------------
+------------------------------
+| C     | velocity:double    | 
+------------------------------
+------------------------------

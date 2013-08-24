@@ -1,0 +1,1933 @@
+13/04/30 23:54:04 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testBETWEEN
+13/04/30 23:54:04 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/04/30 23:54:05 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/04/30 23:54:05 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+13/04/30 23:54:05 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+13/04/30 23:54:05 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+13/04/30 23:54:05 INFO pigstats.ScriptState: Pig script settings are added to the job
+13/04/30 23:54:05 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+13/04/30 23:54:05 INFO input.FileInputFormat: Total input paths to process : 1
+13/04/30 23:54:05 INFO util.MapRedUtil: Total input paths to process : 1
+13/04/30 23:54:06 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+13/04/30 23:54:06 INFO pigstats.ScriptState: Pig script settings are added to the job
+13/04/30 23:54:06 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+13/04/30 23:54:06 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+13/04/30 23:54:06 INFO pigstats.ScriptState: Pig script settings are added to the job
+13/04/30 23:54:06 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+13/04/30 23:54:06 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+13/04/30 23:54:06 INFO pigstats.ScriptState: Pig script settings are added to the job
+13/04/30 23:54:06 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+13/04/30 23:54:06 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+13/04/30 23:54:06 INFO pigstats.ScriptState: Pig script settings are added to the job
+13/04/30 23:54:06 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+13/04/30 23:54:06 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+13/04/30 23:54:06 INFO pigstats.ScriptState: Pig script settings are added to the job
+13/04/30 23:54:06 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+13/04/30 23:54:06 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+13/04/30 23:54:06 INFO pigstats.ScriptState: Pig script settings are added to the job
+13/04/30 23:54:06 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+13/04/30 23:54:06 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+13/04/30 23:54:06 INFO pigstats.ScriptState: Pig script settings are added to the job
+13/04/30 23:54:06 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+13/04/30 23:54:06 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+13/04/30 23:54:06 INFO pigstats.ScriptState: Pig script settings are added to the job
+13/04/30 23:54:06 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+13/04/30 23:54:06 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+13/04/30 23:54:06 INFO pigstats.ScriptState: Pig script settings are added to the job
+13/04/30 23:54:06 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+13/04/30 23:54:06 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+13/04/30 23:54:06 INFO pigstats.ScriptState: Pig script settings are added to the job
+13/04/30 23:54:06 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+13/04/30 23:54:06 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+13/04/30 23:54:06 INFO pigstats.ScriptState: Pig script settings are added to the job
+13/04/30 23:54:06 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+13/04/30 23:54:06 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+13/04/30 23:54:06 INFO pigstats.ScriptState: Pig script settings are added to the job
+13/04/30 23:54:06 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+13/04/30 23:54:06 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+13/04/30 23:54:06 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+13/04/30 23:54:06 INFO pigstats.ScriptState: Pig script settings are added to the job
+13/04/30 23:54:06 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+(588848900971365323,23.96593,1.914158,-9999,3.863054,-0.8196303)
+[PathBranch [l=#-----------------------------------------------
+# New Logical Expression Plan:
+#-----------------------------------------------
+(Name: And Type: boolean Uid: 63)
+|
+|---(Name: And Type: boolean Uid: 55)
+|   |
+|   |---(Name: And Type: boolean Uid: 52)
+|   |   |
+|   |   |---(Name: LessThan Type: boolean Uid: 49)
+|   |   |   |
+|   |   |   |---(Name: Add Type: double Uid: 47)
+|   |   |   |   |
+|   |   |   |   |---r:(Name: Project Type: double Uid: 25 Input: 0 Column: 1)
+|   |   |   |   |
+|   |   |   |   |---rho:(Name: Project Type: double Uid: 26 Input: 0 Column: 2)
+|   |   |   |
+|   |   |   |---(Name: Constant Type: double Uid: 48)
+|   |   |
+|   |   |---(Name: GreaterThanEqual Type: boolean Uid: 51)
+|   |       |
+|   |       |---isoA_r:(Name: Project Type: double Uid: 27 Input: 0 Column: 3)
+|   |       |
+|   |       |---(Name: Constant Type: double Uid: 50)
+|   |
+|   |---(Name: LessThanEqual Type: boolean Uid: 54)
+|       |
+|       |---isoA_r:(Name: Project Type: double Uid: 27 Input: 0 Column: 3)
+|       |
+|       |---(Name: Constant Type: double Uid: 53)
+|
+|---(Name: GreaterThan Type: boolean Uid: 62)
+    |
+    |---(Name: Add Type: double Uid: 60)
+    |   |
+    |   |---(Name: UserFunc(org.apache.pig.piggybank.evaluation.math.POW) Type: double Uid: 57)
+    |   |   |
+    |   |   |---q_r:(Name: Project Type: double Uid: 28 Input: 0 Column: 4)
+    |   |   |
+    |   |   |---(Name: Constant Type: double Uid: 56)
+    |   |
+    |   |---(Name: UserFunc(org.apache.pig.piggybank.evaluation.math.POW) Type: double Uid: 59)
+    |       |
+    |       |---u_r:(Name: Project Type: double Uid: 29 Input: 0 Column: 5)
+    |       |
+    |       |---(Name: Constant Type: double Uid: 58)
+    |
+    |---(Name: Constant Type: double Uid: 61)
+
+, invert=false, log=null, isDuplicate=false, ctr=null]]
+Z3 Context: 
+(solver
+  (let ((a!1 (ite (and (= q_r (- (/ 1.0 36.0))) (= a!1 2.0))
+                  (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                     (/ 1.0 1295.0))
+                  (ite (and (= q_r (/ 48.0 403.0)) (= a!1 2.0))
+                       (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                          (/ 2.0 141.0))
+                       (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                          2147483640.0)))))
+  (let ((a!2 (ite (and (= q_r (- (/ 42.0 205.0))) (= a!1 2.0))
+                  (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                     (/ 17.0 405.0))
+                  (ite (and (= q_r (- (/ 9.0 275.0))) (= a!1 2.0))
+                       (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                          (/ 1.0 933.0))
+                       a!1))))
+  (let ((a!3 (ite (and (= q_r (/ 3.0 428.0)) (= a!1 2.0))
+                  (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                     (/ 1.0 20365.0))
+                  (ite (and (= q_r (/ 100.0 499.0)) (= a!1 2.0))
+                       (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                          (/ 10.0 249.0))
+                       a!2))))
+  (let ((a!4 (ite (and (= q_r (/ 191.0 1178.0)) (= a!1 2.0))
+                  (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                     (/ 25.0 951.0))
+                  (ite (and (= q_r (- (/ 35.0 583.0))) (= a!1 2.0))
+                       (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                          (/ 1.0 277.0))
+                       a!3))))
+  (let ((a!5 (ite (and (= q_r (/ 35.0 664.0)) (= a!1 2.0))
+                  (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                     (/ 1.0 359.0))
+                  (ite (and (= q_r (- (/ 122.0 475.0))) (= a!1 2.0))
+                       (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                          (/ 19.0 288.0))
+                       a!4))))
+  (let ((a!6 (ite (and (= q_r (- (/ 3.0 112.0))) (= a!1 2.0))
+                  (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                     (/ 1.0 1393.0))
+                  (ite (and (= q_r (/ 28.0 383.0)) (= a!1 2.0))
+                       (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                          (/ 1.0 187.0))
+                       a!5))))
+  (let ((a!7 (ite (and (= q_r (- (/ 167.0 680.0))) (= a!1 2.0))
+                  (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                     (/ 19.0 315.0))
+                  (ite (and (= q_r (/ 21.0 713.0)) (= a!1 2.0))
+                       (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                          (/ 1.0 1152.0))
+                       a!6))))
+  (let ((a!8 (ite (and (= q_r (- (/ 31.0 133.0))) (= a!1 2.0))
+                  (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                     (/ 32.0 589.0))
+                  (ite (and (= q_r (- (/ 80.0 1359.0))) (= a!1 2.0))
+                       (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                          (/ 1.0 288.0))
+                       a!7))))
+  (let ((a!9 (ite (and (= q_r (- (/ 109.0 509.0))) (= a!1 2.0))
+                  (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                     (/ 31.0 676.0))
+                  (ite (and (= q_r (/ 14.0 207.0)) (= a!1 2.0))
+                       (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                          (/ 1.0 219.0))
+                       a!8))))
+  (let ((a!10 (ite (and (= q_r (/ 131.0 643.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 11.0 265.0))
+                   (ite (and (= q_r (- (/ 25.0 107.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 19.0 348.0))
+                        a!9))))
+  (let ((a!11 (ite (and (= q_r (/ 103.0 275.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 39.0 278.0))
+                   (ite (and (= q_r (/ 22.0 453.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 423.0))
+                        a!10))))
+  (let ((a!12 (ite (and (= q_r (- (/ 7.0 190.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 736.0))
+                   (ite (and (= q_r (- (/ 37.0 450.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 148.0))
+                        a!11))))
+  (let ((a!13 (ite (and (= q_r (/ 13.0 106.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 2.0 133.0))
+                   (ite (and (= q_r (- (/ 36.0 791.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 482.0))
+                        a!12))))
+  (let ((a!14 (ite (and (= q_r (/ 8.0 101.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 2.0 319.0))
+                   (ite (and (= q_r (/ 62.0 583.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 5.0 442.0))
+                        a!13))))
+  (let ((a!15 (ite (and (= q_r (- (/ 5.0 194.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 1505.0))
+                   (ite (and (= q_r (/ 3.0 161.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 2878.0))
+                        a!14))))
+  (let ((a!16 (ite (and (= q_r (/ 43.0 702.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 266.0))
+                   (ite (and (= q_r (- (/ 21.0 440.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 439.0))
+                        a!15))))
+  (let ((a!17 (ite (and (= q_r (- (/ 84.0 439.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 16.0 437.0))
+                   (ite (and (= q_r (- (/ 18.0 407.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 511.0))
+                        a!16))))
+  (let ((a!18 (ite (and (= q_r (/ 1.0 149.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 22186.0))
+                   (ite (and (= q_r (- (/ 36.0 331.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 2.0 169.0))
+                        a!17))))
+  (let ((a!19 (ite (and (= q_r (/ 100.0 231.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 122.0 651.0))
+                   (ite (and (= q_r (/ 125.0 363.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 30.0 253.0))
+                        a!18))))
+  (let ((a!20 (ite (and (= q_r (/ 64.0 463.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 3.0 157.0))
+                   (ite (and (= q_r (/ 93.0 485.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 5.0 136.0))
+                        a!19))))
+  (let ((a!21 (ite (and (= q_r (- (/ 126.0 199.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 89.0 222.0))
+                   (ite (and (= q_r (- (/ 43.0 436.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 5.0 514.0))
+                        a!20))))
+  (let ((a!22 (ite (and (= q_r (- (/ 232.0 2551.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 121.0))
+                   (ite (and (= q_r (- (/ 64.0 271.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 14.0 251.0))
+                        a!21))))
+  (let ((a!23 (ite (and (= q_r (/ 259.0 625.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 147.0 856.0))
+                   (ite (and (= q_r (- (/ 182.0 401.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 55.0 267.0))
+                        a!22))))
+  (let ((a!24 (ite (and (= q_r (/ 4.0 241.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 3630.0))
+                   (ite (and (= q_r (/ 24.0 305.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 2.0 323.0))
+                        a!23))))
+  (let ((a!25 (ite (and (= q_r (- (/ 41.0 244.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 12.0 425.0))
+                   (ite (and (= q_r (- (/ 526.0 295.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 337.0 106.0))
+                        a!24))))
+  (let ((a!26 (ite (and (= q_r (/ 68.0 167.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 32.0 193.0))
+                   (ite (and (= q_r (/ 145.0 886.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 3.0 112.0))
+                        a!25))))
+  (let ((a!27 (ite (and (= q_r (- (/ 23.0 188.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 5.0 334.0))
+                   (ite (and (= q_r (/ 11.0 446.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 1643.0))
+                        a!26))))
+  (let ((a!28 (ite (and (= q_r (/ 91.0 627.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 17.0 807.0))
+                   (ite (and (= q_r (/ 43.0 181.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 32.0 567.0))
+                        a!27))))
+  (let ((a!29 (ite (and (= q_r (/ 119.0 337.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 49.0 393.0))
+                   (ite (and (= q_r (/ 31.0 282.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 4.0 331.0))
+                        a!28))))
+  (let ((a!30 (ite (and (= q_r (/ 8.0 363.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 2058.0))
+                   (ite (and (= q_r (/ 5.0 33.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 7.0 305.0))
+                        a!29))))
+  (let ((a!31 (ite (and (= q_r (/ 140.0 1167.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 2.0 139.0))
+                   (ite (and (= q_r (- (/ 47.0 275.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 21.0 719.0))
+                        a!30))))
+  (let ((a!32 (ite (and (= q_r (- (/ 59.0 434.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 9.0 487.0))
+                   (ite (and (= q_r (/ 14.0 261.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 347.0))
+                        a!31))))
+  (let ((a!33 (ite (and (= q_r (/ 128.0 297.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 99.0 533.0))
+                   (ite (and (= q_r (- (/ 205.0 538.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 71.0 489.0))
+                        a!32))))
+  (let ((a!34 (ite (and (= q_r (- (/ 1.0 286.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 81991.0))
+                   (ite (and (= q_r (/ 17.0 552.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 1054.0))
+                        a!33))))
+  (let ((a!35 (ite (and (= q_r (/ 39.0 259.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 9.0 397.0))
+                   (ite (and (= q_r (- (/ 107.0 271.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 41.0 263.0))
+                        a!34))))
+  (let ((a!36 (ite (and (= q_r (- (/ 7.0 45.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 3.0 124.0))
+                   (ite (and (= q_r (- (/ 59.0 577.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 3.0 287.0))
+                        a!35))))
+  (let ((a!37 (ite (and (= q_r (- (/ 23.0 629.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 747.0))
+                   (ite (and (= q_r (- (/ 15.0 329.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 481.0))
+                        a!36))))
+  (let ((a!38 (ite (and (= q_r (- (/ 19.0 261.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 189.0))
+                   (ite (and (= q_r (/ 149.0 1311.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 5.0 387.0))
+                        a!37))))
+  (let ((a!39 (ite (and (= q_r (/ 175.0 269.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 113.0 267.0))
+                   (ite (and (= q_r (- (/ 349.0 892.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 62.0 405.0))
+                        a!38))))
+  (let ((a!40 (ite (and (= q_r (/ 1.0 290.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 84278.0))
+                   (ite (and (= q_r (/ 13.0 228.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 307.0))
+                        a!39))))
+  (let ((a!41 (ite (and (= q_r (/ 1.0 66.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 4358.0))
+                   (ite (and (= q_r (- (/ 10.0 33.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 73.0 795.0))
+                        a!40))))
+  (let ((a!42 (ite (and (= q_r (- (/ 211.0 612.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 46.0 387.0))
+                   (ite (and (= q_r (/ 31.0 635.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 419.0))
+                        a!41))))
+  (let ((a!43 (ite (and (= q_r (- (/ 5.0 269.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 2895.0))
+                   (ite (and (= q_r (- (/ 20.0 297.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 221.0))
+                        a!42))))
+  (let ((a!44 (ite (and (= q_r (/ 53.0 391.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 5.0 272.0))
+                   (ite (and (= q_r (- (/ 7.0 50.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 51.0))
+                        a!43))))
+  (let ((a!45 (ite (and (= q_r (/ 19.0 242.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 162.0))
+                   (ite (and (= q_r (- (/ 199.0 400.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 99.0 400.0))
+                        a!44))))
+  (let ((a!46 (ite (and (= q_r (- (/ 16.0 247.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 238.0))
+                   (ite (and (= q_r (- (/ 39.0 340.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 76.0))
+                        a!45))))
+  (let ((a!47 (ite (and (= q_r (- (/ 8.0 267.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 1114.0))
+                   (ite (and (= q_r (/ 15.0 149.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 3.0 296.0))
+                        a!46))))
+  (let ((a!48 (ite (and (= q_r (- (/ 2.0 195.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 9507.0))
+                   (ite (and (= q_r (/ 653.0 740.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 95.0 122.0))
+                        a!47))))
+  (let ((a!49 (ite (and (= q_r (/ 59.0 277.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 23.0 507.0))
+                   (ite (and (= q_r (- (/ 8.0 421.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 2769.0))
+                        a!48))))
+  (let ((a!50 (ite (and (= q_r (/ 10.0 199.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 395.0))
+                   (ite (and (= q_r (- (/ 2.0 43.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 462.0))
+                        a!49))))
+  (let ((a!51 (ite (and (= q_r (- (/ 75.0 284.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 68.0 975.0))
+                   (ite (and (= q_r (/ 1.0 252.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 63493.0))
+                        a!50))))
+  (let ((a!52 (ite (and (= q_r (/ 119.0 554.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 49.0 1062.0))
+                   (ite (and (= q_r (/ 316.0 157.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1268.0 313.0))
+                        a!51))))
+  (let ((a!53 (ite (and (= q_r (- (/ 37.0 374.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 5.0 511.0))
+                   (ite (and (= q_r (- (/ 6.0 203.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 1144.0))
+                        a!52))))
+  (let ((a!54 (ite (and (= q_r (- (/ 51.0 100.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 103.0 396.0))
+                   (ite (and (= q_r (/ 29.0 254.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 3.0 230.0))
+                        a!53))))
+  (let ((a!55 (ite (and (= q_r (- (/ 16.0 97.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 4.0 147.0))
+                   (ite (and (= q_r (- (/ 20.0 307.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 236.0))
+                        a!54))))
+  (let ((a!56 (ite (and (= q_r (/ 1.0 583.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      0.0)
+                   (ite (and (= q_r (- (/ 13.0 278.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 457.0))
+                        a!55))))
+  (let ((a!57 (ite (and (= q_r (- (/ 433.0 398.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 361.0 305.0))
+                   (ite (and (= q_r (- (/ 30.0 259.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 2.0 149.0))
+                        a!56))))
+  (let ((a!58 (ite (and (= q_r (/ 1.0 415.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      0.0)
+                   (ite (and (= q_r (- (/ 76.0 397.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 7.0 191.0))
+                        a!57))))
+  (let ((a!59 (ite (and (= q_r (/ 130.0 241.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 87.0 299.0))
+                   (ite (and (= q_r (/ 33.0 257.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 3.0 182.0))
+                        a!58))))
+  (let ((a!60 (ite (and (= q_r (- (/ 5.0 179.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 1280.0))
+                   (ite (and (= q_r (/ 36.0 647.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 323.0))
+                        a!59))))
+  (let ((a!61 (ite (and (= q_r (- (/ 5.0 306.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 3746.0))
+                   (ite (and (= q_r (- (/ 163.0 253.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 699.0 1684.0))
+                        a!60))))
+  (let ((a!62 (ite (and (= q_r (- (/ 11.0 278.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 638.0))
+                   (ite (and (= q_r (- (/ 34.0 477.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 197.0))
+                        a!61))))
+  (let ((a!63 (ite (and (= q_r (- (/ 52.0 393.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 8.0 457.0))
+                   (ite (and (= q_r (/ 120.0 553.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 17.0 361.0))
+                        a!62))))
+  (let ((a!64 (ite (and (= q_r (- (/ 31.0 271.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 7.0 535.0))
+                   (ite (and (= q_r (/ 17.0 117.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 8.0 379.0))
+                        a!63))))
+  (let ((a!65 (ite (and (= q_r (- (/ 48.0 221.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 5.0 106.0))
+                   (ite (and (= q_r (/ 45.0 413.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 4.0 337.0))
+                        a!64))))
+  (let ((a!66 (ite (and (= q_r (- (/ 123.0 469.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 13.0 189.0))
+                   (ite (and (= q_r (/ 80.0 393.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 15.0 362.0))
+                        a!65))))
+  (let ((a!67 (ite (and (= q_r (- (/ 1.0 264.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 69925.0))
+                   (ite (and (= q_r (/ 189.0 2456.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 169.0))
+                        a!66))))
+  (let ((a!68 (ite (and (= q_r (/ 90.0 409.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 20.0 413.0))
+                   (ite (and (= q_r (/ 179.0 491.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 21.0 158.0))
+                        a!67))))
+  (let ((a!69 (ite (and (= q_r (- (/ 96.0 271.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 32.0 255.0))
+                   (ite (and (= q_r (- (/ 39.0 253.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 12.0 505.0))
+                        a!68))))
+  (let ((a!70 (ite (and (= q_r (- (/ 25.0 281.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 3.0 379.0))
+                   (ite (and (= q_r (- (/ 6.0 91.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 230.0))
+                        a!69))))
+  (let ((a!71 (ite (and (= q_r (- (/ 22.0 135.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 3.0 113.0))
+                   (ite (and (= q_r (/ 17.0 213.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 157.0))
+                        a!70))))
+  (let ((a!72 (ite (and (= q_r (/ 557.0 641.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 780.0 1033.0))
+                   (ite (and (= q_r (- (/ 7.0 213.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 925.0))
+                        a!71))))
+  (let ((a!73 (ite (and (= q_r (/ 1.0 1780.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      0.0)
+                   (ite (and (= q_r (/ 17.0 235.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 191.0))
+                        a!72))))
+  (let ((a!74 (ite (and (= q_r (- (/ 158.0 517.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 41.0 439.0))
+                   (ite (and (= q_r (- (/ 39.0 322.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 6.0 409.0))
+                        a!73))))
+  (let ((a!75 (ite (and (= q_r (/ 11.0 103.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 3.0 263.0))
+                   (ite (and (= q_r (/ 1213.0 314.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 10491.0 703.0))
+                        a!74))))
+  (let ((a!76 (ite (and (= q_r (/ 20.0 237.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 2.0 281.0))
+                   (ite (and (= q_r (- (/ 17.0 169.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 6.0 593.0))
+                        a!75))))
+  (let ((a!77 (ite (and (= q_r (/ 55.0 192.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 16.0 195.0))
+                   (ite (and (= q_r (/ 15.0 401.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 714.0))
+                        a!76))))
+  (let ((a!78 (ite (and (= q_r (- (/ 2.0 267.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 17826.0))
+                   (ite (and (= q_r (- (/ 34.0 325.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 3.0 274.0))
+                        a!77))))
+  (let ((a!79 (ite (and (= q_r (/ 57.0 470.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 68.0))
+                   (ite (and (= q_r (/ 285.0 667.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 44.0 241.0))
+                        a!78))))
+  (let ((a!80 (ite (and (= q_r (- (/ 10.0 283.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 801.0))
+                   (ite (and (= q_r (/ 4.0 153.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 1463.0))
+                        a!79))))
+  (let ((a!81 (ite (and (= q_r (/ 9.0 191.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 450.0))
+                   (ite (and (= q_r (/ 6.0 161.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 720.0))
+                        a!80))))
+  (let ((a!82 (ite (and (= q_r (- (/ 3.0 211.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 4942.0))
+                   (ite (and (= q_r (/ 61.0 178.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 33.0 281.0))
+                        a!81))))
+  (let ((a!83 (ite (and (= q_r (/ 506.0 395.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1193.0 727.0))
+                   (ite (and (= q_r (- (/ 8.0 449.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 3149.0))
+                        a!82))))
+  (let ((a!84 (ite (and (= q_r (/ 104.0 387.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 13.0 180.0))
+                   (ite (and (= q_r (- (/ 40.0 229.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 9.0 295.0))
+                        a!83))))
+  (let ((a!85 (ite (and (= q_r (/ 5.0 393.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 6177.0))
+                   (ite (and (= q_r (/ 811.0 766.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 380.0 339.0))
+                        a!84))))
+  (let ((a!86 (ite (and (= q_r (/ 43.0 206.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 20.0 459.0))
+                   (ite (and (= q_r (- (/ 4.0 147.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 1351.0))
+                        a!85))))
+  (let ((a!87 (ite (and (= q_r (- (/ 13.0 336.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 667.0))
+                   (ite (and (= q_r (/ 55.0 234.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 10.0 181.0))
+                        a!86))))
+  (let ((a!88 (ite (and (= q_r (- (/ 8.0 383.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 2293.0))
+                   (ite (and (= q_r (- (/ 25.0 1001.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 1603.0))
+                        a!87))))
+  (let ((a!89 (ite (and (= q_r (/ 22.0 225.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 2.0 209.0))
+                   (ite (and (= q_r (- (/ 28.0 153.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 7.0 209.0))
+                        a!88))))
+  (let ((a!90 (ite (and (= q_r (- (/ 309.0 377.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 131.0 195.0))
+                   (ite (and (= q_r (/ 33.0 290.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 4.0 309.0))
+                        a!89))))
+  (let ((a!91 (ite (and (= q_r (- (/ 8.0 243.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 922.0))
+                   (ite (and (= q_r (- (/ 9.0 239.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 704.0))
+                        a!90))))
+  (let ((a!92 (ite (and (= q_r (/ 10.0 247.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 610.0))
+                   (ite (and (= q_r (/ 11.0 188.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 292.0))
+                        a!91))))
+  (let ((a!93 (ite (and (= q_r (- (/ 39.0 92.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 62.0 345.0))
+                   (ite (and (= q_r (- (/ 32.0 493.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 237.0))
+                        a!92))))
+  (let ((a!94 (ite (and (= q_r (/ 104.0 283.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 42.0 311.0))
+                   (ite (and (= q_r (/ 19.0 527.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 769.0))
+                        a!93))))
+  (let ((a!95 (ite (and (= q_r (/ 31.0 646.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 434.0))
+                   (ite (and (= q_r (/ 15.0 212.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 1.0 200.0))
+                        a!94))))
+  (let ((a!96 (ite (and (= q_r (/ 46.0 189.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 17.0 287.0))
+                   (ite (and (= q_r (- (/ 261.0 653.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 27.0 169.0))
+                        a!95))))
+  (let ((a!97 (ite (and (= q_r (- (/ 5.0 118.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 556.0))
+                   (ite (and (= q_r (- (/ 218.0 993.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 4.0 83.0))
+                        a!96))))
+  (let ((a!98 (ite (and (= q_r (- (/ 43.0 207.0))) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 17.0 394.0))
+                   (ite (and (= q_r (/ 38.0 255.0)) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 37.0 1666.0))
+                        a!97))))
+  (let ((a!99 (ite (and (= q_r (/ 11.0 252.0)) (= a!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                      (/ 1.0 524.0))
+                   (ite (and (= q_r (- (/ 58.0 295.0))) (= a!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             q_r
+                             a!1)
+                           (/ 8.0 207.0))
+                        a!98))))
+    (ite (and (= q_r (- (/ 5.0 94.0))) (= a!1 2.0))
+         (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+            (/ 1.0 353.0))
+         (ite (and (= q_r (- (/ 17.0 246.0))) (= a!1 2.0))
+              (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+                 (/ 1.0 209.0))
+              a!99)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+  (not (= (org.apache.pig.piggybank.evaluation.math.POW q_r a!1) 2147483640.0))
+  (let ((a!1 (ite (and (= u_r (- (/ 1.0 36.0))) (= b!1 2.0))
+                  (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                     (/ 1.0 1295.0))
+                  (ite (and (= u_r (/ 48.0 403.0)) (= b!1 2.0))
+                       (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                          (/ 2.0 141.0))
+                       (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                          2147483640.0)))))
+  (let ((a!2 (ite (and (= u_r (- (/ 42.0 205.0))) (= b!1 2.0))
+                  (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                     (/ 17.0 405.0))
+                  (ite (and (= u_r (- (/ 9.0 275.0))) (= b!1 2.0))
+                       (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                          (/ 1.0 933.0))
+                       a!1))))
+  (let ((a!3 (ite (and (= u_r (/ 3.0 428.0)) (= b!1 2.0))
+                  (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                     (/ 1.0 20365.0))
+                  (ite (and (= u_r (/ 100.0 499.0)) (= b!1 2.0))
+                       (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                          (/ 10.0 249.0))
+                       a!2))))
+  (let ((a!4 (ite (and (= u_r (/ 191.0 1178.0)) (= b!1 2.0))
+                  (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                     (/ 25.0 951.0))
+                  (ite (and (= u_r (- (/ 35.0 583.0))) (= b!1 2.0))
+                       (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                          (/ 1.0 277.0))
+                       a!3))))
+  (let ((a!5 (ite (and (= u_r (/ 35.0 664.0)) (= b!1 2.0))
+                  (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                     (/ 1.0 359.0))
+                  (ite (and (= u_r (- (/ 122.0 475.0))) (= b!1 2.0))
+                       (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                          (/ 19.0 288.0))
+                       a!4))))
+  (let ((a!6 (ite (and (= u_r (- (/ 3.0 112.0))) (= b!1 2.0))
+                  (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                     (/ 1.0 1393.0))
+                  (ite (and (= u_r (/ 28.0 383.0)) (= b!1 2.0))
+                       (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                          (/ 1.0 187.0))
+                       a!5))))
+  (let ((a!7 (ite (and (= u_r (- (/ 167.0 680.0))) (= b!1 2.0))
+                  (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                     (/ 19.0 315.0))
+                  (ite (and (= u_r (/ 21.0 713.0)) (= b!1 2.0))
+                       (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                          (/ 1.0 1152.0))
+                       a!6))))
+  (let ((a!8 (ite (and (= u_r (- (/ 31.0 133.0))) (= b!1 2.0))
+                  (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                     (/ 32.0 589.0))
+                  (ite (and (= u_r (- (/ 80.0 1359.0))) (= b!1 2.0))
+                       (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                          (/ 1.0 288.0))
+                       a!7))))
+  (let ((a!9 (ite (and (= u_r (- (/ 109.0 509.0))) (= b!1 2.0))
+                  (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                     (/ 31.0 676.0))
+                  (ite (and (= u_r (/ 14.0 207.0)) (= b!1 2.0))
+                       (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                          (/ 1.0 219.0))
+                       a!8))))
+  (let ((a!10 (ite (and (= u_r (/ 131.0 643.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 11.0 265.0))
+                   (ite (and (= u_r (- (/ 25.0 107.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 19.0 348.0))
+                        a!9))))
+  (let ((a!11 (ite (and (= u_r (/ 103.0 275.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 39.0 278.0))
+                   (ite (and (= u_r (/ 22.0 453.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 423.0))
+                        a!10))))
+  (let ((a!12 (ite (and (= u_r (- (/ 7.0 190.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 736.0))
+                   (ite (and (= u_r (- (/ 37.0 450.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 148.0))
+                        a!11))))
+  (let ((a!13 (ite (and (= u_r (/ 13.0 106.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 2.0 133.0))
+                   (ite (and (= u_r (- (/ 36.0 791.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 482.0))
+                        a!12))))
+  (let ((a!14 (ite (and (= u_r (/ 8.0 101.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 2.0 319.0))
+                   (ite (and (= u_r (/ 62.0 583.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 5.0 442.0))
+                        a!13))))
+  (let ((a!15 (ite (and (= u_r (- (/ 5.0 194.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 1505.0))
+                   (ite (and (= u_r (/ 3.0 161.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 2878.0))
+                        a!14))))
+  (let ((a!16 (ite (and (= u_r (/ 43.0 702.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 266.0))
+                   (ite (and (= u_r (- (/ 21.0 440.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 439.0))
+                        a!15))))
+  (let ((a!17 (ite (and (= u_r (- (/ 84.0 439.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 16.0 437.0))
+                   (ite (and (= u_r (- (/ 18.0 407.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 511.0))
+                        a!16))))
+  (let ((a!18 (ite (and (= u_r (/ 1.0 149.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 22186.0))
+                   (ite (and (= u_r (- (/ 36.0 331.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 2.0 169.0))
+                        a!17))))
+  (let ((a!19 (ite (and (= u_r (/ 100.0 231.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 122.0 651.0))
+                   (ite (and (= u_r (/ 125.0 363.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 30.0 253.0))
+                        a!18))))
+  (let ((a!20 (ite (and (= u_r (/ 64.0 463.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 3.0 157.0))
+                   (ite (and (= u_r (/ 93.0 485.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 5.0 136.0))
+                        a!19))))
+  (let ((a!21 (ite (and (= u_r (- (/ 126.0 199.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 89.0 222.0))
+                   (ite (and (= u_r (- (/ 43.0 436.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 5.0 514.0))
+                        a!20))))
+  (let ((a!22 (ite (and (= u_r (- (/ 232.0 2551.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 121.0))
+                   (ite (and (= u_r (- (/ 64.0 271.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 14.0 251.0))
+                        a!21))))
+  (let ((a!23 (ite (and (= u_r (/ 259.0 625.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 147.0 856.0))
+                   (ite (and (= u_r (- (/ 182.0 401.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 55.0 267.0))
+                        a!22))))
+  (let ((a!24 (ite (and (= u_r (/ 4.0 241.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 3630.0))
+                   (ite (and (= u_r (/ 24.0 305.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 2.0 323.0))
+                        a!23))))
+  (let ((a!25 (ite (and (= u_r (- (/ 41.0 244.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 12.0 425.0))
+                   (ite (and (= u_r (- (/ 526.0 295.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 337.0 106.0))
+                        a!24))))
+  (let ((a!26 (ite (and (= u_r (/ 68.0 167.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 32.0 193.0))
+                   (ite (and (= u_r (/ 145.0 886.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 3.0 112.0))
+                        a!25))))
+  (let ((a!27 (ite (and (= u_r (- (/ 23.0 188.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 5.0 334.0))
+                   (ite (and (= u_r (/ 11.0 446.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 1643.0))
+                        a!26))))
+  (let ((a!28 (ite (and (= u_r (/ 91.0 627.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 17.0 807.0))
+                   (ite (and (= u_r (/ 43.0 181.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 32.0 567.0))
+                        a!27))))
+  (let ((a!29 (ite (and (= u_r (/ 119.0 337.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 49.0 393.0))
+                   (ite (and (= u_r (/ 31.0 282.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 4.0 331.0))
+                        a!28))))
+  (let ((a!30 (ite (and (= u_r (/ 8.0 363.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 2058.0))
+                   (ite (and (= u_r (/ 5.0 33.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 7.0 305.0))
+                        a!29))))
+  (let ((a!31 (ite (and (= u_r (/ 140.0 1167.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 2.0 139.0))
+                   (ite (and (= u_r (- (/ 47.0 275.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 21.0 719.0))
+                        a!30))))
+  (let ((a!32 (ite (and (= u_r (- (/ 59.0 434.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 9.0 487.0))
+                   (ite (and (= u_r (/ 14.0 261.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 347.0))
+                        a!31))))
+  (let ((a!33 (ite (and (= u_r (/ 128.0 297.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 99.0 533.0))
+                   (ite (and (= u_r (- (/ 205.0 538.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 71.0 489.0))
+                        a!32))))
+  (let ((a!34 (ite (and (= u_r (- (/ 1.0 286.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 81991.0))
+                   (ite (and (= u_r (/ 17.0 552.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 1054.0))
+                        a!33))))
+  (let ((a!35 (ite (and (= u_r (/ 39.0 259.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 9.0 397.0))
+                   (ite (and (= u_r (- (/ 107.0 271.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 41.0 263.0))
+                        a!34))))
+  (let ((a!36 (ite (and (= u_r (- (/ 7.0 45.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 3.0 124.0))
+                   (ite (and (= u_r (- (/ 59.0 577.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 3.0 287.0))
+                        a!35))))
+  (let ((a!37 (ite (and (= u_r (- (/ 23.0 629.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 747.0))
+                   (ite (and (= u_r (- (/ 15.0 329.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 481.0))
+                        a!36))))
+  (let ((a!38 (ite (and (= u_r (- (/ 19.0 261.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 189.0))
+                   (ite (and (= u_r (/ 149.0 1311.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 5.0 387.0))
+                        a!37))))
+  (let ((a!39 (ite (and (= u_r (/ 175.0 269.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 113.0 267.0))
+                   (ite (and (= u_r (- (/ 349.0 892.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 62.0 405.0))
+                        a!38))))
+  (let ((a!40 (ite (and (= u_r (/ 1.0 290.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 84278.0))
+                   (ite (and (= u_r (/ 13.0 228.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 307.0))
+                        a!39))))
+  (let ((a!41 (ite (and (= u_r (/ 1.0 66.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 4358.0))
+                   (ite (and (= u_r (- (/ 10.0 33.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 73.0 795.0))
+                        a!40))))
+  (let ((a!42 (ite (and (= u_r (- (/ 211.0 612.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 46.0 387.0))
+                   (ite (and (= u_r (/ 31.0 635.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 419.0))
+                        a!41))))
+  (let ((a!43 (ite (and (= u_r (- (/ 5.0 269.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 2895.0))
+                   (ite (and (= u_r (- (/ 20.0 297.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 221.0))
+                        a!42))))
+  (let ((a!44 (ite (and (= u_r (/ 53.0 391.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 5.0 272.0))
+                   (ite (and (= u_r (- (/ 7.0 50.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 51.0))
+                        a!43))))
+  (let ((a!45 (ite (and (= u_r (/ 19.0 242.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 162.0))
+                   (ite (and (= u_r (- (/ 199.0 400.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 99.0 400.0))
+                        a!44))))
+  (let ((a!46 (ite (and (= u_r (- (/ 16.0 247.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 238.0))
+                   (ite (and (= u_r (- (/ 39.0 340.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 76.0))
+                        a!45))))
+  (let ((a!47 (ite (and (= u_r (- (/ 8.0 267.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 1114.0))
+                   (ite (and (= u_r (/ 15.0 149.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 3.0 296.0))
+                        a!46))))
+  (let ((a!48 (ite (and (= u_r (- (/ 2.0 195.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 9507.0))
+                   (ite (and (= u_r (/ 653.0 740.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 95.0 122.0))
+                        a!47))))
+  (let ((a!49 (ite (and (= u_r (/ 59.0 277.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 23.0 507.0))
+                   (ite (and (= u_r (- (/ 8.0 421.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 2769.0))
+                        a!48))))
+  (let ((a!50 (ite (and (= u_r (/ 10.0 199.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 395.0))
+                   (ite (and (= u_r (- (/ 2.0 43.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 462.0))
+                        a!49))))
+  (let ((a!51 (ite (and (= u_r (- (/ 75.0 284.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 68.0 975.0))
+                   (ite (and (= u_r (/ 1.0 252.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 63493.0))
+                        a!50))))
+  (let ((a!52 (ite (and (= u_r (/ 119.0 554.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 49.0 1062.0))
+                   (ite (and (= u_r (/ 316.0 157.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1268.0 313.0))
+                        a!51))))
+  (let ((a!53 (ite (and (= u_r (- (/ 37.0 374.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 5.0 511.0))
+                   (ite (and (= u_r (- (/ 6.0 203.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 1144.0))
+                        a!52))))
+  (let ((a!54 (ite (and (= u_r (- (/ 51.0 100.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 103.0 396.0))
+                   (ite (and (= u_r (/ 29.0 254.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 3.0 230.0))
+                        a!53))))
+  (let ((a!55 (ite (and (= u_r (- (/ 16.0 97.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 4.0 147.0))
+                   (ite (and (= u_r (- (/ 20.0 307.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 236.0))
+                        a!54))))
+  (let ((a!56 (ite (and (= u_r (/ 1.0 583.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      0.0)
+                   (ite (and (= u_r (- (/ 13.0 278.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 457.0))
+                        a!55))))
+  (let ((a!57 (ite (and (= u_r (- (/ 433.0 398.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 361.0 305.0))
+                   (ite (and (= u_r (- (/ 30.0 259.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 2.0 149.0))
+                        a!56))))
+  (let ((a!58 (ite (and (= u_r (/ 1.0 415.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      0.0)
+                   (ite (and (= u_r (- (/ 76.0 397.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 7.0 191.0))
+                        a!57))))
+  (let ((a!59 (ite (and (= u_r (/ 130.0 241.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 87.0 299.0))
+                   (ite (and (= u_r (/ 33.0 257.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 3.0 182.0))
+                        a!58))))
+  (let ((a!60 (ite (and (= u_r (- (/ 5.0 179.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 1280.0))
+                   (ite (and (= u_r (/ 36.0 647.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 323.0))
+                        a!59))))
+  (let ((a!61 (ite (and (= u_r (- (/ 5.0 306.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 3746.0))
+                   (ite (and (= u_r (- (/ 163.0 253.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 699.0 1684.0))
+                        a!60))))
+  (let ((a!62 (ite (and (= u_r (- (/ 11.0 278.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 638.0))
+                   (ite (and (= u_r (- (/ 34.0 477.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 197.0))
+                        a!61))))
+  (let ((a!63 (ite (and (= u_r (- (/ 52.0 393.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 8.0 457.0))
+                   (ite (and (= u_r (/ 120.0 553.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 17.0 361.0))
+                        a!62))))
+  (let ((a!64 (ite (and (= u_r (- (/ 31.0 271.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 7.0 535.0))
+                   (ite (and (= u_r (/ 17.0 117.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 8.0 379.0))
+                        a!63))))
+  (let ((a!65 (ite (and (= u_r (- (/ 48.0 221.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 5.0 106.0))
+                   (ite (and (= u_r (/ 45.0 413.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 4.0 337.0))
+                        a!64))))
+  (let ((a!66 (ite (and (= u_r (- (/ 123.0 469.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 13.0 189.0))
+                   (ite (and (= u_r (/ 80.0 393.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 15.0 362.0))
+                        a!65))))
+  (let ((a!67 (ite (and (= u_r (- (/ 1.0 264.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 69925.0))
+                   (ite (and (= u_r (/ 189.0 2456.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 169.0))
+                        a!66))))
+  (let ((a!68 (ite (and (= u_r (/ 90.0 409.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 20.0 413.0))
+                   (ite (and (= u_r (/ 179.0 491.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 21.0 158.0))
+                        a!67))))
+  (let ((a!69 (ite (and (= u_r (- (/ 96.0 271.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 32.0 255.0))
+                   (ite (and (= u_r (- (/ 39.0 253.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 12.0 505.0))
+                        a!68))))
+  (let ((a!70 (ite (and (= u_r (- (/ 25.0 281.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 3.0 379.0))
+                   (ite (and (= u_r (- (/ 6.0 91.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 230.0))
+                        a!69))))
+  (let ((a!71 (ite (and (= u_r (- (/ 22.0 135.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 3.0 113.0))
+                   (ite (and (= u_r (/ 17.0 213.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 157.0))
+                        a!70))))
+  (let ((a!72 (ite (and (= u_r (/ 557.0 641.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 780.0 1033.0))
+                   (ite (and (= u_r (- (/ 7.0 213.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 925.0))
+                        a!71))))
+  (let ((a!73 (ite (and (= u_r (/ 1.0 1780.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      0.0)
+                   (ite (and (= u_r (/ 17.0 235.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 191.0))
+                        a!72))))
+  (let ((a!74 (ite (and (= u_r (- (/ 158.0 517.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 41.0 439.0))
+                   (ite (and (= u_r (- (/ 39.0 322.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 6.0 409.0))
+                        a!73))))
+  (let ((a!75 (ite (and (= u_r (/ 11.0 103.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 3.0 263.0))
+                   (ite (and (= u_r (/ 1213.0 314.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 10491.0 703.0))
+                        a!74))))
+  (let ((a!76 (ite (and (= u_r (/ 20.0 237.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 2.0 281.0))
+                   (ite (and (= u_r (- (/ 17.0 169.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 6.0 593.0))
+                        a!75))))
+  (let ((a!77 (ite (and (= u_r (/ 55.0 192.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 16.0 195.0))
+                   (ite (and (= u_r (/ 15.0 401.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 714.0))
+                        a!76))))
+  (let ((a!78 (ite (and (= u_r (- (/ 2.0 267.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 17826.0))
+                   (ite (and (= u_r (- (/ 34.0 325.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 3.0 274.0))
+                        a!77))))
+  (let ((a!79 (ite (and (= u_r (/ 57.0 470.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 68.0))
+                   (ite (and (= u_r (/ 285.0 667.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 44.0 241.0))
+                        a!78))))
+  (let ((a!80 (ite (and (= u_r (- (/ 10.0 283.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 801.0))
+                   (ite (and (= u_r (/ 4.0 153.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 1463.0))
+                        a!79))))
+  (let ((a!81 (ite (and (= u_r (/ 9.0 191.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 450.0))
+                   (ite (and (= u_r (/ 6.0 161.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 720.0))
+                        a!80))))
+  (let ((a!82 (ite (and (= u_r (- (/ 3.0 211.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 4942.0))
+                   (ite (and (= u_r (/ 61.0 178.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 33.0 281.0))
+                        a!81))))
+  (let ((a!83 (ite (and (= u_r (/ 506.0 395.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1193.0 727.0))
+                   (ite (and (= u_r (- (/ 8.0 449.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 3149.0))
+                        a!82))))
+  (let ((a!84 (ite (and (= u_r (/ 104.0 387.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 13.0 180.0))
+                   (ite (and (= u_r (- (/ 40.0 229.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 9.0 295.0))
+                        a!83))))
+  (let ((a!85 (ite (and (= u_r (/ 5.0 393.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 6177.0))
+                   (ite (and (= u_r (/ 811.0 766.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 380.0 339.0))
+                        a!84))))
+  (let ((a!86 (ite (and (= u_r (/ 43.0 206.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 20.0 459.0))
+                   (ite (and (= u_r (- (/ 4.0 147.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 1351.0))
+                        a!85))))
+  (let ((a!87 (ite (and (= u_r (- (/ 13.0 336.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 667.0))
+                   (ite (and (= u_r (/ 55.0 234.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 10.0 181.0))
+                        a!86))))
+  (let ((a!88 (ite (and (= u_r (- (/ 8.0 383.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 2293.0))
+                   (ite (and (= u_r (- (/ 25.0 1001.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 1603.0))
+                        a!87))))
+  (let ((a!89 (ite (and (= u_r (/ 22.0 225.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 2.0 209.0))
+                   (ite (and (= u_r (- (/ 28.0 153.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 7.0 209.0))
+                        a!88))))
+  (let ((a!90 (ite (and (= u_r (- (/ 309.0 377.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 131.0 195.0))
+                   (ite (and (= u_r (/ 33.0 290.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 4.0 309.0))
+                        a!89))))
+  (let ((a!91 (ite (and (= u_r (- (/ 8.0 243.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 922.0))
+                   (ite (and (= u_r (- (/ 9.0 239.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 704.0))
+                        a!90))))
+  (let ((a!92 (ite (and (= u_r (/ 10.0 247.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 610.0))
+                   (ite (and (= u_r (/ 11.0 188.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 292.0))
+                        a!91))))
+  (let ((a!93 (ite (and (= u_r (- (/ 39.0 92.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 62.0 345.0))
+                   (ite (and (= u_r (- (/ 32.0 493.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 237.0))
+                        a!92))))
+  (let ((a!94 (ite (and (= u_r (/ 104.0 283.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 42.0 311.0))
+                   (ite (and (= u_r (/ 19.0 527.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 769.0))
+                        a!93))))
+  (let ((a!95 (ite (and (= u_r (/ 31.0 646.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 434.0))
+                   (ite (and (= u_r (/ 15.0 212.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 1.0 200.0))
+                        a!94))))
+  (let ((a!96 (ite (and (= u_r (/ 46.0 189.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 17.0 287.0))
+                   (ite (and (= u_r (- (/ 261.0 653.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 27.0 169.0))
+                        a!95))))
+  (let ((a!97 (ite (and (= u_r (- (/ 5.0 118.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 556.0))
+                   (ite (and (= u_r (- (/ 218.0 993.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 4.0 83.0))
+                        a!96))))
+  (let ((a!98 (ite (and (= u_r (- (/ 43.0 207.0))) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 17.0 394.0))
+                   (ite (and (= u_r (/ 38.0 255.0)) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 37.0 1666.0))
+                        a!97))))
+  (let ((a!99 (ite (and (= u_r (/ 11.0 252.0)) (= b!1 2.0))
+                   (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                      (/ 1.0 524.0))
+                   (ite (and (= u_r (- (/ 58.0 295.0))) (= b!1 2.0))
+                        (= (org.apache.pig.piggybank.evaluation.math.POW
+                             u_r
+                             b!1)
+                           (/ 8.0 207.0))
+                        a!98))))
+    (ite (and (= u_r (- (/ 5.0 94.0))) (= b!1 2.0))
+         (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+            (/ 1.0 353.0))
+         (ite (and (= u_r (- (/ 17.0 246.0))) (= b!1 2.0))
+              (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1)
+                 (/ 1.0 209.0))
+              a!99)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+  (not (= (org.apache.pig.piggybank.evaluation.math.POW u_r b!1) 2147483640.0))
+  (not (>= (+ r rho) 24.0))
+  (>= isoA_r 75.0)
+  (<= isoA_r 150.0)
+  (not (<= (+ (org.apache.pig.piggybank.evaluation.math.POW q_r a!1)
+              (org.apache.pig.piggybank.evaluation.math.POW u_r b!1))
+           (/ 1.0 4.0))))
+function interpretations:
+org.apache.pig.piggybank.evaluation.math.POW = {(edu.umass.cs.z3.SWIGTYPE_p__Z3_ast@12d43c6, edu.umass.cs.z3.SWIGTYPE_p__Z3_ast@bc997d|->10491/703:real), (edu.umass.cs.z3.SWIGTYPE_p__Z3_ast@164cb94, edu.umass.cs.z3.SWIGTYPE_p__Z3_ast@7174b9|->0:real), (else|->edu.umass.cs.z3.SWIGTYPE_p__Z3_ast@a65d82)}
+Model Start : 
+q_r = (define q_r Real)1213/314:real
+a!1 = (define a!1 Real)2:real
+b!1 = (define b!1 Real)2:real
+isoA_r = (define isoA_r Real)75:real
+u_r = (define u_r Real)1/1780:real
+rho = (define rho Real)0:real
+r = (define r Real)0:real
+function interpretations:
+org.apache.pig.piggybank.evaluation.math.POW = {(1213/314:real, 2:real|->10491/703:real), (1/1780:real, 2:real|->0:real), (else|->10491/703:real)}
+Model End : 
+13/04/30 23:54:07 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+13/04/30 23:54:07 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+13/04/30 23:54:07 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+13/04/30 23:54:07 INFO pigstats.ScriptState: Pig script settings are added to the job
+13/04/30 23:54:07 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+---------------------------------------------------------------------------------------------------------------------------
+| A     | ObjID:long         | r:double    | rho:double    | isoA_r:double    | q_r:double         | u_r:double           | 
+---------------------------------------------------------------------------------------------------------------------------
+|       | 588848900971365323 | 0.0         | 0.0           | 75.0             | 3.8630573248407645 | 5.617977528089888E-4 | 
+|       | 588848900971365323 | 23.96593    | 1.914158      | -9999.0          | 3.863054           | -0.8196303           | 
+|       | 588848900971365256 | 23.14365    | 0.4459226     | 209.0727         | 0.4309749          | 0.4329022            | 
+|       | 588848900971364426 | 23.417      | -5.564261     | -9999.0          | -0.1649571         | 1.058747             | 
+|       | 588848900971430111 | 19.89236    | 1.756343      | 6.356686         | -0.09094462        | 0.01863834           | 
+|       | 588848900971429913 | 23.40014    | 2.363344      | -9999.0          | -0.4538631         | -0.1147115           | 
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+| B     | ObjID:long         | r:double    | rho:double    | isoA_r:double    | q_r:double         | u_r:double           | 
+---------------------------------------------------------------------------------------------------------------------------
+|       | 588848900971365323 | 0.0         | 0.0           | 75.0             | 3.8630573248407645 | 5.617977528089888E-4 | 
+---------------------------------------------------------------------------------------------------------------------------
+

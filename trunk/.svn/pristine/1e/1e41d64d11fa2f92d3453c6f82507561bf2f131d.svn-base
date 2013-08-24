@@ -1,0 +1,35 @@
+SDSS:
+testBasic:
+SELECT top 10 objID, field, ra, dec, run from PhotoObj
+WHERE (ABS(CAST((BINARY_CHECKSUM(objID, NEWID())) AS int)) % 100) < 10
+
+SELECT top 10 objID, field, ra, dec, run from PhotoObj
+WHERE (ABS(CAST((BINARY_CHECKSUM(*) * RAND()) AS int)) % 100) < 10
+
+testGalaxies2Criteria:
+SELECT top 10 objID, r, extinction_r FROM Galaxy 
+WHERE (ABS(CAST((BINARY_CHECKSUM(*) * RAND()) AS int)) % 100) < 10
+
+testUnclassifiedSpectra:
+SELECT top 10 specObjID, SpecClass FROM SpecObj
+WHERE (ABS(CAST((BINARY_CHECKSUM(*) * RAND()) AS int)) % 100) < 10
+
+SELECT top 10 name, value FROM SpecClass
+WHERE (ABS(CAST((BINARY_CHECKSUM(*) * RAND()) AS int)) % 100) < 10
+
+testMultipleCriteria:
+SELECT top 10 objID, ra, dec, g, rho FROM Galaxy
+WHERE (ABS(CAST((BINARY_CHECKSUM(*) * RAND()) AS int)) % 100) < 10
+
+
+
+MergingCondition:
+SELECT top 10 objID, ra, dec, modelMag_u, modelMag_g, modelMag_r, modelMag_i, modelMag_z, petroR50_r, petrorad_u,petrorad_g, petrorad_r, petrorad_i, petrorad_z, petroRadErr_g, petroMag_g from Galaxy
+WHERE (ABS(CAST((BINARY_CHECKSUM(*) * RAND()) AS int)) % 100) < 10
+
+SELECT top 10 objID, NeighborObjID, neighborType, distance from Neighbors
+WHERE (ABS(CAST((BINARY_CHECKSUM(*) * RAND()) AS int)) % 100) < 10
+
+1000:
+vi command to replace , with /tab
+:%s/OLD/NEW/g

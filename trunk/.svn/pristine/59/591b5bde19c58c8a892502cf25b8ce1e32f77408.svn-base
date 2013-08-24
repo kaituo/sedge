@@ -1,0 +1,254 @@
+package edu.umass.cs.pig.z3.model;
+
+
+import java.math.BigInteger;
+
+import org.apache.commons.math3.fraction.BigFraction;
+
+import edu.umass.cs.pig.MainConfig;
+import edu.umass.cs.pig.z3.Z3Context;
+import edu.umass.cs.z3.SWIGTYPE_p__Z3_ast;
+import edu.umass.cs.z3.SWIGTYPE_p__Z3_func_decl;
+import edu.umass.cs.z3.SWIGTYPE_p__Z3_model;
+import edu.umass.cs.z3.SWIGTYPE_p__Z3_sort;
+import edu.umass.cs.z3.Z3_ast_kind;
+import edu.umass.cs.z3.Z3_lbool;
+import gnu.trove.TObjectDoubleHashMap;
+import gnu.trove.TObjectIntHashMap;
+import gnu.trove.TObjectLongHashMap;
+
+public class Z3ToJava {
+
+	protected final static Z3ToJava _theInstance = new Z3ToJava();
+	
+	protected final long minus1 = 4294967295L;
+	
+  /**
+   * Singleton
+   */
+  public static Z3ToJava get() {
+    return _theInstance;
+  }
+
+  /* instance properties */
+  
+  protected final boolean LOG_MODEL = MainConfig.get().LOG_MODEL_DSC;
+  protected Z3Context z3 = Z3Context.get();
+  
+  
+	/**
+	 * (unsigned) Z3 numeral --> (signed) Jvm int
+	 * 
+	 * <p>Z3 gives us an unsigned int value, but a JVM int is signed.
+	 * Parse Z3 unsigned int into a long, then narrow it to a (signed) int.
+	 *  
+	 * @see http://java.sun.com/docs/books/jls/third_edition/html/conversions.html#25363
+	 */
+	public int asInt(SWIGTYPE_p__Z3_ast value) {
+		int ret = z3.get_numeral_int(value);
+		if(ret == 0) {
+			String valueString = z3.get_numeral_string(value);
+			long valueLong = Long.parseLong(valueString);
+			ret = (int) valueLong;
+		}
+		return ret;
+//		DisplayModel disp = new DisplayModel();
+//		System.out.println("%%%%%%%%%%%");
+//		disp.display_ast(value);
+//		System.out.println("%%%%%%%%%%%");
+//		SWIGTYPE_p__Z3_ast value2 = z3.mk_bv2int(value);
+//		disp.display_ast(value2);
+//		System.out.println("%%%%%%%%%%%");
+//		String valueString = z3.get_numeral_string(value);
+		
+//		if(valueString.compareToIgnoreCase("9223372036854775807")>0) {
+//			// Z3 has no support for signed decimals. We can add an 
+//			// option to display a bit-vector n as 
+//			// (bvneg (_ bv<decimal> <size>) if the most significant 
+//			// bit of n is 1.
+//			SWIGTYPE_p__Z3_ast value3 = z3.mk_bvneg(value);
+//			SWIGTYPE_p__Z3_ast value4 = z3.eval(model, value3);
+//			valueString = z3.ast_to_string(value4);
+//			System.out.println(valueString);
+//		}
+		// Long has a minimum value of -9,223,372,036,854,775,808 and
+		// a maximum value of 9,223,372,036,854,775,807 (inclusive).
+//		long valueLong = Long.parseLong(valueString);
+//		int valueInt = (int) valueLong;
+		//return valueInt; // may be a negative value
+//		return z3.get_numeral_int(value);
+	}
+	
+	public long asLong(SWIGTYPE_p__Z3_ast value) {
+		long ret = z3.get_numeral_int64(value);
+		if (ret == 0) {
+			
+			BigInteger b = new BigInteger(z3.get_numeral_string(value));
+//			BigInteger b2 = new BigInteger("18446744073709551616");
+//			BigInteger b3 = b.subtract(b2);
+			ret = b.longValue();
+		}
+		return ret;
+	}
+	
+	public double asDouble(SWIGTYPE_p__Z3_ast value) {
+		BigFraction bf = z3.get_numeral_rational_int64(value);
+		return bf.doubleValue();
+	}
+
+	/**
+	 * (unsigned) Z3 numeral --> Jvm boolean
+	 */
+	public boolean asBoolean(SWIGTYPE_p__Z3_ast value) {
+	  Z3_lbool lbool = z3.get_bool_value(value);
+	  switch (lbool) {
+	  case Z3_L_FALSE:
+	    return false;
+	  case Z3_L_TRUE:
+	    return true;
+	  default:
+	    throw new IllegalStateException("not a boolean");
+	  }
+	}
+
+	
+	/**
+	 * Parse simple variables: int, reference, etc.
+	 * I.e., variables that are not maps.
+	 * 
+	 * @return variable name --> value that the model assigns to variable
+	 */
+	public ModelConstants parse1AryVariables(SWIGTYPE_p__Z3_model model) {
+		TObjectIntHashMap<String> intStr = new TObjectIntHashMap<String>(); 
+		TObjectDoubleHashMap<String> doubleStr = new TObjectDoubleHashMap<String>();
+//		TObjectFloatHashMap<String> floatStr = new TObjectFloatHashMap<String>();
+		TObjectLongHashMap<String> longStr = new TObjectLongHashMap<String>();
+		
+		long nrValues =                             // may be less than #vars
+			z3.get_model_num_constants(model); 
+	  
+	  for (int i=0; i<nrValues; i++) {
+	    SWIGTYPE_p__Z3_func_decl decl = z3.get_model_constant(model, i);
+	    SWIGTYPE_p__Z3_ast value = z3.eval_func_decl(model, decl); 	    
+	    if (z3.get_ast_kind(value) != Z3_ast_kind.Z3_NUMERAL_AST)
+	      continue;                               // Process numeral values only
+	
+	    if(decl == null) {
+	    	System.err.println("Z3_func_decl cannot be null!");
+	    	System.exit(1);
+	    }
+	    	
+	    final String varName = z3.get_symbol_string(z3.get_decl_name(decl));
+	    SWIGTYPE_p__Z3_sort ty = z3.get_sort(value);
+	    
+//	    final int valueInt = asInt(value);
+//	    loglnIf(LOG_MODEL, varName+": "+valueInt);
+	    switch (z3.get_sort_kind(ty)) {
+		case Z3_INT_SORT:
+			int valueInt = asInt(value);
+			intStr.put(varName, valueInt);
+			break;
+		case Z3_REAL_SORT:
+			double valueDouble = asDouble(value);
+			doubleStr.put(varName, valueDouble);
+			break;
+		case Z3_BV_SORT:
+			long s = z3.get_bv_sort_size(ty);
+			if(s == 32) {
+				int valueInt2 = asInt(value);
+				intStr.put(varName, valueInt2);
+			} else if(s == 64) {
+				long valueLong = asLong(value);
+				longStr.put(varName, valueLong);
+			}
+			break;
+		default:
+			System.out.print("unsupported sort");
+			break;
+		}
+	  }		
+	  
+	  ModelConstants res = new ModelConstants(intStr, doubleStr, longStr);
+	  
+	  return res;
+	}
+	
+	
+	/**
+	 * Parse the value at modelIndex as an array.
+	 * 
+	 * @return (bv32/bv30/int --> bv32/bv30/int)
+	 */
+//	public SmtArrayInt parseArrayIntInt(SWIGTYPE_p__Z3_model model, int modelIndex) {
+//	  SWIGTYPE_p__Z3_func_decl constDecl = z3.get_model_constant(model, modelIndex);            
+//	  SWIGTYPE_p__Z3_ast 			 z3Array   = z3.eval_func_decl(model, constDecl);
+//    if (z3.get_ast_kind(z3Array) == Z3_ast_kind.Z3_NUMERAL_AST)
+//      check(false, "not an array");
+//	  
+//	  final long numEntries = z3.is_array_value(z3Array, model); //Kaituo: added the 2nd parameter
+//    if (numEntries == minus1)               
+//      check(false, "not an array"); 
+//	  
+//    final int arraySize = (int) numEntries;
+//    
+//    final AstArray indices = new AstArrayTheirs(arraySize);
+//    final AstArray values = new AstArrayTheirs(arraySize);
+//    final SWIGTYPE_p__Z3_ast elseValue = z3.get_array_value(
+//        z3Array, model, numEntries, indices.cast(), values.cast()); //Kaituo: added the 2nd parameter
+//    
+//	  final int elseInt = asInt(elseValue);
+//	  loglnIf(LOG_MODEL, "\telse --> "+elseInt);	  
+//	  SmtArrayInt res = new SmtArrayInt(elseInt);	// default case
+//	  
+//	  for (int i=0; i<arraySize; i++) {
+//	    SWIGTYPE_p__Z3_ast index = indices.getitem(i);      	
+//	    SWIGTYPE_p__Z3_ast value = values.getitem(i);	  	
+//	  	int indexInt = asInt(index);							// corresponding value
+//	  	int valueInt = asInt(value);							// corresponding value
+//	  	res.put(indexInt, valueInt);
+//	  	loglnIf(LOG_MODEL, "\t"+indexInt+" --> "+valueInt);
+//	  }  
+//	
+//	  return res;
+//	}
+
+	/**
+	 * Parse the value at modelIndex as an array. 
+	 * 
+	 * @return (bv32/bv30/int --> boolean)
+	 */
+//	public SmtArrayBool parseArrayIntBoolean(SWIGTYPE_p__Z3_model model, int modelIndex) {
+//	  SWIGTYPE_p__Z3_func_decl constDecl = z3.get_model_constant(model, modelIndex);            
+//	  SWIGTYPE_p__Z3_ast       z3Array   = z3.eval_func_decl(model, constDecl);
+//    if (z3.get_ast_kind(z3Array) == Z3_ast_kind.Z3_NUMERAL_AST)
+//      check(false, "not an array");
+//    
+//	  final long numEntries = z3.is_array_value(z3Array, model); //Kaituo: added the 2nd parameter
+//	  if (numEntries == minus1)               
+//	    check(false, "not an array"); 
+//	  
+//	  final int arraySize = (int) numEntries;
+//	  
+//	  final AstArray indices = new AstArrayTheirs(arraySize);
+//	  final AstArray values = new AstArrayTheirs(arraySize);
+//	  final SWIGTYPE_p__Z3_ast elseValue = z3.get_array_value(
+//	      z3Array, model, numEntries, indices.cast(), values.cast()); //Kaituo: added the 2nd parameter
+//	  
+//	  final boolean elseBool = asBoolean(elseValue);
+//	  loglnIf(LOG_MODEL, "\telse --> "+elseBool);   
+//	  SmtArrayBool res = new SmtArrayBool(elseBool); // default case
+//	  
+//	  for (int i=0; i<arraySize; i++) {
+//	    SWIGTYPE_p__Z3_ast index = indices.getitem(i);        
+//	    SWIGTYPE_p__Z3_ast value = values.getitem(i);
+//	    
+//	    int indexInt = asInt(index);              	// corresponding value
+//	    boolean valueBoolean = asBoolean(value);    // corresponding value
+//	    res.put(indexInt, valueBoolean);
+//	    loglnIf(LOG_MODEL, "\t"+indexInt+" --> "+valueBoolean);
+//	  }  
+//	
+//	  return res;
+//	}  
+}
+

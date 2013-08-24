@@ -1,0 +1,42 @@
+13/05/08 10:54:40 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testBETWEEN
+13/05/08 10:54:40 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/05/08 10:54:41 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/05/08 10:54:41 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+13/05/08 10:54:41 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+13/05/08 10:54:41 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+13/05/08 10:54:41 INFO pigstats.ScriptState: Pig script settings are added to the job
+13/05/08 10:54:41 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+13/05/08 10:54:41 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+13/05/08 10:54:41 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+13/05/08 10:54:41 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+13/05/08 10:54:41 INFO pigstats.ScriptState: Pig script settings are added to the job
+13/05/08 10:54:41 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+13/05/08 10:54:41 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+13/05/08 10:54:41 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+13/05/08 10:54:41 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+13/05/08 10:54:41 INFO pigstats.ScriptState: Pig script settings are added to the job
+13/05/08 10:54:41 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+13/05/08 10:54:41 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+13/05/08 10:54:41 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+13/05/08 10:54:41 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+13/05/08 10:54:41 INFO pigstats.ScriptState: Pig script settings are added to the job
+13/05/08 10:54:41 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+13/05/08 10:54:41 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+13/05/08 10:54:41 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+13/05/08 10:54:41 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+13/05/08 10:54:41 INFO pigstats.ScriptState: Pig script settings are added to the job
+13/05/08 10:54:41 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+---------------------------------------------------------------------------------------------------------------------------------
+| A     | ObjID:long    | r:double            | rho:double        | isoA_r:double     | q_r:double         | u_r:double         | 
+---------------------------------------------------------------------------------------------------------------------------------
+|       | 0             | 0.0                 | 0.0               | 75.0              | 0.8362573099415205 | 0.8362573099415205 | 
+|       | 0             | 0.49448311776918996 | 0.841779712332958 | 0.735003149115967 | 0.8362480020803643 | 0.6856241175707645 | 
+---------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+| B     | ObjID:long    | r:double    | rho:double    | isoA_r:double    | q_r:double         | u_r:double         | 
+--------------------------------------------------------------------------------------------------------------------
+|       | 0             | 0.0         | 0.0           | 75.0             | 0.8362573099415205 | 0.8362573099415205 | 
+--------------------------------------------------------------------------------------------------------------------
+
+0.723352875 seconds passed.

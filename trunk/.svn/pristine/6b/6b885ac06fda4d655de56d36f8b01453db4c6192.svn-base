@@ -1,0 +1,203 @@
+package edu.umass.cs.pig.z3.model;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.apache.pig.data.DataType;
+
+import edu.umass.cs.pig.z3.ConstraintSolution;
+import gnu.trove.TObjectDoubleIterator;
+import gnu.trove.TObjectFloatIterator;
+import gnu.trove.TObjectIntHashMap;
+import gnu.trove.TObjectDoubleHashMap;
+import gnu.trove.TObjectFloatHashMap;
+import gnu.trove.TObjectIntIterator;
+import gnu.trove.TObjectLongHashMap;
+import gnu.trove.TObjectLongIterator;
+
+public class ModelConstants {
+	TObjectIntHashMap<String> intStr;
+	TObjectDoubleHashMap<String> doubleStr;
+	TObjectFloatHashMap<String> floatStr;
+	TObjectLongHashMap<String> longStr;
+	
+	public ModelConstants(TObjectIntHashMap<String> intStr,
+			TObjectDoubleHashMap<String> doubleStr,
+			TObjectLongHashMap<String> longStr,
+			TObjectFloatHashMap<String> floatStr) {
+		super();
+		this.intStr = intStr;
+		this.doubleStr = doubleStr;
+		this.longStr = longStr;
+		this.floatStr =floatStr;
+	}
+	
+	public boolean isEmpty() {
+		return
+				intStr.isEmpty() && doubleStr.isEmpty() && longStr.isEmpty();
+	}
+	
+	public Object getSolution(String name) {
+		if(intStr.containsKey(name))
+			return intStr.get(name);
+		else if(doubleStr.containsKey(name))
+			return doubleStr.get(name);
+//		else if(floatStr.contains(name))
+//			return floatStr.get(name);
+		else if(longStr.contains(name))
+			return longStr.get(name);
+		else
+			return null;
+	}
+
+	public TObjectIntHashMap<String> getIntStr() {
+		return intStr;
+	}
+
+	public void setIntStr(TObjectIntHashMap<String> intStr) {
+		this.intStr = intStr;
+	}
+
+	public TObjectDoubleHashMap<String> getDoubleStr() {
+		return doubleStr;
+	}
+
+	public void setDoubleStr(TObjectDoubleHashMap<String> doubleStr) {
+		this.doubleStr = doubleStr;
+	}
+
+	public TObjectLongHashMap<String> getLongStr() {
+		return longStr;
+	}
+
+	public void setLongStr(TObjectLongHashMap<String> longStr) {
+		this.longStr = longStr;
+	}
+	
+	public Object get(String name, byte ty) {
+		Object value = null;
+		switch(ty) {
+		case DataType.INTEGER:
+			value = intStr.get(name);
+			if(value == null || value.toString().equals("0")) {
+				value = findIntValueBySubName(name);
+			}
+			break;
+		case DataType.LONG:
+			value = longStr.get(name);
+			if(value == null || value.toString().equals("0")) {
+				value = findLongValueBySubName(name);
+			}
+			break;
+		case DataType.DOUBLE:
+			value = doubleStr.get(name);
+			if(value == null || value.toString().equals("0.0")) {
+				value = findDoubleValueBySubName(name);
+			}
+			break;
+		case DataType.FLOAT:
+			value = floatStr.get(name);
+			if(value == null || value.toString().equals("0.0")) {
+				value = findFloatValueBySubName(name);
+			}
+			break;
+		default:
+			value = null;
+		}
+				
+		
+		return value;
+	}
+	
+	public Object findIntValueBySubName(String name) {
+		Object value = null;
+		 for (TObjectIntIterator<String> it = intStr.iterator();
+		      it.hasNext();) {
+		   it.advance();
+		   String keyFullName = it.key();
+		   if(keyFullName.endsWith(name)) {
+				value = it.value();
+				break;
+		   }
+		 }
+		return value;
+	}
+	
+	public Object findLongValueBySubName(String name) {
+		Object value = null;
+		 for (TObjectLongIterator<String> it = longStr.iterator();
+		      it.hasNext();) {
+		   it.advance();
+		   String keyFullName = it.key();
+		   if(keyFullName.endsWith(name)) {
+				value = it.value();
+				break;
+		   }
+		 }
+		return value;
+	}
+	
+	public Object findDoubleValueBySubName(String name) {
+		Object value = null;
+		 for (TObjectDoubleIterator<String> it = doubleStr.iterator();
+		      it.hasNext();) {
+		   it.advance();
+		   String keyFullName = it.key();
+		   if(keyFullName.endsWith(name)) {
+				value = it.value();
+				break;
+		   }
+		 }
+		return value;
+	}
+	
+	public Object findFloatValueBySubName(String name) {
+		Object value = null;
+		 for (TObjectFloatIterator<String> it = floatStr.iterator();
+		      it.hasNext();) {
+		   it.advance();
+		   String keyFullName = it.key();
+		   if(keyFullName.endsWith(name)) {
+				value = it.value();
+				break;
+		   }
+		 }
+		return value;
+	}
+	
+	
+	public Map<String, Object> getStrValMap(ConstraintSolution c) {
+		Map<String, Object> ret = new HashMap<String, Object>();
+    	if(intStr != null && !intStr.isEmpty()) {
+    		for (String name: intStr.keys(new String[intStr.size()])) {
+          		int value = intStr.get(name);
+    			ret.put(name, value);
+    		}
+    	}
+    	
+    	
+    	if(longStr != null && !longStr.isEmpty()) {
+    		for (String name: longStr.keys(new String[longStr.size()])) {
+          		long value = longStr.get(name);
+    			ret.put(name, value);
+    		}
+    	}
+    	
+    	if(doubleStr != null && !doubleStr.isEmpty()) {
+    		for (String name: doubleStr.keys(new String[doubleStr.size()])) {
+          		double value = doubleStr.get(name);
+    			ret.put(name, value);
+    		}
+    	}
+    	
+    	return ret;
+    }
+
+	public TObjectFloatHashMap<String> getFloatStr() {
+		return floatStr;
+	}
+
+	public void setFloatStr(TObjectFloatHashMap<String> floatStr) {
+		this.floatStr = floatStr;
+	}
+}

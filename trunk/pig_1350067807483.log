@@ -1,0 +1,37 @@
+Backend error message during job submission
+-------------------------------------------
+org.apache.pig.backend.executionengine.ExecException: ERROR 2118: Input path does not exist: file:/home/kaituo/code/pig3/trunk/PigmixRandomData/10/power_usersX/power_users100m0
+	at org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigInputFormat.getSplits(PigInputFormat.java:282)
+	at org.apache.hadoop.mapred.JobClient.writeNewSplits(JobClient.java:962)
+	at org.apache.hadoop.mapred.JobClient.writeSplits(JobClient.java:979)
+	at org.apache.hadoop.mapred.JobClient.access$600(JobClient.java:174)
+	at org.apache.hadoop.mapred.JobClient$2.run(JobClient.java:897)
+	at org.apache.hadoop.mapred.JobClient$2.run(JobClient.java:850)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1083)
+	at org.apache.hadoop.mapred.JobClient.submitJobInternal(JobClient.java:850)
+	at org.apache.hadoop.mapred.JobClient.submitJob(JobClient.java:824)
+	at org.apache.hadoop.mapred.jobcontrol.Job.submit(Job.java:378)
+	at org.apache.hadoop.mapred.jobcontrol.JobControl.startReadyJobs(JobControl.java:247)
+	at org.apache.hadoop.mapred.jobcontrol.JobControl.run(JobControl.java:279)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.apache.hadoop.mapreduce.lib.input.InvalidInputException: Input path does not exist: file:/home/kaituo/code/pig3/trunk/PigmixRandomData/10/power_usersX/power_users100m0
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.listStatus(FileInputFormat.java:235)
+	at org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigTextInputFormat.listStatus(PigTextInputFormat.java:36)
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.getSplits(FileInputFormat.java:252)
+	at org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.PigInputFormat.getSplits(PigInputFormat.java:270)
+	... 14 more
+
+Pig Stack Trace
+---------------
+ERROR 2244: Job failed, hadoop does not return any error message
+
+org.apache.pig.backend.executionengine.ExecException: ERROR 2244: Job failed, hadoop does not return any error message
+	at org.apache.pig.tools.grunt.GruntParser.executeBatch(GruntParser.java:139)
+	at org.apache.pig.tools.grunt.GruntParser.parseStopOnError(GruntParser.java:192)
+	at org.apache.pig.tools.grunt.GruntParser.parseStopOnError(GruntParser.java:164)
+	at org.apache.pig.tools.grunt.Grunt.exec(Grunt.java:84)
+	at org.apache.pig.Main.run(Main.java:561)
+	at org.apache.pig.Main.main(Main.java:111)
+================================================================================

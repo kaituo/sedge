@@ -1,0 +1,88 @@
+package edu.umass.cs.userfunc;
+
+import java.util.List;
+
+import edu.umass.cs.pig.z3.Z3Context;
+import edu.umass.cs.z3.AstArray;
+import edu.umass.cs.z3.AstArrayTheirs;
+import edu.umass.cs.z3.SWIGTYPE_p__Z3_ast;
+import edu.umass.cs.z3.SWIGTYPE_p__Z3_func_decl;
+import edu.umass.cs.z3.SWIGTYPE_p__Z3_sort;
+
+public class UninterpretedMaker {
+	protected final Z3Context z3; 
+	
+	public UninterpretedMaker() {
+		z3 = Z3Context.get();
+	}
+	
+	public SWIGTYPE_p__Z3_ast[] toUninterpFunc(List<InputOutput> concreteVals) {
+		SWIGTYPE_p__Z3_sort[] domain = new SWIGTYPE_p__Z3_sort[3];
+		SWIGTYPE_p__Z3_sort intT = z3.mk_int_sort();
+        domain[0] = intT;  
+        domain[1] = intT;          
+        domain[2] = intT;  
+        SWIGTYPE_p__Z3_func_decl FPolicy = z3.mk_func_decl2(z3.mk_string_symbol("FPolicy"), intT, domain);      
+
+        SWIGTYPE_p__Z3_ast[] args = new SWIGTYPE_p__Z3_ast[3];
+        args[0] = z3.mk_numeral("0", intT);
+        args[1] = z3.mk_numeral("1", intT);
+        args[2] = z3.mk_numeral("30", intT);
+//        SWIGTYPE_p__Z3_ast case1 = z3.mk_app(FPolicy, args);
+
+        SWIGTYPE_p__Z3_ast[] args2 = new SWIGTYPE_p__Z3_ast[3];
+        args2[0] = z3.mk_numeral("0", intT);
+        args2[1] = z3.mk_numeral("2", intT);
+        args2[2] = z3.mk_numeral("20", intT);
+//       SWIGTYPE_p__Z3_ast case2 = z3.mk_app(FPolicy, args);
+        
+        SWIGTYPE_p__Z3_ast[] func = new SWIGTYPE_p__Z3_ast[3];
+        func[0] = z3.mk_var("x!1", intT);
+        func[1] = z3.mk_var("x!2", intT);
+        func[2] = z3.mk_var("x!3", intT);
+        SWIGTYPE_p__Z3_ast fun = z3.mk_app(FPolicy, func);
+        
+        SWIGTYPE_p__Z3_ast ite1, f1, f2, f, ite2, condition1, condition1_1, condition1_2, condition1_3, condition2, condition2_1, condition2_2, condition2_3;
+        f1 = z3.mk_numeral("567", intT);
+        f = z3.mk_numeral("0", intT);
+        f2 = z3.mk_numeral("544", intT);
+        condition1_1 = z3.mk_eq(func[0], args[0]);
+        condition1_2 = z3.mk_eq(func[1], args[1]);
+        condition1_3 = z3.mk_eq(func[2], args[2]);
+        
+        condition2_1 = z3.mk_eq(func[0], args2[0]);
+        condition2_2 = z3.mk_eq(func[1], args2[1]);
+        condition2_3 = z3.mk_eq(func[2], args2[2]);
+        
+        AstArray andArgs1 = new AstArrayTheirs(3);
+        andArgs1.setitem(0, condition1_1);
+        andArgs1.setitem(1, condition1_2);
+        andArgs1.setitem(2, condition1_3);
+        
+        AstArray andArgs2 = new AstArrayTheirs(3);
+        andArgs2.setitem(0, condition2_1);
+        andArgs2.setitem(1, condition2_2);
+        andArgs2.setitem(2, condition2_3);
+        
+        condition1 = z3.mk_and(3, andArgs1.cast());
+        condition2 = z3.mk_and(3, andArgs2.cast());
+        ite2 = z3.mk_ite(condition2, z3.mk_eq(fun, f2), z3.mk_eq(fun, f));
+        ite1 = z3.mk_ite(condition1,z3.mk_eq(fun, f1) ,ite2);
+        System.out.println("term : " + z3.ast_to_string(ite1));
+        
+        SWIGTYPE_p__Z3_ast z = z3.mk_var("z", intT);
+        SWIGTYPE_p__Z3_ast[] addition = new SWIGTYPE_p__Z3_ast[2];
+        addition[0] = z;
+        addition[1] = func[1];
+        SWIGTYPE_p__Z3_ast cntr1 = z3.mk_eq(fun, z3.mk_add(2, addition));
+        SWIGTYPE_p__Z3_ast cntr2 = z3.mk_not(z3.mk_eq(fun, f));
+        
+        z3.assert_cnstr(ite1);
+        z3.assert_cnstr(cntr2);
+        z3.assert_cnstr(cntr1);
+        
+        // TODO: to be changed in the future
+        return null;
+	}
+
+}

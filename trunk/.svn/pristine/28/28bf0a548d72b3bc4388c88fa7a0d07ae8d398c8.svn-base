@@ -1,0 +1,278 @@
+package edu.umass.cs.pig.dataflow;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import org.apache.pig.backend.executionengine.ExecException;
+import org.apache.pig.data.DataType;
+import org.apache.pig.impl.logicalLayer.FrontendException;
+import org.apache.pig.newplan.logical.relational.LogicalSchema;
+import org.apache.pig.newplan.logical.relational.LogicalSchema.LogicalFieldSchema;
+import org.apache.pig.pen.util.ExampleTuple;
+
+import edu.umass.cs.pig.cntr.EqualConstraint;
+import edu.umass.cs.pig.cntr.PltRelCntr;
+import edu.umass.cs.pig.cntr.SumConstraint;
+
+import edu.umass.cs.pig.vm.PathBranch;
+import edu.umass.cs.pig.vm.PathList;
+
+public class CntrComposer {
+	ValueExtractor extract;
+	ArrayList<String> nameDeclared;
+
+	
+	public CntrComposer(ArrayList<String> n) {
+		extract = new ValueExtractor();
+		nameDeclared = n;
+	}
+	
+	public void composeEqlCntr(PltRelation pElm, LogicalSchema cSchema, ArrayList<PathBranch> mainConstraints,
+			List<ParentEncapsulation> pTupleDuo, ParentEncapSol pListSol,
+			List<LogicalSchema> schemas, ExampleTuple out) throws FrontendException {
+		for(Entry<VarInfo, VarInfo> entry4var : pElm.child_to_parent_map.entrySet()) {
+			VarInfo childVar = entry4var.getKey();
+			VarInfo parentVar = entry4var.getValue();
+			ParentValueTNype value4Parent = null;
+			for(ParentEncapsulation pTuple : pTupleDuo ) {
+				value4Parent = extract.extractsGenVal(pTuple, parentVar);
+				if(value4Parent != null)
+					break;
+			} 
+			
+			if(value4Parent == null) {
+				//FIXME:
+    			// There is a possibility that either one of or both of variables in the dataflow 
+    			// hierarchy are intermediate variable (i.e. don't appear in load's schema).  Although
+    			// we have values in the parent pathlist, we need to transform those values into intermediate
+    			// values in the parent path, make the corresponding variable in the child pathlist equal to 
+    			// the parent variable value. There are two cases:
+    			// 1) if the variable of the parent pathlist in the dataflow hierarchy appear in Z3 solution, we could
+    			// remember it;
+    			// 2) else, the variable of the parent pathlist isn't involved in any symbolic constraints.  That
+    			// is, it could be random.  I suspect this case is impossible.  An intermediate variable has to 
+    			// be produced based on input variable and therefore has to be involved in some symbolic constraints.
+    			// the variable in the dataflow hierarchy appears in the load's schema  
+				value4Parent = extract.extractsGenVal(pListSol, parentVar);
+				if(value4Parent == null) {
+	        		throw new FrontendException("Cannot find values of variables matching the name!");
+				}
+			}
+			Object value = value4Parent.getVal();
+			byte type = value4Parent.getType();
+			
+			byte t = -1;
+			int pos = -1;
+			String alias = childVar.getAlias();
+			for (LogicalSchema s : schemas) {
+				LogicalFieldSchema fmatch = s.getFieldSubNameMatch(alias);
+	            if(fmatch != null) {
+	            	t = fmatch.type;
+	            	pos = s.getFieldPosition(alias);
+	            	break;
+	            }
+	        }
+			if(t == -1)
+				throw new FrontendException("Cannot find matching field from all knwo schemas!");
+			try {
+				if(type == DataType.CHARARRAY)
+					out.set(pos, value);
+				else if(type == DataType.BOOLEAN)
+					out.set(pos, value);
+				else {
+					EqualConstraint eqctr = new EqualConstraint(value, childVar, cSchema, type);
+					PathBranch pbr = new PathBranch(eqctr);
+					mainConstraints.add(pbr);
+				}
+			} catch(ExecException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	
+	private String analyzeName(String n) {
+		for(String name : nameDeclared) {
+			if(name.equals(n))
+				return n;
+			else if(name.indexOf("::" + n) > 0)
+				return name;
+		}
+		return n;
+	}
+	
+	public void composeEqlCntr(PltRelation pElm, LogicalSchema cSchema, ArrayList<PathBranch> mainConstraints,
+			ParentEncapsulation pTuple, ParentEncapSol pListSol,
+			List<LogicalSchema> schemas, ExampleTuple out) throws FrontendException {
+		for(Entry<VarInfo, VarInfo> entry4var : pElm.child_to_parent_map.entrySet()) {
+			VarInfo childVar = entry4var.getKey();
+			VarInfo parentVar = entry4var.getValue();
+			ParentValueTNype value4Parent = extract.extractsGenVal(pTuple, parentVar);
+			
+			if(value4Parent == null) {
+				//FIXME:
+    			// There is a possibility that either one of or both of variables in the dataflow 
+    			// hierarchy are intermediate variable (i.e. don't appear in load's schema).  Although
+    			// we have values in the parent pathlist, we need to transform those values into intermediate
+    			// values in the parent path, make the corresponding variable in the child pathlist equal to 
+    			// the parent variable value. There are two cases:
+    			// 1) if the variable of the parent pathlist in the dataflow hierarchy appear in Z3 solution, we could
+    			// remember it;
+    			// 2) else, the variable of the parent pathlist isn't involved in any symbolic constraints.  That
+    			// is, it could be random.  I suspect this case is impossible.  An intermediate variable has to 
+    			// be produced based on input variable and therefore has to be involved in some symbolic constraints.
+    			// the variable in the dataflow hierarchy appears in the load's schema  
+				value4Parent = extract.extractsGenVal(pListSol, parentVar);
+				if(value4Parent == null) {
+	        		throw new FrontendException("Cannot find values of variables matching the name!");
+				}
+			}
+			Object value = value4Parent.getVal();
+			byte type = value4Parent.getType();
+			
+			byte t = -1;
+			int pos = -1;
+			String alias = childVar.getAlias();
+			for (LogicalSchema s : schemas) {
+				LogicalFieldSchema fmatch = s.getFieldSubNameMatch(alias);
+	            if(fmatch != null) {
+	            	t = fmatch.type;
+	            	pos = s.getFieldPosition(alias);
+	            	break;
+	            }
+	        }
+			if(t == -1)
+				throw new FrontendException("Cannot find matching field from all knwo schemas!");
+			try {
+				if(type == DataType.CHARARRAY)
+					out.set(pos, value);
+				else if(type == DataType.BOOLEAN)
+					out.set(pos, value);
+				else {
+					EqualConstraint eqctr = new EqualConstraint(value, childVar, cSchema, type);
+					PathBranch pbr = new PathBranch(eqctr);
+					mainConstraints.add(pbr);
+				}
+			} catch(ExecException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	
+	/**
+	 * FIXME:
+     * There is a possibility that either one of or both of variables in the dataflow 
+     * hierarchy are intermediate variable (i.e. don't appear in load's schema).  Although
+     * we have values in the parent pathlist, we need to transform those values into intermediate
+     * values in the parent path, make the corresponding variable in the child pathlist equal to 
+     * the parent variable value. There are two cases:
+     * 1) if the variable of the parent pathlist in the dataflow hierarchy appear in Z3 solution, we could
+     *	remember it;
+     * 2) else, the variable of the parent pathlist isn't involved in any symbolic constraints.  That
+     * is, it could be random.  I suspect this case is impossible.  An intermediate variable has to 
+     * be produced based on input variable and therefore has to be involved in some symbolic constraints.
+     * the variable in the dataflow hierarchy appears in the load's schema  
+     * 
+	 * @param pElm
+	 * @param cSchema
+	 * @param mainConstraints
+	 * @param pTuple
+	 * @param pListSol
+	 * @throws FrontendException
+	 */
+	public void composeAggrCntr(PltAggrRelation pElm, LogicalSchema cSchema, 
+			ArrayList<PathBranch> mainConstraints, ParentEncapsulation pTuple, ParentEncapSol pListSol) throws FrontendException {
+		for(Entry<PltRelCntr, VarInfo> entry4var : pElm.child_to_parent_map.entrySet()) {
+			PltRelCntr childCntr = entry4var.getKey();
+			VarInfo parentVar = entry4var.getValue();
+			ParentValueTNype value4Parent = extract.extractsGenVal(pTuple, parentVar);
+			
+			if(value4Parent == null) {
+				
+				value4Parent = extract.extractsGenVal(pListSol, parentVar);
+				if(value4Parent == null) {
+	        		throw new FrontendException("Cannot find values of variables matching the name!");
+				}
+			}
+			Object parentValue = value4Parent.getVal();
+			if(childCntr instanceof SumConstraint) {
+				SumConstraint sumCtr = (SumConstraint)childCntr;
+				VarInfo sum = sumCtr.getSum();
+				ParentValueTNype value4Sum = extract.extractsGenVal(pListSol, sum);
+				Object sumValue = value4Sum.getVal();
+				
+				sumCtr.setParentValue(parentValue);
+				sumCtr.setSumValue(sumValue);
+				
+				PathBranch pbr = new PathBranch(sumCtr);
+				mainConstraints.add(pbr);
+			}
+			
+		}
+	}
+
+
+	public void composeCntr(Map<PathList, ParentEncapsulation> pMap, LoadArgs larg, Map<PathList, ParentEncapSol> pSol, 
+			PathList pInRel, Relation pElm, ArrayList<PathBranch> mainConstraints,
+			List<LogicalSchema> allSchema, ExampleTuple out) throws FrontendException {//, Map<PathList, List<ParentEncapsulation>> pMapDuo
+		LogicalSchema cSchema = larg.getSchema();
+		if(pMap.containsKey(pInRel) || pSol.containsKey(pInRel)) {
+//			if(pInRel.children.size() > 1) {
+//				List<ParentEncapsulation> pTupleDuo = pMapDuo.get(pInRel);
+//	    		ParentEncapSol pListSol = pSol.get(pInRel);
+//	    		// Doesn't deal with PltAggrRelation now
+//	    		if(pElm instanceof PltRelation) {
+//	    			PltRelation pltElm = (PltRelation)pElm;
+//	    			composeEqlCntr(pltElm, cSchema, mainConstraints,
+//	    					pTupleDuo, pListSol, allSchema, out);
+//	    		} 
+//			} else {
+				ParentEncapsulation pTuple = pMap.get(pInRel);
+	    		ParentEncapSol pListSol = pSol.get(pInRel);
+	    		if(pElm instanceof PltRelation) {
+	    			PltRelation pltElm = (PltRelation)pElm;
+	    			composeEqlCntr(pltElm, cSchema, mainConstraints,
+	    					pTuple, pListSol, allSchema, out);
+	    		} else if (pElm instanceof PltAggrRelation) {
+	    			PltAggrRelation pAggrElm = (PltAggrRelation)pElm;
+	    			composeAggrCntr(pAggrElm, cSchema, mainConstraints,
+	    					pTuple, pListSol);
+	    		}
+//			}
+    		
+//    		for(Entry<VarInfo, VarInfo> entry4var : pElm.child_to_parent_map.entrySet()) {
+//    			VarInfo childVar = entry4var.getKey();
+//    			VarInfo parentVar = entry4var.getValue();
+//    			ParentValueTNype value4Parent = extract.extractsGenVal(pTuple, parentVar);
+//    			
+//    			if(value4Parent == null) {
+//    				//FIXME:
+//        			// There is a possibility that either one of or both of variables in the dataflow 
+//        			// hierarchy are intermediate variable (i.e. don't appear in load's schema).  Although
+//        			// we have values in the parent pathlist, we need to transform those values into intermediate
+//        			// values in the parent path, make the corresponding variable in the child pathlist equal to 
+//        			// the parent variable value. There are two cases:
+//        			// 1) if the variable of the parent pathlist in the dataflow hierarchy appear in Z3 solution, we could
+//        			// remember it;
+//        			// 2) else, the variable of the parent pathlist isn't involved in any symbolic constraints.  That
+//        			// is, it could be random.  I suspect this case is impossible.  An intermediate variable has to 
+//        			// be produced based on input variable and therefore has to be involved in some symbolic constraints.
+//        			// the variable in the dataflow hierarchy appears in the load's schema  
+//    				value4Parent = extract.extractsGenVal(pListSol, parentVar);
+//    				if(value4Parent == null) {
+//    	        		throw new FrontendException("Cannot find values of variables matching the name!");
+//    				}
+//    			}
+//    			Object value = value4Parent.getVal();
+//    			byte type = value4Parent.getType();
+//    			EqualConstraint eqctr = new EqualConstraint(value, childVar, cSchema, type);
+//    			PathBranch pbr = new PathBranch(eqctr);
+//    			mainConstraints.add(pbr);
+//    		}
+    	} else {
+    		throw new FrontendException("A child path list doesn't have corresponding parent path list.");
+    	}
+	}
+
+}

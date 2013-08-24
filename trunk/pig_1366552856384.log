@@ -1,0 +1,21 @@
+Pig Stack Trace
+---------------
+ERROR 1200: <file /home/kaituo/code/pig3/trunk/scripts/pScalability2.pig, line 3, column 0>  Syntax error, unexpected symbol at or near 'store'
+
+org.apache.pig.impl.logicalLayer.FrontendException: ERROR 1000: Error during parsing. <file /home/kaituo/code/pig3/trunk/scripts/pScalability2.pig, line 3, column 0>  Syntax error, unexpected symbol at or near 'store'
+	at org.apache.pig.PigServer$Graph.parseQuery(PigServer.java:1641)
+	at org.apache.pig.PigServer$Graph.registerQuery(PigServer.java:1584)
+	at org.apache.pig.PigServer.registerQuery(PigServer.java:584)
+	at org.apache.pig.tools.grunt.GruntParser.processPig(GruntParser.java:942)
+	at org.apache.pig.tools.pigscript.parser.PigScriptParser.parse(PigScriptParser.java:386)
+	at org.apache.pig.tools.grunt.GruntParser.parseStopOnError(GruntParser.java:188)
+	at org.apache.pig.tools.grunt.GruntParser.parseStopOnError(GruntParser.java:164)
+	at org.apache.pig.tools.grunt.Grunt.exec(Grunt.java:84)
+	at org.apache.pig.Main.run(Main.java:561)
+	at org.apache.pig.Main.main(Main.java:111)
+Caused by: Failed to parse: <file /home/kaituo/code/pig3/trunk/scripts/pScalability2.pig, line 3, column 0>  Syntax error, unexpected symbol at or near 'store'
+	at org.apache.pig.parser.QueryParserDriver.parse(QueryParserDriver.java:222)
+	at org.apache.pig.parser.QueryParserDriver.parse(QueryParserDriver.java:164)
+	at org.apache.pig.PigServer$Graph.parseQuery(PigServer.java:1633)
+	... 9 more
+================================================================================

@@ -1,0 +1,180 @@
+package edu.umass.cs.pig.cntr;
+
+import org.apache.pig.backend.executionengine.ExecException;
+import org.apache.pig.data.DataByteArray;
+import org.apache.pig.data.DataType;
+import org.apache.pig.impl.logicalLayer.FrontendException;
+import org.apache.pig.newplan.Operator;
+import org.apache.pig.newplan.logical.expression.AndExpression;
+import org.apache.pig.newplan.logical.expression.BinaryExpression;
+import org.apache.pig.newplan.logical.expression.CastExpression;
+import org.apache.pig.newplan.logical.expression.ConstantExpression;
+import org.apache.pig.newplan.logical.expression.EqualExpression;
+import org.apache.pig.newplan.logical.expression.LogicalExpression;
+import org.apache.pig.newplan.logical.expression.OrExpression;
+import org.apache.pig.newplan.logical.expression.RegexExpression;
+import org.apache.pig.newplan.logical.expression.UserFuncExpression;
+
+import org.apache.pig.newplan.logical.expression.LogicalExpressionPlan;
+import org.apache.pig.newplan.logical.relational.LogicalSchema.LogicalFieldSchema;
+
+public class CountConstraintCmpr {
+
+	public CountConstraint GenerateMatchingTuple(LogicalExpressionPlan predicate,
+			boolean invert, CountConstraint countCtr) throws FrontendException {
+		GenerateMatchingTupleHelper(countCtr, predicate
+				.getSources().get(0), invert);
+		// tOut.synthetic = true;
+		return countCtr;
+	}
+
+	void GenerateMatchingTupleHelper(CountConstraint countCtr,
+			Operator pred, boolean invert) throws FrontendException {
+		// only support binary expression now
+		if (pred instanceof BinaryExpression)
+			GenerateMatchingTupleHelper(countCtr,
+					(BinaryExpression) pred, invert);
+	}
+
+	void GenerateMatchingTupleHelper(CountConstraint countCtr, BinaryExpression pred,
+			boolean invert) throws FrontendException {
+		if (pred instanceof AndExpression || pred instanceof OrExpression || pred instanceof RegexExpression) {
+			return;
+		}
+
+		Object leftConst = null, rightConst = null;
+//		long leftUid = (long)-1;
+//		long rightUid = (long)-1;
+		boolean leftIsConst = false, rightIsConst = false;
+		byte lefttypeCast = -1, righttypeCast = -1;
+		LogicalExpression lhs = pred.getLhs();
+		LogicalExpression rhs = pred.getRhs();
+
+		if (pred.getLhs() instanceof ConstantExpression) {
+			leftConst = ((ConstantExpression) pred.getLhs()).getValue();
+			leftIsConst = true;
+		} else {
+			if (lhs instanceof CastExpression) {
+				CastExpression castOp = (CastExpression) lhs;
+				lhs = castOp.getExpression();
+				lefttypeCast = castOp.getFieldSchema().type;
+			}
+			
+			if (lhs instanceof ConstantExpression) {
+				Object constVal = ((ConstantExpression) lhs).getValue();
+				leftConst = generateData(lefttypeCast, constVal.toString());
+				leftIsConst = true;
+			} else if (lhs instanceof UserFuncExpression) {
+				// currently only support COUNT
+//				UserFuncExpression udfCount = ((UserFuncExpression) lhs);
+//            	LogicalFieldSchema count = udfCount.getFieldSchema();
+//        		leftUid = count.uid;
+			} else {
+				throw new FrontendException(
+	                    "Error generating count constraint during lhs computation! ");
+			}
+		}
+		
+		if (pred.getRhs() instanceof ConstantExpression) {
+			rightConst = ((ConstantExpression) pred.getRhs()).getValue();
+			rightIsConst = true;
+		} else {
+			if (rhs instanceof CastExpression) {
+				CastExpression castOp = (CastExpression) rhs;
+				rhs = castOp.getExpression();
+				righttypeCast = castOp.getFieldSchema().type;
+			}
+			
+			if (rhs instanceof ConstantExpression) {
+				Object constVal = ((ConstantExpression) rhs).getValue();
+				rightConst = generateData(righttypeCast, constVal.toString());
+				rightIsConst = true;
+			} else if (rhs instanceof UserFuncExpression) {
+				// currently only support COUNT
+//				UserFuncExpression udfCount = ((UserFuncExpression) rhs);
+//            	LogicalFieldSchema count = udfCount.getFieldSchema();
+//        		rightUid = count.uid;
+			} else {
+				throw new FrontendException(
+	                    "Error generating count constraint during rhs computation! ");
+			}
+		}
+
+		
+		if (!invert) {
+			if (pred instanceof EqualExpression) {
+					if (leftIsConst) {
+//						countCtr.setCountFields(rightUid);
+						countCtr.setCountNum(((Long)leftConst).longValue());
+					} else if (rightIsConst) {
+//						countCtr.setCountFields(leftUid);
+						countCtr.setCountNum(((Long)rightConst).longValue());
+	                } else {
+	                	throw new FrontendException(
+	    	                    "Error generating count constraint during equal expression computation! ");
+	                }
+			}
+			
+		} else {
+			if (pred instanceof EqualExpression) {
+				 if (leftIsConst) {
+					 Object genUneq = generateData(DataType.LONG,
+	                            GetUnequalValue(leftConst).toString());
+//					 countCtr.setCountFields(rightUid);
+						countCtr.setCountNum(((Long)genUneq).longValue());
+	                } else if (rightIsConst) {
+	                	Object genUneq = generateData(DataType.LONG,
+	                            GetUnequalValue(rightConst).toString());
+//					 countCtr.setCountFields(rightUid);
+						countCtr.setCountNum(((Long)genUneq).longValue());
+	                } else {
+	                	throw new FrontendException(
+	    	                    "Error generating count constraint during equal expression computation! ");
+	                }
+			}
+		}
+	}
+
+	Object GetUnequalValue(Object v) {
+		byte type = DataType.findType(v);
+
+		if (type == DataType.BAG || type == DataType.TUPLE
+				|| type == DataType.MAP)
+			return null;
+
+		Object zero = generateData(type, "0");
+
+		if (v.equals(zero))
+			return generateData(type, "1");
+
+		return zero;
+	}
+
+	Object generateData(byte type, String data) {
+		switch (type) {
+		case DataType.BOOLEAN:
+			if (data.equalsIgnoreCase("true")) {
+				return Boolean.TRUE;
+			} else if (data.equalsIgnoreCase("false")) {
+				return Boolean.FALSE;
+			} else {
+				return null;
+			}
+		case DataType.BYTEARRAY:
+			return new DataByteArray(data.getBytes());
+		case DataType.DOUBLE:
+			return Double.valueOf(data);
+		case DataType.FLOAT:
+			return Float.valueOf(data);
+		case DataType.INTEGER:
+			return Integer.valueOf(data);
+		case DataType.LONG:
+			return Long.valueOf(data);
+		case DataType.CHARARRAY:
+			return data;
+		default:
+			return null;
+		}
+	}
+
+}

@@ -1,0 +1,65 @@
+package edu.umass.cs.pig.cntr;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+import org.apache.pig.data.DataType;
+
+import edu.umass.cs.pig.ast.ConstraintResult;
+import edu.umass.cs.pig.dataflow.VarInfo;
+import edu.umass.cs.pig.z3.Z3Context;
+import edu.umass.cs.z3.SWIGTYPE_p__Z3_ast;
+
+public class EqualVarCntr extends PltRelCntr implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
+
+	Map<VarInfo,VarInfo> equalVars;
+	
+	public EqualVarCntr(Map<VarInfo,VarInfo> mp) {
+		super((byte)-1, (byte)-1);
+		equalVars = mp;
+	}
+	
+	@Override
+	public void syncNameDB(ArrayList<String> ndb) {
+		nameDB = ndb;
+	}
+	
+	@Override
+	public SWIGTYPE_p__Z3_ast asZ3ast(Z3Context z3) {
+		Set<Entry<VarInfo, VarInfo>> s = equalVars.entrySet();
+		Iterator<Entry<VarInfo, VarInfo>> it = s.iterator();
+		// only support one pair of values now
+		while(it.hasNext()) {
+			Map.Entry<VarInfo, VarInfo> m = (Map.Entry<VarInfo, VarInfo>)it.next();
+			VarInfo key = (VarInfo)m.getKey();
+			VarInfo value = (VarInfo)m.getValue();
+			
+			String keyName, valueName;
+			if(nameDB != null) {
+				keyName = analyzeName(key.getAlias());
+				valueName = analyzeName(value.getAlias());
+			} else {
+				keyName = key.getAlias();
+				valueName = value.getAlias();
+			}
+			
+			ConstraintResult lhsAst = alloc.mallocInZ3(keyName, key.getType(), -1);//, fl
+			ConstraintResult rhsAst = alloc.mallocInZ3(valueName, value.getType(), -1);//, fl
+			
+//			if (memberType == DataType.INTEGER
+//					|| memberType == DataType.LONG
+//					|| memberType == DataType.FLOAT 
+//					|| memberType == DataType.DOUBLE) {
+			SWIGTYPE_p__Z3_ast cntr = z3.mk_eq(lhsAst.getZ3ast(), rhsAst.getZ3ast());
+			return cntr;
+//			} 
+		}
+		return null;
+	}
+}

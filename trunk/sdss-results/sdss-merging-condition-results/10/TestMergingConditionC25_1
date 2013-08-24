@@ -1,0 +1,660 @@
+12/09/29 02:23:49 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testFilter25
+12/09/29 02:23:49 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:50 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/09/29 02:23:50 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:50 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:50 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:50 INFO input.FileInputFormat: Total input paths to process : 1
+12/09/29 02:23:50 INFO util.MapRedUtil: Total input paths to process : 1
+12/09/29 02:23:50 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:50 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:50 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:50 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:50 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:50 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:50 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:50 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:50 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:50 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:50 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:50 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:50 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+(588848900971299370,145.5320164,0.80163342,22.76102,22.58733,21.71674,21.87729,21.13533,1.062051,2.968804,2.969576,2.311268,2.969343,2.00764,-1000,22.77005)
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| G1     | objID1:long        | ra:float     | dec:float     | modelMag_u1:float     | modelMag_g1:float     | modelMag_r1:float     | modelMag_i1:float     | modelMag_z1:float     | petroR50_r1:float     | petrorad_u1:float     | petrorad_g1:float     | petrorad_r1:float     | petrorad_i1:float     | petrorad_z1:float     | petroRadErr_g1:float     | petroMag_g1:float     | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|        | 588848900971299370 | 145.53201    | 0.8016334     | 22.76102              | 22.58733              | 21.71674              | 21.87729              | 21.13533              | 1.062051              | 2.968804              | 2.969576              | 2.311268              | 2.969343              | 2.00764               | -1000.0                  | 22.77005              | 
+|        | 588848900971299356 | 145.51799    | 0.67523223    | 23.26456              | 21.0423               | 20.2163               | 19.69322              | 19.39753              | 1.660326              | 7.356313              | 2.969576              | 7.358338              | 4.063219              | 4.521453              | -1000.0                  | 20.63875              | 
+|        | 588848900971299296 | 145.46777    | 0.6966069     | 22.88753              | 22.0459               | 21.4043               | 20.99609              | 21.36701              | 0.827136              | 0.5750441             | 1.484013              | 1.799352              | 1.600856              | 1.038247              | 0.1528674                | 22.36202              | 
+|        | 588848900971299370 | 145.53201    | 0.8016334     | -9998.0               | -9998.0               | -9998.0               | -9998.0               | -9998.0               | 1.062051              | 1.0                   | 1.0                   | 1.0                   | 1.0                   | 1.0                   | 1.0                      | 17.0                  | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| AG1     | objID1:long        | ra:float     | dec:float     | modelMag_u1:float     | modelMag_g1:float     | modelMag_r1:float     | modelMag_i1:float     | modelMag_z1:float     | petroR50_r1:float     | petrorad_u1:float     | petrorad_g1:float     | petrorad_r1:float     | petrorad_i1:float     | petrorad_z1:float     | petroRadErr_g1:float     | petroMag_g1:float     | 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|         | 588848900971299370 | 145.53201    | 0.8016334     | -9998.0               | -9998.0               | -9998.0               | -9998.0               | -9998.0               | 1.062051              | 1.0                   | 1.0                   | 1.0                   | 1.0                   | 1.0                   | 1.0                      | 17.0                  | 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:51 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO input.FileInputFormat: Total input paths to process : 1
+12/09/29 02:23:51 INFO util.MapRedUtil: Total input paths to process : 1
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+(588848900971299331,145.4999451,0.82948516,25.6018,22.14064,20.58263,20.03471,19.63508,1.526541,2.968804,2.286373,3.835627,4.656705,2.157075,2.238858,21.45918)
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:51 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:51 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:51 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:51 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| G2     | objID2:long        | ra:float     | dec:float     | modelMag_u2:float     | modelMag_g2:float     | modelMag_r2:float     | modelMag_i2:float     | modelMag_z2:float     | petroR50_r2:float     | petrorad_u2:float     | petrorad_g2:float     | petrorad_r2:float     | petrorad_i2:float     | petrorad_z2:float     | petroRadErr_g2:float     | petroMag_g2:float     | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|        | 588848900971299331 | 145.49994    | 0.8294852     | 25.6018               | 22.14064              | 20.58263              | 20.03471              | 19.63508              | 1.526541              | 2.968804              | 2.286373              | 3.835627              | 4.656705              | 2.157075              | 2.238858                 | 21.45918              | 
+|        | 588848900971299429 | 145.41809    | 0.77868927    | 23.67902              | 23.80864              | 22.45864              | 21.86776              | 22.05835              | 0.5421513             | 2.968804              | 4.583522              | 1.366174              | 1.910112              | 2.969238              | -1000.0                  | 23.66347              | 
+|        | 588848900971299331 | 145.49994    | 0.8294852     | -9998.0               | -9998.0               | -9998.0               | -9998.0               | 19.63508              | 1.526541              | 1.0                   | 1.0                   | 1.0                   | 1.0                   | 1.0                   | 1.0                      | 17.0                  | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| AG2     | objID2:long        | ra:float     | dec:float     | modelMag_u2:float     | modelMag_g2:float     | modelMag_r2:float     | modelMag_i2:float     | modelMag_z2:float     | petroR50_r2:float     | petrorad_u2:float     | petrorad_g2:float     | petrorad_r2:float     | petrorad_i2:float     | petrorad_z2:float     | petroRadErr_g2:float     | petroMag_g2:float     | 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|         | 588848900971299331 | 145.49994    | 0.8294852     | -9998.0               | -9998.0               | -9998.0               | -9998.0               | 19.63508              | 1.526541              | 1.0                   | 1.0                   | 1.0                   | 1.0                   | 1.0                   | 1.0                      | 17.0                  | 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+12/09/29 02:23:52 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testFilter26
+12/09/29 02:23:52 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO input.FileInputFormat: Total input paths to process : 1
+12/09/29 02:23:52 INFO util.MapRedUtil: Total input paths to process : 1
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+(588848900971299296,145.46778034,0.69660687,22.88753,22.0459,21.4043,20.99609,21.36701,0.827136,0.5750441,1.484013,1.799352,1.600856,1.038247,0.1528674,22.36202)
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| G1     | objID1:long        | ra:float     | dec:float     | modelMag_u1:float     | modelMag_g1:float     | modelMag_r1:float     | modelMag_i1:float     | modelMag_z1:float     | petroR50_r1:float     | petrorad_u1:float     | petrorad_g1:float     | petrorad_r1:float     | petrorad_i1:float     | petrorad_z1:float     | petroRadErr_g1:float     | petroMag_g1:float     | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|        | 588848900971299296 | 145.46777    | 0.6966069     | 22.88753              | 22.0459               | 21.4043               | 20.99609              | 21.36701              | 0.827136              | 0.5750441             | 1.484013              | 1.799352              | 1.600856              | 1.038247              | 0.1528674                | 22.36202              | 
+|        | 588848900971299356 | 145.51799    | 0.67523223    | 23.26456              | 21.0423               | 20.2163               | 19.69322              | 19.39753              | 1.660326              | 7.356313              | 2.969576              | 7.358338              | 4.063219              | 4.521453              | -1000.0                  | 20.63875              | 
+|        | 588848900971299342 | 145.50484    | 0.744911      | 24.33281              | 22.2664               | 20.50923              | 19.80633              | 19.26615              | 1.113954              | 2.968804              | 2.969576              | 2.362977              | 2.874777              | 1.789402              | -1000.0                  | 22.22692              | 
+|        | 588848900971299296 | 145.46777    | 0.6966069     | -9998.0               | -9998.0               | -9998.0               | -9998.0               | -9998.0               | 0.827136              | 1.0                   | 1.0                   | 1.0                   | 1.0                   | 1.0                   | 1.0                      | 17.0                  | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| AG1     | objID1:long        | ra:float     | dec:float     | modelMag_u1:float     | modelMag_g1:float     | modelMag_r1:float     | modelMag_i1:float     | modelMag_z1:float     | petroR50_r1:float     | petrorad_u1:float     | petrorad_g1:float     | petrorad_r1:float     | petrorad_i1:float     | petrorad_z1:float     | petroRadErr_g1:float     | petroMag_g1:float     | 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|         | 588848900971299296 | 145.46777    | 0.6966069     | -9998.0               | -9998.0               | -9998.0               | -9998.0               | -9998.0               | 0.827136              | 1.0                   | 1.0                   | 1.0                   | 1.0                   | 1.0                   | 1.0                      | 17.0                  | 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanEqualExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under LessThanEqualExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 WARN pig.PigServer: float is implicitly cast to double under GreaterThanExpression Operator
+12/09/29 02:23:52 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO input.FileInputFormat: Total input paths to process : 1
+12/09/29 02:23:52 INFO util.MapRedUtil: Total input paths to process : 1
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+(588848900971299385,145.54624747,0.71817248,23.79659,22.88839,22.18909,22.02524,21.60788,0.6627098,2.968804,2.969576,1.412663,1.514168,2.969238,-1000,22.45487)
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:52 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:52 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:52 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+12/09/29 02:23:52 INFO mapReduceLayer.MRCompiler: File concatenation threshold: 100 optimistic? false
+12/09/29 02:23:53 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size before optimization: 1
+12/09/29 02:23:53 INFO mapReduceLayer.MultiQueryOptimizer: MR plan size after optimization: 1
+12/09/29 02:23:53 INFO pigstats.ScriptState: Pig script settings are added to the job
+12/09/29 02:23:53 INFO mapReduceLayer.JobControlCompiler: mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| G2     | objID2:long        | ra:float      | dec:float      | modelMag_u2:float      | modelMag_g2:float      | modelMag_r2:float      | modelMag_i2:float      | modelMag_z2:float      | petroR50_r2:float      | petrorad_u2:float      | petrorad_g2:float      | petrorad_r2:float      | petrorad_i2:float      | petrorad_z2:float      | petroRadErr_g2:float      | petroMag_g2:float      | 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|        | 588848900971299385 | 145.54625     | 0.7181725      | 23.79659               | 22.88839               | 22.18909               | 22.02524               | 21.60788               | 0.6627098              | 2.968804               | 2.969576               | 1.412663               | 1.514168               | 2.969238               | -1000.0                   | 22.45487               | 
+|        | 588848900971299331 | 145.49994     | 0.8294852      | 25.6018                | 22.14064               | 20.58263               | 20.03471               | 19.63508               | 1.526541               | 2.968804               | 2.286373               | 3.835627               | 4.656705               | 2.157075               | 2.238858                  | 21.45918               | 
+|        | 588848900971299385 | 145.54625     | 0.7181725      | -9998.0                | -9998.0                | -9998.0                | -9998.0                | -9998.0                | 0.6627098              | 1.0                    | 1.0                    | 1.0                    | 1.0                    | 1.0                    | 1.0                       | 17.0                   | 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| AG2     | objID2:long        | ra:float      | dec:float      | modelMag_u2:float      | modelMag_g2:float      | modelMag_r2:float      | modelMag_i2:float      | modelMag_z2:float      | petroR50_r2:float      | petrorad_u2:float      | petrorad_g2:float      | petrorad_r2:float      | petrorad_i2:float      | petrorad_z2:float      | petroRadErr_g2:float      | petroMag_g2:float      | 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|         | 588848900971299385 | 145.54625     | 0.7181725      | -9998.0                | -9998.0                | -9998.0                | -9998.0                | -9998.0                | 0.6627098              | 1.0                    | 1.0                    | 1.0                    | 1.0                    | 1.0                    | 1.0                       | 17.0                   | 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

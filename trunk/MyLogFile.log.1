@@ -1,0 +1,1876 @@
+Aug 25, 2012 12:48:54 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:54,464 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/kaituo/code/pig3/trunk/pig_1345870134460.log
+Aug 25, 2012 12:48:54 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:54,630 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: file:///
+Aug 25, 2012 12:48:55 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:55,619 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: LIMIT
+Aug 25, 2012 12:48:55 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:55,877 [main] INFO  org.apache.pig.newplan.logical.rules.ColumnPruneVisitor - Columns pruned for A: $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46, $47, $48, $49, $50, $51, $52, $53, $54, $55, $56, $57, $58, $59, $60, $61, $62, $63, $64, $65, $66, $67, $68, $69, $70, $71, $72, $73, $74, $75, $76, $77, $78, $79, $80, $81, $82, $83, $84, $85, $86, $87, $88, $89, $90, $91, $92, $93, $94, $95, $96, $97, $98, $99, $100, $101, $102, $103, $104, $105, $106, $107, $108, $109, $110, $111, $112, $113, $114, $115, $116, $117, $118, $119, $120, $121, $122, $123, $124, $125, $126, $127, $128, $129, $130, $131, $132, $133, $134, $135, $136, $137, $138, $139, $140, $141, $142, $143, $144, $145, $146, $147, $148, $149, $150, $151, $152, $153, $154, $155, $156, $157, $158, $159, $160, $161, $162, $163, $164, $165, $166, $167, $168, $169, $170, $171, $172, $173, $174, $175, $176, $177, $178, $179, $180, $181, $182, $183, $184, $185, $186, $187, $188, $189, $190, $191, $192, $193, $194, $195, $196, $197, $198, $199, $200, $201, $202, $203, $204, $205, $206, $207, $208, $209, $210, $211, $212, $213, $214, $215, $216, $217, $218, $219, $220, $221, $222, $223, $224, $225, $226, $227, $228, $229, $230, $231, $232, $233, $234, $235, $236, $237, $238, $239, $240, $241, $242, $243, $244, $245, $246, $247, $248, $249, $250, $251, $252, $253, $254, $255, $256, $257, $258, $259, $260, $261, $262, $263, $264, $265, $266, $267, $268, $269, $270, $271, $272, $273, $274, $275, $276, $277, $278, $279, $280, $281, $282, $283, $284, $285, $286, $287, $288, $289, $290, $291, $292, $293, $294, $295, $296, $297, $298, $299, $300, $301, $302, $303, $304, $305, $306, $307, $308, $309, $310, $311, $312, $313, $314, $315, $316, $317, $318, $319, $320, $321, $322, $323, $324, $325, $326, $327, $328, $329, $330, $331, $332, $333, $334, $335, $336, $337, $338, $339, $340, $341, $342, $343, $344, $345, $346, $347, $348, $349, $350, $351, $352, $353, $354, $355, $356, $357, $358, $359, $360, $361, $362, $363, $364, $365, $366, $367, $368, $369, $370, $371, $372, $373, $374, $375, $376, $377, $378, $379, $380, $381, $382, $383, $384, $385, $386, $387, $388, $389, $390, $391, $392, $393, $394, $395, $396, $397, $398, $399, $400, $401, $402, $403, $404, $405, $406, $407, $408, $409, $410, $411, $412, $413, $414, $415, $416, $417, $418, $419, $420, $421, $422, $423, $424, $425, $426, $427, $428, $429, $430, $431, $432, $433, $434, $435, $436, $437, $438, $439, $440, $441, $442, $443, $444, $445, $446, $447, $448, $449, $450, $451, $452, $453, $454, $455, $456, $457, $458, $459, $460, $461, $462, $463, $464, $465, $466, $467, $468, $469, $470, $471, $472, $473, $474, $475, $476, $477, $478, $479, $480, $481, $482, $483, $484, $485, $486, $487, $488, $489, $490, $491, $492, $493, $494, $495, $496, $497, $498, $499, $500, $501
+Aug 25, 2012 12:48:55 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:55,971 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+Aug 25, 2012 12:48:56 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:55,999 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 1
+Aug 25, 2012 12:48:56 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:56,000 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 1
+Aug 25, 2012 12:48:56 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:56,023 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+Aug 25, 2012 12:48:56 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:56,035 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+Aug 25, 2012 12:48:56 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:56,051 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+Aug 25, 2012 12:48:56 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:56,100 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+Aug 25, 2012 12:48:56 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:56,112 [Thread-1] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Aug 25, 2012 12:48:56 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:56,117 [Thread-1] WARN  org.apache.hadoop.mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Aug 25, 2012 12:48:56 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:56,157 [Thread-1] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+Aug 25, 2012 12:48:56 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:56,157 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+Aug 25, 2012 12:48:56 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:56,166 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+Aug 25, 2012 12:48:56 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:56,408 [Thread-2] INFO  org.apache.hadoop.util.ProcessTree - setsid exited with exit code 0
+Aug 25, 2012 12:48:56 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:56,411 [Thread-2] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@15dcfa4
+Aug 25, 2012 12:48:56 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:56,426 [Thread-2] INFO  org.apache.hadoop.mapred.MapTask - io.sort.mb = 100
+Aug 25, 2012 12:48:56 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:56,472 [Thread-2] INFO  org.apache.hadoop.mapred.MapTask - data buffer = 79691776/99614720
+Aug 25, 2012 12:48:56 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:56,472 [Thread-2] INFO  org.apache.hadoop.mapred.MapTask - record buffer = 262144/327680
+Aug 25, 2012 12:48:56 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:56,601 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_local_0001
+Aug 25, 2012 12:48:56 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:56,602 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+Aug 25, 2012 12:48:56 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:56,708 [Thread-2] INFO  org.apache.hadoop.mapred.MapTask - Starting flush of map output
+Aug 25, 2012 12:48:56 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:56,721 [Thread-2] INFO  org.apache.hadoop.mapred.MapTask - Finished spill 0
+Aug 25, 2012 12:48:56 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:56,724 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+Aug 25, 2012 12:48:59 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:59,381 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Aug 25, 2012 12:48:59 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:59,381 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0001_m_000000_0' done.
+Aug 25, 2012 12:48:59 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:59,391 [Thread-2] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@1031ae9
+Aug 25, 2012 12:48:59 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:59,391 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Aug 25, 2012 12:48:59 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:59,395 [Thread-2] INFO  org.apache.hadoop.mapred.Merger - Merging 1 sorted segments
+Aug 25, 2012 12:48:59 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:59,403 [Thread-2] INFO  org.apache.hadoop.mapred.Merger - Down to the last merge-pass, with 1 segments left of total size: 418 bytes
+Aug 25, 2012 12:48:59 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:59,404 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Aug 25, 2012 12:48:59 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:59,431 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0001_r_000000_0 is done. And is in the process of commiting
+Aug 25, 2012 12:48:59 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:59,432 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Aug 25, 2012 12:48:59 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:59,432 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task attempt_local_0001_r_000000_0 is allowed to commit now
+Aug 25, 2012 12:48:59 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:48:59,437 [Thread-2] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local_0001_r_000000_0' to /home/kaituo/code/pig3/trunk/pigmixExtData/scalabilityData
+Aug 25, 2012 12:49:02 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:49:02,388 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - reduce > reduce
+Aug 25, 2012 12:49:02 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:49:02,389 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0001_r_000000_0' done.
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:49:06,611 [main] WARN  org.apache.pig.tools.pigstats.PigStatsUtil - Failed to get RunningJob for job job_local_0001
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:49:06,613 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:49:06,613 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Detected Local mode. Stats reported below may be incomplete
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:49:06,615 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Script Statistics: 
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>1.0.0	0.9.2	kaituo	2012-08-25 00:48:56	2012-08-25 00:49:06	LIMIT
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Success!
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.TestExGen4PigMixReal logErrororOutput
+FINE: ExitValue: 0
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job Stats (time in seconds):
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>JobId	Alias	Feature	Outputs
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001	A,B,C		/home/kaituo/code/pig3/trunk/pigmixExtData/scalabilityData,
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Input(s):
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully read records from: "/home/kaituo/code/pig3/trunk/pigmixdata/widerow"
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Output(s):
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully stored records in: "/home/kaituo/code/pig3/trunk/pigmixExtData/scalabilityData"
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job DAG:
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Aug 25, 2012 12:49:06 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-08-25 00:49:06,616 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+Sep 01, 2012 12:17:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:21,584 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/kaituo/code/pig3/trunk/pig_1346473041580.log
+Sep 01, 2012 12:17:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:21,710 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: file:///
+Sep 01, 2012 12:17:22 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:22,528 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: UNKNOWN
+Sep 01, 2012 12:17:22 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:22,566 [main] INFO  org.apache.pig.newplan.logical.rules.ColumnPruneVisitor - Columns pruned for A: $4, $5, $7, $8
+Sep 01, 2012 12:17:22 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:22,700 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+Sep 01, 2012 12:17:22 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:22,722 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 1
+Sep 01, 2012 12:17:22 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:22,723 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 1
+Sep 01, 2012 12:17:22 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:22,775 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+Sep 01, 2012 12:17:22 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:22,792 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+Sep 01, 2012 12:17:22 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:22,811 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+Sep 01, 2012 12:17:22 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:22,847 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+Sep 01, 2012 12:17:22 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:22,918 [Thread-1] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Sep 01, 2012 12:17:22 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:22,928 [Thread-1] WARN  org.apache.hadoop.mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Sep 01, 2012 12:17:22 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:22,975 [Thread-1] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+Sep 01, 2012 12:17:22 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:22,975 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+Sep 01, 2012 12:17:22 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:22,994 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+Sep 01, 2012 12:17:23 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:23,253 [Thread-2] INFO  org.apache.hadoop.util.ProcessTree - setsid exited with exit code 0
+Sep 01, 2012 12:17:23 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:23,267 [Thread-2] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@6407d8
+Sep 01, 2012 12:17:23 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:23,314 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+Sep 01, 2012 12:17:23 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:23,317 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Sep 01, 2012 12:17:23 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:23,318 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task attempt_local_0001_m_000000_0 is allowed to commit now
+Sep 01, 2012 12:17:23 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:23,321 [Thread-2] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local_0001_m_000000_0' to /home/kaituo/code/pig3/trunk/pigmixExtData/data12
+Sep 01, 2012 12:17:23 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:23,348 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_local_0001
+Sep 01, 2012 12:17:23 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:23,348 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+Sep 01, 2012 12:17:26 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:26,221 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Sep 01, 2012 12:17:26 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:26,222 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0001_m_000000_0' done.
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:28,355 [main] WARN  org.apache.pig.tools.pigstats.PigStatsUtil - Failed to get RunningJob for job job_local_0001
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:28,359 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:28,359 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Detected Local mode. Stats reported below may be incomplete
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:28,360 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Script Statistics: 
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>1.0.0	0.9.2	kaituo	2012-09-01 00:17:22	2012-09-01 00:17:28	UNKNOWN
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Success!
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job Stats (time in seconds):
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>JobId	Alias	Feature	Outputs
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001	A,B	MAP_ONLY	/home/kaituo/code/pig3/trunk/pigmixExtData/data12,
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Input(s):
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully read records from: "/home/kaituo/code/pig3/trunk/pigmixExtData/pages625m"
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.TestExGen4PigMixReal logErrororOutput
+FINE: ExitValue: 0
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Output(s):
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully stored records in: "/home/kaituo/code/pig3/trunk/pigmixExtData/data12"
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job DAG:
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Sep 01, 2012 12:17:28 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:17:28,361 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+Sep 01, 2012 12:27:09 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:09,730 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/kaituo/code/pig3/trunk/pig_1346473629726.log
+Sep 01, 2012 12:27:09 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:09,895 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: file:///
+Sep 01, 2012 12:27:10 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:10,872 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: LIMIT
+Sep 01, 2012 12:27:11 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:11,127 [main] INFO  org.apache.pig.newplan.logical.rules.ColumnPruneVisitor - Columns pruned for A: $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46, $47, $48, $49, $50, $51, $52, $53, $54, $55, $56, $57, $58, $59, $60, $61, $62, $63, $64, $65, $66, $67, $68, $69, $70, $71, $72, $73, $74, $75, $76, $77, $78, $79, $80, $81, $82, $83, $84, $85, $86, $87, $88, $89, $90, $91, $92, $93, $94, $95, $96, $97, $98, $99, $100, $101, $102, $103, $104, $105, $106, $107, $108, $109, $110, $111, $112, $113, $114, $115, $116, $117, $118, $119, $120, $121, $122, $123, $124, $125, $126, $127, $128, $129, $130, $131, $132, $133, $134, $135, $136, $137, $138, $139, $140, $141, $142, $143, $144, $145, $146, $147, $148, $149, $150, $151, $152, $153, $154, $155, $156, $157, $158, $159, $160, $161, $162, $163, $164, $165, $166, $167, $168, $169, $170, $171, $172, $173, $174, $175, $176, $177, $178, $179, $180, $181, $182, $183, $184, $185, $186, $187, $188, $189, $190, $191, $192, $193, $194, $195, $196, $197, $198, $199, $200, $201, $202, $203, $204, $205, $206, $207, $208, $209, $210, $211, $212, $213, $214, $215, $216, $217, $218, $219, $220, $221, $222, $223, $224, $225, $226, $227, $228, $229, $230, $231, $232, $233, $234, $235, $236, $237, $238, $239, $240, $241, $242, $243, $244, $245, $246, $247, $248, $249, $250, $251, $252, $253, $254, $255, $256, $257, $258, $259, $260, $261, $262, $263, $264, $265, $266, $267, $268, $269, $270, $271, $272, $273, $274, $275, $276, $277, $278, $279, $280, $281, $282, $283, $284, $285, $286, $287, $288, $289, $290, $291, $292, $293, $294, $295, $296, $297, $298, $299, $300, $301, $302, $303, $304, $305, $306, $307, $308, $309, $310, $311, $312, $313, $314, $315, $316, $317, $318, $319, $320, $321, $322, $323, $324, $325, $326, $327, $328, $329, $330, $331, $332, $333, $334, $335, $336, $337, $338, $339, $340, $341, $342, $343, $344, $345, $346, $347, $348, $349, $350, $351, $352, $353, $354, $355, $356, $357, $358, $359, $360, $361, $362, $363, $364, $365, $366, $367, $368, $369, $370, $371, $372, $373, $374, $375, $376, $377, $378, $379, $380, $381, $382, $383, $384, $385, $386, $387, $388, $389, $390, $391, $392, $393, $394, $395, $396, $397, $398, $399, $400, $401, $402, $403, $404, $405, $406, $407, $408, $409, $410, $411, $412, $413, $414, $415, $416, $417, $418, $419, $420, $421, $422, $423, $424, $425, $426, $427, $428, $429, $430, $431, $432, $433, $434, $435, $436, $437, $438, $439, $440, $441, $442, $443, $444, $445, $446, $447, $448, $449, $450, $451, $452, $453, $454, $455, $456, $457, $458, $459, $460, $461, $462, $463, $464, $465, $466, $467, $468, $469, $470, $471, $472, $473, $474, $475, $476, $477, $478, $479, $480, $481, $482, $483, $484, $485, $486, $487, $488, $489, $490, $491, $492, $493, $494, $495, $496, $497, $498, $499, $500, $501
+Sep 01, 2012 12:27:11 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:11,220 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+Sep 01, 2012 12:27:11 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:11,248 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 1
+Sep 01, 2012 12:27:11 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:11,248 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 1
+Sep 01, 2012 12:27:11 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:11,271 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+Sep 01, 2012 12:27:11 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:11,283 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+Sep 01, 2012 12:27:11 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:11,299 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+Sep 01, 2012 12:27:11 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:11,348 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+Sep 01, 2012 12:27:11 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:11,360 [Thread-1] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Sep 01, 2012 12:27:11 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:11,365 [Thread-1] WARN  org.apache.hadoop.mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Sep 01, 2012 12:27:11 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:11,410 [Thread-1] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+Sep 01, 2012 12:27:11 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:11,410 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+Sep 01, 2012 12:27:11 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:11,418 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+Sep 01, 2012 12:27:11 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:11,640 [Thread-2] INFO  org.apache.hadoop.util.ProcessTree - setsid exited with exit code 0
+Sep 01, 2012 12:27:11 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:11,645 [Thread-2] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@15dcfa4
+Sep 01, 2012 12:27:11 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:11,668 [Thread-2] INFO  org.apache.hadoop.mapred.MapTask - io.sort.mb = 100
+Sep 01, 2012 12:27:11 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:11,718 [Thread-2] INFO  org.apache.hadoop.mapred.MapTask - data buffer = 79691776/99614720
+Sep 01, 2012 12:27:11 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:11,718 [Thread-2] INFO  org.apache.hadoop.mapred.MapTask - record buffer = 262144/327680
+Sep 01, 2012 12:27:11 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:11,849 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_local_0001
+Sep 01, 2012 12:27:11 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:11,849 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+Sep 01, 2012 12:27:12 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:12,087 [Thread-2] INFO  org.apache.hadoop.mapred.MapTask - Starting flush of map output
+Sep 01, 2012 12:27:12 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:12,117 [Thread-2] INFO  org.apache.hadoop.mapred.MapTask - Finished spill 0
+Sep 01, 2012 12:27:12 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:12,121 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+Sep 01, 2012 12:27:14 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:14,619 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Sep 01, 2012 12:27:14 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:14,620 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0001_m_000000_0' done.
+Sep 01, 2012 12:27:14 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:14,639 [Thread-2] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@1031ae9
+Sep 01, 2012 12:27:14 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:14,639 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Sep 01, 2012 12:27:14 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:14,644 [Thread-2] INFO  org.apache.hadoop.mapred.Merger - Merging 1 sorted segments
+Sep 01, 2012 12:27:14 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:14,649 [Thread-2] INFO  org.apache.hadoop.mapred.Merger - Down to the last merge-pass, with 1 segments left of total size: 418 bytes
+Sep 01, 2012 12:27:14 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:14,649 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Sep 01, 2012 12:27:14 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:14,675 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0001_r_000000_0 is done. And is in the process of commiting
+Sep 01, 2012 12:27:14 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:14,677 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Sep 01, 2012 12:27:14 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:14,677 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task attempt_local_0001_r_000000_0 is allowed to commit now
+Sep 01, 2012 12:27:14 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:14,680 [Thread-2] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local_0001_r_000000_0' to /home/kaituo/code/pig3/trunk/pigmixExtData/scalabilityData
+Sep 01, 2012 12:27:17 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:17,632 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - reduce > reduce
+Sep 01, 2012 12:27:17 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:17,633 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0001_r_000000_0' done.
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:21,858 [main] WARN  org.apache.pig.tools.pigstats.PigStatsUtil - Failed to get RunningJob for job job_local_0001
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:21,860 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:21,860 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Detected Local mode. Stats reported below may be incomplete
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:21,862 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Script Statistics: 
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>1.0.0	0.9.2	kaituo	2012-09-01 00:27:11	2012-09-01 00:27:21	LIMIT
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Success!
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job Stats (time in seconds):
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>JobId	Alias	Feature	Outputs
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001	A,B,C		/home/kaituo/code/pig3/trunk/pigmixExtData/scalabilityData,
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Input(s):
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.TestExGen4PigMixReal3 logErrororOutput
+FINE: ExitValue: 0
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully read records from: "/home/kaituo/code/pig3/trunk/pigmixdata/widerow"
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Output(s):
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully stored records in: "/home/kaituo/code/pig3/trunk/pigmixExtData/scalabilityData"
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job DAG:
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Sep 01, 2012 12:27:21 AM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-09-01 00:27:21,863 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+Oct 04, 2012 4:16:49 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:49,356 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/kaituo/code/pig3/trunk/pig_1349381809352.log
+Oct 04, 2012 4:16:49 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:49,532 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: file:///
+Oct 04, 2012 4:16:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:50,528 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: UNKNOWN
+Oct 04, 2012 4:16:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:50,702 [main] INFO  org.apache.pig.newplan.logical.rules.ColumnPruneVisitor - Columns pruned for A: $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46, $47, $48, $49, $50, $51, $52, $53, $54, $55, $56, $57, $58, $59, $60, $61, $62, $63, $64, $65, $66, $67, $68, $69, $70, $71, $72, $73, $74, $75, $76, $77, $78, $79, $80, $81, $82, $83, $84, $85, $86, $87, $88, $89, $90, $91, $92, $93, $94, $95, $96, $97, $98, $99, $100, $101, $102, $103, $104, $105, $106, $107, $108, $109, $110, $111, $112, $113, $114, $115, $116, $117, $118, $119, $120, $121, $122, $123, $124, $125, $126, $127, $128, $129, $130, $131, $132, $133, $134, $135, $136, $137, $138, $139, $140, $141, $142, $143, $144, $145, $146, $147, $148, $149, $150, $151, $152, $153, $154, $155, $156, $157, $158, $159, $160, $161, $162, $163, $164, $165, $166, $167, $168, $169, $170, $171, $172, $173, $174, $175, $176, $177, $178, $179, $180, $181, $182, $183, $184, $185, $186, $187, $188, $189, $190, $191, $192, $193, $194, $195, $196, $197, $198, $199, $200, $201, $202, $203, $204, $205, $206, $207, $208, $209, $210, $211, $212, $213, $214, $215, $216, $217, $218, $219, $220, $221, $222, $223, $224, $225, $226, $227, $228, $229, $230, $231, $232, $233, $234, $235, $236, $237, $238, $239, $240, $241, $242, $243, $244, $245, $246, $247, $248, $249, $250, $251, $252, $253, $254, $255, $256, $257, $258, $259, $260, $261, $262, $263, $264, $265, $266, $267, $268, $269, $270, $271, $272, $273, $274, $275, $276, $277, $278, $279, $280, $281, $282, $283, $284, $285, $286, $287, $288, $289, $290, $291, $292, $293, $294, $295, $296, $297, $298, $299, $300, $301, $302, $303, $304, $305, $306, $307, $308, $309, $310, $311, $312, $313, $314, $315, $316, $317, $318, $319, $320, $321, $322, $323, $324, $325, $326, $327, $328, $329, $330, $331, $332, $333, $334, $335, $336, $337, $338, $339, $340, $341, $342, $343, $344, $345, $346, $347, $348, $349, $350, $351, $352, $353, $354, $355, $356, $357, $358, $359, $360, $361, $362, $363, $364, $365, $366, $367, $368, $369, $370, $371, $372, $373, $374, $375, $376, $377, $378, $379, $380, $381, $382, $383, $384, $385, $386, $387, $388, $389, $390, $391, $392, $393, $394, $395, $396, $397, $398, $399, $400, $401, $402, $403, $404, $405, $406, $407, $408, $409, $410, $411, $412, $413, $414, $415, $416, $417, $418, $419, $420, $421, $422, $423, $424, $425, $426, $427, $428, $429, $430, $431, $432, $433, $434, $435, $436, $437, $438, $439, $440, $441, $442, $443, $444, $445, $446, $447, $448, $449, $450, $451, $452, $453, $454, $455, $456, $457, $458, $459, $460, $461, $462, $463, $464, $465, $466, $467, $468, $469, $470, $471, $472, $473, $474, $475, $476, $477, $478, $479, $480, $481, $482, $483, $484, $485, $486, $487, $488, $489, $490, $491, $492, $493, $494, $495, $496, $497, $498, $499, $500, $501
+Oct 04, 2012 4:16:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:50,790 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+Oct 04, 2012 4:16:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:50,811 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 1
+Oct 04, 2012 4:16:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:50,811 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 1
+Oct 04, 2012 4:16:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:50,839 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+Oct 04, 2012 4:16:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:50,852 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+Oct 04, 2012 4:16:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:50,867 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+Oct 04, 2012 4:16:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:50,897 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+Oct 04, 2012 4:16:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:50,908 [Thread-1] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Oct 04, 2012 4:16:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:50,912 [Thread-1] WARN  org.apache.hadoop.mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Oct 04, 2012 4:16:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:50,954 [Thread-1] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+Oct 04, 2012 4:16:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:50,954 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+Oct 04, 2012 4:16:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:50,962 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+Oct 04, 2012 4:16:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:51,169 [Thread-2] INFO  org.apache.hadoop.util.ProcessTree - setsid exited with exit code 0
+Oct 04, 2012 4:16:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:51,176 [Thread-2] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@51afc8
+Oct 04, 2012 4:16:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:51,221 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+Oct 04, 2012 4:16:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:51,224 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 04, 2012 4:16:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:51,224 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task attempt_local_0001_m_000000_0 is allowed to commit now
+Oct 04, 2012 4:16:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:51,227 [Thread-2] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local_0001_m_000000_0' to /home/kaituo/code/pig3/trunk/PigmixRandomData/10/widerowX/scalabilityData0
+Oct 04, 2012 4:16:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:51,399 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_local_0001
+Oct 04, 2012 4:16:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:51,399 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+Oct 04, 2012 4:16:54 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:54,148 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 04, 2012 4:16:54 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:54,148 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0001_m_000000_0' done.
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:56,406 [main] WARN  org.apache.pig.tools.pigstats.PigStatsUtil - Failed to get RunningJob for job job_local_0001
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:56,410 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:56,410 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Detected Local mode. Stats reported below may be incomplete
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:56,411 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Script Statistics: 
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>1.0.0	0.9.2	kaituo	2012-10-04 16:16:50	2012-10-04 16:16:56	UNKNOWN
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Success!
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job Stats (time in seconds):
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>JobId	Alias	Feature	Outputs
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001	A,B	MAP_ONLY	/home/kaituo/code/pig3/trunk/PigmixRandomData/10/widerowX/scalabilityData0,
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Input(s):
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully read records from: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/widerow/widerow10m0"
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Output(s):
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully stored records in: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/widerowX/scalabilityData0"
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job DAG:
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:56,412 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.pigmix.DataGeneration logErrororOutput
+FINE: ExitValue: 0
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:56,683 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/kaituo/code/pig3/trunk/pig_1349381816679.log
+Oct 04, 2012 4:16:56 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:56,809 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: file:///
+Oct 04, 2012 4:16:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:57,420 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: UNKNOWN
+Oct 04, 2012 4:16:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:57,460 [main] INFO  org.apache.pig.newplan.logical.rules.ColumnPruneVisitor - Columns pruned for A: $4, $5, $7, $8
+Oct 04, 2012 4:16:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:57,544 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+Oct 04, 2012 4:16:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:57,565 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 1
+Oct 04, 2012 4:16:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:57,565 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 1
+Oct 04, 2012 4:16:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:57,589 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+Oct 04, 2012 4:16:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:57,603 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+Oct 04, 2012 4:16:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:57,622 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+Oct 04, 2012 4:16:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:57,660 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+Oct 04, 2012 4:16:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:57,670 [Thread-1] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Oct 04, 2012 4:16:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:57,676 [Thread-1] WARN  org.apache.hadoop.mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Oct 04, 2012 4:16:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:57,730 [Thread-1] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+Oct 04, 2012 4:16:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:57,730 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+Oct 04, 2012 4:16:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:57,738 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+Oct 04, 2012 4:16:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:57,984 [Thread-2] INFO  org.apache.hadoop.util.ProcessTree - setsid exited with exit code 0
+Oct 04, 2012 4:16:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:57,988 [Thread-2] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@1660da2
+Oct 04, 2012 4:16:58 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:58,034 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+Oct 04, 2012 4:16:58 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:58,038 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 04, 2012 4:16:58 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:58,039 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task attempt_local_0001_m_000000_0 is allowed to commit now
+Oct 04, 2012 4:16:58 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:58,044 [Thread-2] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local_0001_m_000000_0' to /home/kaituo/code/pig3/trunk/PigmixRandomData/10/data12X/data12N0
+Oct 04, 2012 4:16:58 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:58,161 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_local_0001
+Oct 04, 2012 4:16:58 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:16:58,161 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+Oct 04, 2012 4:17:00 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:00,963 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 04, 2012 4:17:00 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:00,964 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0001_m_000000_0' done.
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:03,169 [main] WARN  org.apache.pig.tools.pigstats.PigStatsUtil - Failed to get RunningJob for job job_local_0001
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:03,172 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:03,172 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Detected Local mode. Stats reported below may be incomplete
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:03,174 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Script Statistics: 
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>1.0.0	0.9.2	kaituo	2012-10-04 16:16:57	2012-10-04 16:17:03	UNKNOWN
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Success!
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job Stats (time in seconds):
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>JobId	Alias	Feature	Outputs
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001	A,B	MAP_ONLY	/home/kaituo/code/pig3/trunk/PigmixRandomData/10/data12X/data12N0,
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.pigmix.DataGeneration logErrororOutput
+FINE: ExitValue: 0
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Input(s):
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully read records from: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/page_views/pages625m0"
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Output(s):
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully stored records in: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/data12X/data12N0"
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job DAG:
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:03,175 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:03,419 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/kaituo/code/pig3/trunk/pig_1349381823415.log
+Oct 04, 2012 4:17:03 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:03,544 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: file:///
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,109 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: ORDER_BY
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,235 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,268 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=583
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,268 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Neither PARALLEL nor default parallelism is set for this job. Setting number of reducers to 1
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,285 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 3
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,285 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 3
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,307 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,321 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,355 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,393 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,403 [Thread-1] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,409 [Thread-1] WARN  org.apache.hadoop.mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,478 [Thread-1] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,478 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,486 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,703 [Thread-2] INFO  org.apache.hadoop.util.ProcessTree - setsid exited with exit code 0
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,708 [Thread-2] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@1df1547
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,760 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,762 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,762 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task attempt_local_0001_m_000000_0 is allowed to commit now
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,765 [Thread-2] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local_0001_m_000000_0' to file:/tmp/temp676360176/tmp-395866310
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,894 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_local_0001
+Oct 04, 2012 4:17:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:04,895 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+Oct 04, 2012 4:17:07 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:07,671 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 04, 2012 4:17:07 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:07,672 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0001_m_000000_0' done.
+Oct 04, 2012 4:17:09 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:09,897 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 33% complete
+Oct 04, 2012 4:17:09 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:09,901 [main] WARN  org.apache.pig.tools.pigstats.PigStatsUtil - Failed to get RunningJob for job job_local_0001
+Oct 04, 2012 4:17:09 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:09,902 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+Oct 04, 2012 4:17:09 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:09,903 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+Oct 04, 2012 4:17:09 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:09,908 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+Oct 04, 2012 4:17:09 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:09,931 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+Oct 04, 2012 4:17:09 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:09,936 [Thread-7] WARN  org.apache.hadoop.mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Oct 04, 2012 4:17:09 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:09,954 [Thread-7] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+Oct 04, 2012 4:17:09 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:09,954 [Thread-7] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+Oct 04, 2012 4:17:09 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:09,954 [Thread-7] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+Oct 04, 2012 4:17:10 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:10,029 [Thread-8] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@1224703
+Oct 04, 2012 4:17:10 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:10,042 [Thread-8] INFO  org.apache.hadoop.mapred.MapTask - io.sort.mb = 100
+Oct 04, 2012 4:17:10 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:10,102 [Thread-8] INFO  org.apache.hadoop.mapred.MapTask - data buffer = 79691776/99614720
+Oct 04, 2012 4:17:10 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:10,103 [Thread-8] INFO  org.apache.hadoop.mapred.MapTask - record buffer = 262144/327680
+Oct 04, 2012 4:17:10 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:10,132 [Thread-8] INFO  org.apache.hadoop.mapred.MapTask - Starting flush of map output
+Oct 04, 2012 4:17:10 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:10,141 [Thread-8] INFO  org.apache.hadoop.mapred.MapTask - Finished spill 0
+Oct 04, 2012 4:17:10 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:10,144 [Thread-8] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0002_m_000000_0 is done. And is in the process of commiting
+Oct 04, 2012 4:17:10 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:10,432 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_local_0002
+Oct 04, 2012 4:17:13 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:13,023 [Thread-8] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 04, 2012 4:17:13 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:13,024 [Thread-8] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0002_m_000000_0' done.
+Oct 04, 2012 4:17:13 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:13,038 [Thread-8] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@d5f446
+Oct 04, 2012 4:17:13 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:13,038 [Thread-8] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 04, 2012 4:17:13 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:13,042 [Thread-8] INFO  org.apache.hadoop.mapred.Merger - Merging 1 sorted segments
+Oct 04, 2012 4:17:13 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:13,047 [Thread-8] INFO  org.apache.hadoop.mapred.Merger - Down to the last merge-pass, with 1 segments left of total size: 592 bytes
+Oct 04, 2012 4:17:13 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:13,047 [Thread-8] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 04, 2012 4:17:13 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:13,073 [Thread-8] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0002_r_000000_0 is done. And is in the process of commiting
+Oct 04, 2012 4:17:13 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:13,075 [Thread-8] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 04, 2012 4:17:13 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:13,075 [Thread-8] INFO  org.apache.hadoop.mapred.Task - Task attempt_local_0002_r_000000_0 is allowed to commit now
+Oct 04, 2012 4:17:13 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:13,078 [Thread-8] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local_0002_r_000000_0' to file:/tmp/temp676360176/tmp-1014502063
+Oct 04, 2012 4:17:16 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:16,034 [Thread-8] INFO  org.apache.hadoop.mapred.LocalJobRunner - reduce > reduce
+Oct 04, 2012 4:17:16 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:16,035 [Thread-8] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0002_r_000000_0' done.
+Oct 04, 2012 4:17:20 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:20,436 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 66% complete
+Oct 04, 2012 4:17:20 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:20,438 [main] WARN  org.apache.pig.tools.pigstats.PigStatsUtil - Failed to get RunningJob for job job_local_0002
+Oct 04, 2012 4:17:20 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:20,438 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+Oct 04, 2012 4:17:20 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:20,439 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+Oct 04, 2012 4:17:20 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:20,444 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+Oct 04, 2012 4:17:20 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:20,457 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+Oct 04, 2012 4:17:20 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:20,460 [Thread-11] WARN  org.apache.hadoop.mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Oct 04, 2012 4:17:20 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:20,469 [Thread-11] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+Oct 04, 2012 4:17:20 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:20,469 [Thread-11] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+Oct 04, 2012 4:17:20 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:20,469 [Thread-11] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+Oct 04, 2012 4:17:20 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:20,520 [Thread-12] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@1f7423c
+Oct 04, 2012 4:17:20 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:20,524 [Thread-12] INFO  org.apache.hadoop.mapred.MapTask - io.sort.mb = 100
+Oct 04, 2012 4:17:20 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:20,634 [Thread-12] INFO  org.apache.hadoop.mapred.MapTask - data buffer = 79691776/99614720
+Oct 04, 2012 4:17:20 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:20,634 [Thread-12] INFO  org.apache.hadoop.mapred.MapTask - record buffer = 262144/327680
+Oct 04, 2012 4:17:20 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:20,641 [Thread-12] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+Oct 04, 2012 4:17:20 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:20,641 [Thread-12] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+Oct 04, 2012 4:17:20 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:20,652 [Thread-12] INFO  org.apache.hadoop.mapred.MapTask - Starting flush of map output
+Oct 04, 2012 4:17:20 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:20,655 [Thread-12] INFO  org.apache.hadoop.mapred.MapTask - Finished spill 0
+Oct 04, 2012 4:17:20 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:20,656 [Thread-12] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0003_m_000000_0 is done. And is in the process of commiting
+Oct 04, 2012 4:17:20 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:20,957 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_local_0003
+Oct 04, 2012 4:17:23 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:23,513 [Thread-12] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 04, 2012 4:17:23 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:23,514 [Thread-12] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0003_m_000000_0' done.
+Oct 04, 2012 4:17:23 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:23,526 [Thread-12] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@1c5a59a
+Oct 04, 2012 4:17:23 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:23,527 [Thread-12] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 04, 2012 4:17:23 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:23,528 [Thread-12] INFO  org.apache.hadoop.mapred.Merger - Merging 1 sorted segments
+Oct 04, 2012 4:17:23 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:23,529 [Thread-12] INFO  org.apache.hadoop.mapred.Merger - Down to the last merge-pass, with 1 segments left of total size: 726 bytes
+Oct 04, 2012 4:17:23 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:23,529 [Thread-12] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 04, 2012 4:17:23 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:23,544 [Thread-12] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0003_r_000000_0 is done. And is in the process of commiting
+Oct 04, 2012 4:17:23 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:23,546 [Thread-12] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 04, 2012 4:17:23 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:23,547 [Thread-12] INFO  org.apache.hadoop.mapred.Task - Task attempt_local_0003_r_000000_0 is allowed to commit now
+Oct 04, 2012 4:17:23 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:23,550 [Thread-12] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local_0003_r_000000_0' to /home/kaituo/code/pig3/trunk/PigmixRandomData/10/data14X/data14N0
+Oct 04, 2012 4:17:26 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:26,520 [Thread-12] INFO  org.apache.hadoop.mapred.LocalJobRunner - reduce > reduce
+Oct 04, 2012 4:17:26 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:26,520 [Thread-12] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0003_r_000000_0' done.
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:30,965 [main] WARN  org.apache.pig.tools.pigstats.PigStatsUtil - Failed to get RunningJob for job job_local_0003
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:30,967 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:30,967 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Detected Local mode. Stats reported below may be incomplete
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:30,970 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Script Statistics: 
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>1.0.0	0.9.2	kaituo	2012-10-04 16:17:04	2012-10-04 16:17:30	ORDER_BY
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Success!
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job Stats (time in seconds):
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>JobId	Alias	Feature	Outputs
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001	alpha	MAP_ONLY	
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0002	a1	SAMPLER	
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0003	a1	ORDER_BY	/home/kaituo/code/pig3/trunk/PigmixRandomData/10/data14X/data14N0,
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Input(s):
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully read records from: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/usersX/users100m0"
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Output(s):
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully stored records in: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/data14X/data14N0"
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.pigmix.DataGeneration logErrororOutput
+FINE: ExitValue: 0
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job DAG:
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001	->	job_local_0002,
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0002	->	job_local_0003,
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0003
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:30,974 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+Oct 04, 2012 4:17:31 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:31,224 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/kaituo/code/pig3/trunk/pig_1349381851220.log
+Oct 04, 2012 4:17:31 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:31,351 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: file:///
+Oct 04, 2012 4:17:31 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:31,987 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: UNKNOWN
+Oct 04, 2012 4:17:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:32,122 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+Oct 04, 2012 4:17:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:32,146 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 1
+Oct 04, 2012 4:17:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:32,146 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 1
+Oct 04, 2012 4:17:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:32,172 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+Oct 04, 2012 4:17:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:32,186 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+Oct 04, 2012 4:17:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:32,209 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+Oct 04, 2012 4:17:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:32,278 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+Oct 04, 2012 4:17:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:32,292 [Thread-1] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Oct 04, 2012 4:17:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:32,297 [Thread-1] WARN  org.apache.hadoop.mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Oct 04, 2012 4:17:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:32,352 [Thread-1] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+Oct 04, 2012 4:17:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:32,352 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+Oct 04, 2012 4:17:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:32,360 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+Oct 04, 2012 4:17:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:32,580 [Thread-2] INFO  org.apache.hadoop.util.ProcessTree - setsid exited with exit code 0
+Oct 04, 2012 4:17:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:32,593 [Thread-2] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@25eaea
+Oct 04, 2012 4:17:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:32,666 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+Oct 04, 2012 4:17:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:32,670 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 04, 2012 4:17:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:32,671 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task attempt_local_0001_m_000000_0 is allowed to commit now
+Oct 04, 2012 4:17:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:32,675 [Thread-2] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local_0001_m_000000_0' to /home/kaituo/code/pig3/trunk/PigmixRandomData/10/widegroupbydataX/widegroupbydata0
+Oct 04, 2012 4:17:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:32,780 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_local_0001
+Oct 04, 2012 4:17:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:32,780 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+Oct 04, 2012 4:17:35 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:35,546 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 04, 2012 4:17:35 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:35,547 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0001_m_000000_0' done.
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:37,789 [main] WARN  org.apache.pig.tools.pigstats.PigStatsUtil - Failed to get RunningJob for job job_local_0001
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:37,792 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:37,792 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Detected Local mode. Stats reported below may be incomplete
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:37,794 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Script Statistics: 
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>1.0.0	0.9.2	kaituo	2012-10-04 16:17:32	2012-10-04 16:17:37	UNKNOWN
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Success!
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job Stats (time in seconds):
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>JobId	Alias	Feature	Outputs
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001	A,B	MAP_ONLY	/home/kaituo/code/pig3/trunk/PigmixRandomData/10/widegroupbydataX/widegroupbydata0,
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Input(s):
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully read records from: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/page_views/pages625m0"
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Output(s):
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully stored records in: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/widegroupbydataX/widegroupbydata0"
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job DAG:
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.pigmix.DataGeneration logErrororOutput
+FINE: ExitValue: 0
+Oct 04, 2012 4:17:37 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:37,797 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+Oct 04, 2012 4:17:38 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:38,046 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/kaituo/code/pig3/trunk/pig_1349381858042.log
+Oct 04, 2012 4:17:38 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:38,171 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: file:///
+Oct 04, 2012 4:17:38 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:38,745 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: FILTER
+Oct 04, 2012 4:17:38 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:38,884 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+Oct 04, 2012 4:17:38 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:38,906 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 1
+Oct 04, 2012 4:17:38 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:38,906 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 1
+Oct 04, 2012 4:17:38 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:38,931 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+Oct 04, 2012 4:17:38 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:38,939 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+Oct 04, 2012 4:17:38 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:38,961 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+Oct 04, 2012 4:17:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:39,002 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+Oct 04, 2012 4:17:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:39,013 [Thread-1] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Oct 04, 2012 4:17:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:39,019 [Thread-1] WARN  org.apache.hadoop.mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Oct 04, 2012 4:17:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:39,070 [Thread-1] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+Oct 04, 2012 4:17:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:39,070 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+Oct 04, 2012 4:17:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:39,091 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+Oct 04, 2012 4:17:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:39,310 [Thread-2] INFO  org.apache.hadoop.util.ProcessTree - setsid exited with exit code 0
+Oct 04, 2012 4:17:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:39,315 [Thread-2] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@1e16eb2
+Oct 04, 2012 4:17:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:39,365 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+Oct 04, 2012 4:17:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:39,368 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 04, 2012 4:17:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:39,368 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task attempt_local_0001_m_000000_0 is allowed to commit now
+Oct 04, 2012 4:17:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:39,371 [Thread-2] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local_0001_m_000000_0' to /home/kaituo/code/pig3/trunk/PigmixRandomData/10/power_users_sampleX/power_users_sample0
+Oct 04, 2012 4:17:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:39,504 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_local_0001
+Oct 04, 2012 4:17:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:39,504 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+Oct 04, 2012 4:17:42 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:42,277 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 04, 2012 4:17:42 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:42,278 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0001_m_000000_0' done.
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:44,511 [main] WARN  org.apache.pig.tools.pigstats.PigStatsUtil - Failed to get RunningJob for job job_local_0001
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:44,512 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:44,513 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Detected Local mode. Stats reported below may be incomplete
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:44,514 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Script Statistics: 
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>1.0.0	0.9.2	kaituo	2012-10-04 16:17:38	2012-10-04 16:17:44	FILTER
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Success!
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job Stats (time in seconds):
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>JobId	Alias	Feature	Outputs
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001	A,B	MAP_ONLY	/home/kaituo/code/pig3/trunk/PigmixRandomData/10/power_users_sampleX/power_users_sample0,
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Input(s):
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully read records from: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/power_usersX/power_users100m0"
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Output(s):
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully stored records in: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/power_users_sampleX/power_users_sample0"
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job DAG:
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.pigmix.DataGeneration logErrororOutput
+FINE: ExitValue: 0
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:44,517 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:44,766 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/kaituo/code/pig3/trunk/pig_1349381864762.log
+Oct 04, 2012 4:17:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:44,891 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: file:///
+Oct 04, 2012 4:17:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:45,446 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: UNKNOWN
+Oct 04, 2012 4:17:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:45,567 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+Oct 04, 2012 4:17:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:45,589 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 1
+Oct 04, 2012 4:17:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:45,589 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 1
+Oct 04, 2012 4:17:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:45,613 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+Oct 04, 2012 4:17:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:45,627 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+Oct 04, 2012 4:17:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:45,649 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+Oct 04, 2012 4:17:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:45,686 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+Oct 04, 2012 4:17:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:45,696 [Thread-1] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Oct 04, 2012 4:17:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:45,702 [Thread-1] WARN  org.apache.hadoop.mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Oct 04, 2012 4:17:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:45,752 [Thread-1] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+Oct 04, 2012 4:17:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:45,752 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+Oct 04, 2012 4:17:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:45,760 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+Oct 04, 2012 4:17:46 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:46,026 [Thread-2] INFO  org.apache.hadoop.util.ProcessTree - setsid exited with exit code 0
+Oct 04, 2012 4:17:46 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:46,030 [Thread-2] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@1844ba6
+Oct 04, 2012 4:17:46 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:46,076 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+Oct 04, 2012 4:17:46 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:46,079 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 04, 2012 4:17:46 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:46,080 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task attempt_local_0001_m_000000_0 is allowed to commit now
+Oct 04, 2012 4:17:46 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:46,082 [Thread-2] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local_0001_m_000000_0' to /home/kaituo/code/pig3/trunk/PigmixRandomData/10/page_viewsX/pages625m0
+Oct 04, 2012 4:17:46 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:46,187 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_local_0001
+Oct 04, 2012 4:17:46 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:46,187 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+Oct 04, 2012 4:17:48 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:48,998 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 04, 2012 4:17:48 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:48,999 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0001_m_000000_0' done.
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:51,194 [main] WARN  org.apache.pig.tools.pigstats.PigStatsUtil - Failed to get RunningJob for job job_local_0001
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:51,198 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:51,198 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Detected Local mode. Stats reported below may be incomplete
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:51,201 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Script Statistics: 
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>1.0.0	0.9.2	kaituo	2012-10-04 16:17:45	2012-10-04 16:17:51	UNKNOWN
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Success!
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job Stats (time in seconds):
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>JobId	Alias	Feature	Outputs
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001	A	MAP_ONLY	/home/kaituo/code/pig3/trunk/PigmixRandomData/10/page_viewsX/pages625m0,
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Input(s):
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully read records from: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/page_views/pages625m0"
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Output(s):
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully stored records in: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/page_viewsX/pages625m0"
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job DAG:
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.pigmix.DataGeneration logErrororOutput
+FINE: ExitValue: 0
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 04, 2012 4:17:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-04 16:17:51,204 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+Oct 06, 2012 12:31:43 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:43,893 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/kaituo/code/pig3/trunk/pig_1349541103887.log
+Oct 06, 2012 12:31:44 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:44,061 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: file:///
+Oct 06, 2012 12:31:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:45,023 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: UNKNOWN
+Oct 06, 2012 12:31:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:45,207 [main] INFO  org.apache.pig.newplan.logical.rules.ColumnPruneVisitor - Columns pruned for A: $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46, $47, $48, $49, $50, $51, $52, $53, $54, $55, $56, $57, $58, $59, $60, $61, $62, $63, $64, $65, $66, $67, $68, $69, $70, $71, $72, $73, $74, $75, $76, $77, $78, $79, $80, $81, $82, $83, $84, $85, $86, $87, $88, $89, $90, $91, $92, $93, $94, $95, $96, $97, $98, $99, $100, $101, $102, $103, $104, $105, $106, $107, $108, $109, $110, $111, $112, $113, $114, $115, $116, $117, $118, $119, $120, $121, $122, $123, $124, $125, $126, $127, $128, $129, $130, $131, $132, $133, $134, $135, $136, $137, $138, $139, $140, $141, $142, $143, $144, $145, $146, $147, $148, $149, $150, $151, $152, $153, $154, $155, $156, $157, $158, $159, $160, $161, $162, $163, $164, $165, $166, $167, $168, $169, $170, $171, $172, $173, $174, $175, $176, $177, $178, $179, $180, $181, $182, $183, $184, $185, $186, $187, $188, $189, $190, $191, $192, $193, $194, $195, $196, $197, $198, $199, $200, $201, $202, $203, $204, $205, $206, $207, $208, $209, $210, $211, $212, $213, $214, $215, $216, $217, $218, $219, $220, $221, $222, $223, $224, $225, $226, $227, $228, $229, $230, $231, $232, $233, $234, $235, $236, $237, $238, $239, $240, $241, $242, $243, $244, $245, $246, $247, $248, $249, $250, $251, $252, $253, $254, $255, $256, $257, $258, $259, $260, $261, $262, $263, $264, $265, $266, $267, $268, $269, $270, $271, $272, $273, $274, $275, $276, $277, $278, $279, $280, $281, $282, $283, $284, $285, $286, $287, $288, $289, $290, $291, $292, $293, $294, $295, $296, $297, $298, $299, $300, $301, $302, $303, $304, $305, $306, $307, $308, $309, $310, $311, $312, $313, $314, $315, $316, $317, $318, $319, $320, $321, $322, $323, $324, $325, $326, $327, $328, $329, $330, $331, $332, $333, $334, $335, $336, $337, $338, $339, $340, $341, $342, $343, $344, $345, $346, $347, $348, $349, $350, $351, $352, $353, $354, $355, $356, $357, $358, $359, $360, $361, $362, $363, $364, $365, $366, $367, $368, $369, $370, $371, $372, $373, $374, $375, $376, $377, $378, $379, $380, $381, $382, $383, $384, $385, $386, $387, $388, $389, $390, $391, $392, $393, $394, $395, $396, $397, $398, $399, $400, $401, $402, $403, $404, $405, $406, $407, $408, $409, $410, $411, $412, $413, $414, $415, $416, $417, $418, $419, $420, $421, $422, $423, $424, $425, $426, $427, $428, $429, $430, $431, $432, $433, $434, $435, $436, $437, $438, $439, $440, $441, $442, $443, $444, $445, $446, $447, $448, $449, $450, $451, $452, $453, $454, $455, $456, $457, $458, $459, $460, $461, $462, $463, $464, $465, $466, $467, $468, $469, $470, $471, $472, $473, $474, $475, $476, $477, $478, $479, $480, $481, $482, $483, $484, $485, $486, $487, $488, $489, $490, $491, $492, $493, $494, $495, $496, $497, $498, $499, $500, $501
+Oct 06, 2012 12:31:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:45,299 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+Oct 06, 2012 12:31:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:45,320 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 1
+Oct 06, 2012 12:31:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:45,320 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 1
+Oct 06, 2012 12:31:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:45,353 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+Oct 06, 2012 12:31:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:45,368 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+Oct 06, 2012 12:31:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:45,384 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+Oct 06, 2012 12:31:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:45,413 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+Oct 06, 2012 12:31:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:45,428 [Thread-1] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Oct 06, 2012 12:31:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:45,433 [Thread-1] WARN  org.apache.hadoop.mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Oct 06, 2012 12:31:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:45,481 [Thread-1] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+Oct 06, 2012 12:31:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:45,482 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+Oct 06, 2012 12:31:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:45,491 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+Oct 06, 2012 12:31:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:45,700 [Thread-2] INFO  org.apache.hadoop.util.ProcessTree - setsid exited with exit code 0
+Oct 06, 2012 12:31:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:45,704 [Thread-2] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@eb7ad0
+Oct 06, 2012 12:31:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:45,759 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+Oct 06, 2012 12:31:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:45,763 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 06, 2012 12:31:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:45,765 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task attempt_local_0001_m_000000_0 is allowed to commit now
+Oct 06, 2012 12:31:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:45,768 [Thread-2] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local_0001_m_000000_0' to /home/kaituo/code/pig3/trunk/PigmixRandomData/10/widerowX/scalabilityData1
+Oct 06, 2012 12:31:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:45,915 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_local_0001
+Oct 06, 2012 12:31:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:45,915 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+Oct 06, 2012 12:31:48 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:48,678 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 06, 2012 12:31:48 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:48,679 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0001_m_000000_0' done.
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:50,921 [main] WARN  org.apache.pig.tools.pigstats.PigStatsUtil - Failed to get RunningJob for job job_local_0001
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:50,925 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:50,925 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Detected Local mode. Stats reported below may be incomplete
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:50,927 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Script Statistics: 
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>1.0.0	0.9.2	kaituo	2012-10-06 12:31:45	2012-10-06 12:31:50	UNKNOWN
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Success!
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job Stats (time in seconds):
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>JobId	Alias	Feature	Outputs
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.pigmix.DataGeneration logErrororOutput
+FINE: ExitValue: 0
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001	A,B	MAP_ONLY	/home/kaituo/code/pig3/trunk/PigmixRandomData/10/widerowX/scalabilityData1,
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Input(s):
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully read records from: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/widerow/widerow10m1"
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Output(s):
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully stored records in: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/widerowX/scalabilityData1"
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job DAG:
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:31:50 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:50,928 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+Oct 06, 2012 12:31:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:51,172 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/kaituo/code/pig3/trunk/pig_1349541111168.log
+Oct 06, 2012 12:31:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:51,297 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: file:///
+Oct 06, 2012 12:31:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:51,909 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: UNKNOWN
+Oct 06, 2012 12:31:51 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:51,950 [main] INFO  org.apache.pig.newplan.logical.rules.ColumnPruneVisitor - Columns pruned for A: $4, $5, $7, $8
+Oct 06, 2012 12:31:52 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:52,034 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+Oct 06, 2012 12:31:52 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:52,055 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 1
+Oct 06, 2012 12:31:52 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:52,055 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 1
+Oct 06, 2012 12:31:52 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:52,079 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+Oct 06, 2012 12:31:52 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:52,093 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+Oct 06, 2012 12:31:52 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:52,112 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+Oct 06, 2012 12:31:52 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:52,158 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+Oct 06, 2012 12:31:52 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:52,168 [Thread-1] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Oct 06, 2012 12:31:52 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:52,173 [Thread-1] WARN  org.apache.hadoop.mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Oct 06, 2012 12:31:52 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:52,229 [Thread-1] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+Oct 06, 2012 12:31:52 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:52,229 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+Oct 06, 2012 12:31:52 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:52,237 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+Oct 06, 2012 12:31:52 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:52,444 [Thread-2] INFO  org.apache.hadoop.util.ProcessTree - setsid exited with exit code 0
+Oct 06, 2012 12:31:52 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:52,450 [Thread-2] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@22c2c3
+Oct 06, 2012 12:31:52 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:52,496 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+Oct 06, 2012 12:31:52 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:52,499 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 06, 2012 12:31:52 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:52,499 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task attempt_local_0001_m_000000_0 is allowed to commit now
+Oct 06, 2012 12:31:52 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:52,502 [Thread-2] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local_0001_m_000000_0' to /home/kaituo/code/pig3/trunk/PigmixRandomData/10/data12X/data12N1
+Oct 06, 2012 12:31:52 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:52,660 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_local_0001
+Oct 06, 2012 12:31:52 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:52,660 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+Oct 06, 2012 12:31:55 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:55,423 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 06, 2012 12:31:55 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:55,424 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0001_m_000000_0' done.
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:57,666 [main] WARN  org.apache.pig.tools.pigstats.PigStatsUtil - Failed to get RunningJob for job job_local_0001
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:57,668 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:57,669 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Detected Local mode. Stats reported below may be incomplete
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:57,670 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Script Statistics: 
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>1.0.0	0.9.2	kaituo	2012-10-06 12:31:52	2012-10-06 12:31:57	UNKNOWN
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Success!
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job Stats (time in seconds):
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>JobId	Alias	Feature	Outputs
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001	A,B	MAP_ONLY	/home/kaituo/code/pig3/trunk/PigmixRandomData/10/data12X/data12N1,
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Input(s):
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.pigmix.DataGeneration logErrororOutput
+FINE: ExitValue: 0
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully read records from: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/page_views/pages625m1"
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Output(s):
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully stored records in: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/data12X/data12N1"
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job DAG:
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:57,671 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+Oct 06, 2012 12:31:57 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:57,918 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/kaituo/code/pig3/trunk/pig_1349541117914.log
+Oct 06, 2012 12:31:58 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:58,043 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: file:///
+Oct 06, 2012 12:31:58 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:58,611 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: ORDER_BY
+Oct 06, 2012 12:31:58 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:58,737 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+Oct 06, 2012 12:31:58 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:58,770 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=634
+Oct 06, 2012 12:31:58 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:58,770 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Neither PARALLEL nor default parallelism is set for this job. Setting number of reducers to 1
+Oct 06, 2012 12:31:58 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:58,795 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 3
+Oct 06, 2012 12:31:58 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:58,796 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 3
+Oct 06, 2012 12:31:58 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:58,817 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+Oct 06, 2012 12:31:58 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:58,833 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+Oct 06, 2012 12:31:58 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:58,866 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+Oct 06, 2012 12:31:58 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:58,908 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+Oct 06, 2012 12:31:58 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:58,920 [Thread-1] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Oct 06, 2012 12:31:58 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:58,927 [Thread-1] WARN  org.apache.hadoop.mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Oct 06, 2012 12:31:58 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:58,987 [Thread-1] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+Oct 06, 2012 12:31:58 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:58,988 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+Oct 06, 2012 12:31:58 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:58,998 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+Oct 06, 2012 12:31:59 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:59,239 [Thread-2] INFO  org.apache.hadoop.util.ProcessTree - setsid exited with exit code 0
+Oct 06, 2012 12:31:59 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:59,242 [Thread-2] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@1a2e40f
+Oct 06, 2012 12:31:59 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:59,288 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+Oct 06, 2012 12:31:59 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:59,291 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 06, 2012 12:31:59 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:59,291 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task attempt_local_0001_m_000000_0 is allowed to commit now
+Oct 06, 2012 12:31:59 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:59,294 [Thread-2] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local_0001_m_000000_0' to file:/tmp/temp732612464/tmp-820097508
+Oct 06, 2012 12:31:59 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:59,410 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_local_0001
+Oct 06, 2012 12:31:59 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:31:59,410 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+Oct 06, 2012 12:32:02 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:02,212 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 06, 2012 12:32:02 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:02,212 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0001_m_000000_0' done.
+Oct 06, 2012 12:32:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:04,413 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 33% complete
+Oct 06, 2012 12:32:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:04,416 [main] WARN  org.apache.pig.tools.pigstats.PigStatsUtil - Failed to get RunningJob for job job_local_0001
+Oct 06, 2012 12:32:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:04,417 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+Oct 06, 2012 12:32:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:04,418 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+Oct 06, 2012 12:32:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:04,422 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+Oct 06, 2012 12:32:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:04,446 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+Oct 06, 2012 12:32:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:04,449 [Thread-7] WARN  org.apache.hadoop.mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Oct 06, 2012 12:32:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:04,468 [Thread-7] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+Oct 06, 2012 12:32:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:04,468 [Thread-7] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+Oct 06, 2012 12:32:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:04,469 [Thread-7] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+Oct 06, 2012 12:32:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:04,536 [Thread-8] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@387843
+Oct 06, 2012 12:32:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:04,549 [Thread-8] INFO  org.apache.hadoop.mapred.MapTask - io.sort.mb = 100
+Oct 06, 2012 12:32:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:04,598 [Thread-8] INFO  org.apache.hadoop.mapred.MapTask - data buffer = 79691776/99614720
+Oct 06, 2012 12:32:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:04,598 [Thread-8] INFO  org.apache.hadoop.mapred.MapTask - record buffer = 262144/327680
+Oct 06, 2012 12:32:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:04,629 [Thread-8] INFO  org.apache.hadoop.mapred.MapTask - Starting flush of map output
+Oct 06, 2012 12:32:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:04,637 [Thread-8] INFO  org.apache.hadoop.mapred.MapTask - Finished spill 0
+Oct 06, 2012 12:32:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:04,640 [Thread-8] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0002_m_000000_0 is done. And is in the process of commiting
+Oct 06, 2012 12:32:04 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:04,946 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_local_0002
+Oct 06, 2012 12:32:07 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:07,530 [Thread-8] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 06, 2012 12:32:07 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:07,531 [Thread-8] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0002_m_000000_0' done.
+Oct 06, 2012 12:32:07 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:07,543 [Thread-8] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@1a64f71
+Oct 06, 2012 12:32:07 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:07,543 [Thread-8] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 06, 2012 12:32:07 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:07,547 [Thread-8] INFO  org.apache.hadoop.mapred.Merger - Merging 1 sorted segments
+Oct 06, 2012 12:32:07 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:07,552 [Thread-8] INFO  org.apache.hadoop.mapred.Merger - Down to the last merge-pass, with 1 segments left of total size: 620 bytes
+Oct 06, 2012 12:32:07 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:07,552 [Thread-8] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 06, 2012 12:32:07 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:07,574 [Thread-8] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0002_r_000000_0 is done. And is in the process of commiting
+Oct 06, 2012 12:32:07 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:07,576 [Thread-8] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 06, 2012 12:32:07 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:07,577 [Thread-8] INFO  org.apache.hadoop.mapred.Task - Task attempt_local_0002_r_000000_0 is allowed to commit now
+Oct 06, 2012 12:32:07 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:07,581 [Thread-8] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local_0002_r_000000_0' to file:/tmp/temp732612464/tmp421728789
+Oct 06, 2012 12:32:10 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:10,538 [Thread-8] INFO  org.apache.hadoop.mapred.LocalJobRunner - reduce > reduce
+Oct 06, 2012 12:32:10 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:10,539 [Thread-8] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0002_r_000000_0' done.
+Oct 06, 2012 12:32:14 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:14,951 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 66% complete
+Oct 06, 2012 12:32:14 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:14,953 [main] WARN  org.apache.pig.tools.pigstats.PigStatsUtil - Failed to get RunningJob for job job_local_0002
+Oct 06, 2012 12:32:14 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:14,953 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+Oct 06, 2012 12:32:14 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:14,954 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+Oct 06, 2012 12:32:14 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:14,959 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+Oct 06, 2012 12:32:14 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:14,972 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+Oct 06, 2012 12:32:14 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:14,976 [Thread-11] WARN  org.apache.hadoop.mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Oct 06, 2012 12:32:14 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:14,989 [Thread-11] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+Oct 06, 2012 12:32:14 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:14,990 [Thread-11] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+Oct 06, 2012 12:32:14 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:14,990 [Thread-11] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+Oct 06, 2012 12:32:15 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:15,039 [Thread-12] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@9ca906
+Oct 06, 2012 12:32:15 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:15,042 [Thread-12] INFO  org.apache.hadoop.mapred.MapTask - io.sort.mb = 100
+Oct 06, 2012 12:32:15 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:15,151 [Thread-12] INFO  org.apache.hadoop.mapred.MapTask - data buffer = 79691776/99614720
+Oct 06, 2012 12:32:15 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:15,151 [Thread-12] INFO  org.apache.hadoop.mapred.MapTask - record buffer = 262144/327680
+Oct 06, 2012 12:32:15 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:15,160 [Thread-12] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+Oct 06, 2012 12:32:15 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:15,160 [Thread-12] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+Oct 06, 2012 12:32:15 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:15,169 [Thread-12] INFO  org.apache.hadoop.mapred.MapTask - Starting flush of map output
+Oct 06, 2012 12:32:15 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:15,170 [Thread-12] INFO  org.apache.hadoop.mapred.MapTask - Finished spill 0
+Oct 06, 2012 12:32:15 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:15,171 [Thread-12] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0003_m_000000_0 is done. And is in the process of commiting
+Oct 06, 2012 12:32:15 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:15,472 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_local_0003
+Oct 06, 2012 12:32:18 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:18,036 [Thread-12] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 06, 2012 12:32:18 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:18,037 [Thread-12] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0003_m_000000_0' done.
+Oct 06, 2012 12:32:18 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:18,055 [Thread-12] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@ce7967
+Oct 06, 2012 12:32:18 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:18,056 [Thread-12] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 06, 2012 12:32:18 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:18,058 [Thread-12] INFO  org.apache.hadoop.mapred.Merger - Merging 1 sorted segments
+Oct 06, 2012 12:32:18 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:18,058 [Thread-12] INFO  org.apache.hadoop.mapred.Merger - Down to the last merge-pass, with 1 segments left of total size: 780 bytes
+Oct 06, 2012 12:32:18 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:18,058 [Thread-12] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 06, 2012 12:32:18 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:18,072 [Thread-12] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0003_r_000000_0 is done. And is in the process of commiting
+Oct 06, 2012 12:32:18 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:18,074 [Thread-12] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 06, 2012 12:32:18 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:18,075 [Thread-12] INFO  org.apache.hadoop.mapred.Task - Task attempt_local_0003_r_000000_0 is allowed to commit now
+Oct 06, 2012 12:32:18 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:18,080 [Thread-12] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local_0003_r_000000_0' to /home/kaituo/code/pig3/trunk/PigmixRandomData/10/data14X/data14N1
+Oct 06, 2012 12:32:21 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:21,043 [Thread-12] INFO  org.apache.hadoop.mapred.LocalJobRunner - reduce > reduce
+Oct 06, 2012 12:32:21 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:21,044 [Thread-12] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0003_r_000000_0' done.
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:25,480 [main] WARN  org.apache.pig.tools.pigstats.PigStatsUtil - Failed to get RunningJob for job job_local_0003
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:25,482 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:25,482 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Detected Local mode. Stats reported below may be incomplete
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:25,485 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Script Statistics: 
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>1.0.0	0.9.2	kaituo	2012-10-06 12:31:58	2012-10-06 12:32:25	ORDER_BY
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Success!
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job Stats (time in seconds):
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>JobId	Alias	Feature	Outputs
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001	alpha	MAP_ONLY	
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0002	a1	SAMPLER	
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0003	a1	ORDER_BY	/home/kaituo/code/pig3/trunk/PigmixRandomData/10/data14X/data14N1,
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Input(s):
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully read records from: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/usersX/users100m1"
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Output(s):
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully stored records in: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/data14X/data14N1"
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job DAG:
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001	->	job_local_0002,
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0002	->	job_local_0003,
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0003
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:25,491 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.pigmix.DataGeneration logErrororOutput
+FINE: ExitValue: 0
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:25,745 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/kaituo/code/pig3/trunk/pig_1349541145739.log
+Oct 06, 2012 12:32:25 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:25,874 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: file:///
+Oct 06, 2012 12:32:26 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:26,511 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: UNKNOWN
+Oct 06, 2012 12:32:26 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:26,649 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+Oct 06, 2012 12:32:26 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:26,673 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 1
+Oct 06, 2012 12:32:26 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:26,673 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 1
+Oct 06, 2012 12:32:26 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:26,702 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+Oct 06, 2012 12:32:26 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:26,718 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+Oct 06, 2012 12:32:26 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:26,751 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+Oct 06, 2012 12:32:26 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:26,811 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+Oct 06, 2012 12:32:26 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:26,824 [Thread-1] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Oct 06, 2012 12:32:26 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:26,829 [Thread-1] WARN  org.apache.hadoop.mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Oct 06, 2012 12:32:26 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:26,886 [Thread-1] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+Oct 06, 2012 12:32:26 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:26,886 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+Oct 06, 2012 12:32:26 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:26,893 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+Oct 06, 2012 12:32:27 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:27,148 [Thread-2] INFO  org.apache.hadoop.util.ProcessTree - setsid exited with exit code 0
+Oct 06, 2012 12:32:27 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:27,151 [Thread-2] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@25eaea
+Oct 06, 2012 12:32:27 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:27,212 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+Oct 06, 2012 12:32:27 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:27,215 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 06, 2012 12:32:27 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:27,216 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task attempt_local_0001_m_000000_0 is allowed to commit now
+Oct 06, 2012 12:32:27 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:27,218 [Thread-2] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local_0001_m_000000_0' to /home/kaituo/code/pig3/trunk/PigmixRandomData/10/widegroupbydataX/widegroupbydata1
+Oct 06, 2012 12:32:27 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:27,313 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_local_0001
+Oct 06, 2012 12:32:27 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:27,313 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+Oct 06, 2012 12:32:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:30,117 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 06, 2012 12:32:30 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:30,118 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0001_m_000000_0' done.
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:32,322 [main] WARN  org.apache.pig.tools.pigstats.PigStatsUtil - Failed to get RunningJob for job job_local_0001
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:32,326 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:32,326 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Detected Local mode. Stats reported below may be incomplete
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:32,328 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Script Statistics: 
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>1.0.0	0.9.2	kaituo	2012-10-06 12:32:26	2012-10-06 12:32:32	UNKNOWN
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Success!
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job Stats (time in seconds):
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>JobId	Alias	Feature	Outputs
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001	A,B	MAP_ONLY	/home/kaituo/code/pig3/trunk/PigmixRandomData/10/widegroupbydataX/widegroupbydata1,
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Input(s):
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully read records from: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/page_views/pages625m1"
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Output(s):
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully stored records in: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/widegroupbydataX/widegroupbydata1"
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job DAG:
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:32,332 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.pigmix.DataGeneration logErrororOutput
+FINE: ExitValue: 0
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:32,579 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/kaituo/code/pig3/trunk/pig_1349541152575.log
+Oct 06, 2012 12:32:32 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:32,706 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: file:///
+Oct 06, 2012 12:32:33 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:33,288 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: FILTER
+Oct 06, 2012 12:32:33 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:33,424 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+Oct 06, 2012 12:32:33 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:33,446 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 1
+Oct 06, 2012 12:32:33 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:33,446 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 1
+Oct 06, 2012 12:32:33 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:33,470 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+Oct 06, 2012 12:32:33 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:33,478 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+Oct 06, 2012 12:32:33 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:33,501 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+Oct 06, 2012 12:32:33 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:33,543 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+Oct 06, 2012 12:32:33 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:33,554 [Thread-1] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Oct 06, 2012 12:32:33 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:33,560 [Thread-1] WARN  org.apache.hadoop.mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Oct 06, 2012 12:32:33 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:33,613 [Thread-1] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+Oct 06, 2012 12:32:33 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:33,613 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+Oct 06, 2012 12:32:33 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:33,631 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+Oct 06, 2012 12:32:33 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:33,853 [Thread-2] INFO  org.apache.hadoop.util.ProcessTree - setsid exited with exit code 0
+Oct 06, 2012 12:32:33 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:33,858 [Thread-2] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@947958
+Oct 06, 2012 12:32:33 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:33,912 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+Oct 06, 2012 12:32:33 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:33,915 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 06, 2012 12:32:33 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:33,915 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task attempt_local_0001_m_000000_0 is allowed to commit now
+Oct 06, 2012 12:32:33 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:33,918 [Thread-2] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local_0001_m_000000_0' to /home/kaituo/code/pig3/trunk/PigmixRandomData/10/power_users_sampleX/power_users_sample1
+Oct 06, 2012 12:32:34 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:34,045 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_local_0001
+Oct 06, 2012 12:32:34 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:34,045 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+Oct 06, 2012 12:32:36 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:36,820 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 06, 2012 12:32:36 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:36,821 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0001_m_000000_0' done.
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:39,052 [main] WARN  org.apache.pig.tools.pigstats.PigStatsUtil - Failed to get RunningJob for job job_local_0001
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:39,056 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:39,056 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Detected Local mode. Stats reported below may be incomplete
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:39,057 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Script Statistics: 
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>1.0.0	0.9.2	kaituo	2012-10-06 12:32:33	2012-10-06 12:32:39	FILTER
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Success!
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job Stats (time in seconds):
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>JobId	Alias	Feature	Outputs
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001	A,B	MAP_ONLY	/home/kaituo/code/pig3/trunk/PigmixRandomData/10/power_users_sampleX/power_users_sample1,
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Input(s):
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully read records from: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/power_usersX/power_users100m1"
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Output(s):
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully stored records in: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/power_users_sampleX/power_users_sample1"
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job DAG:
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.pigmix.DataGeneration logErrororOutput
+FINE: ExitValue: 0
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:39,061 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:39,313 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/kaituo/code/pig3/trunk/pig_1349541159309.log
+Oct 06, 2012 12:32:39 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:39,438 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: file:///
+Oct 06, 2012 12:32:40 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:40,000 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: UNKNOWN
+Oct 06, 2012 12:32:40 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:40,120 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+Oct 06, 2012 12:32:40 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:40,141 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 1
+Oct 06, 2012 12:32:40 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:40,141 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 1
+Oct 06, 2012 12:32:40 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:40,164 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig script settings are added to the job
+Oct 06, 2012 12:32:40 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:40,178 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+Oct 06, 2012 12:32:40 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:40,198 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+Oct 06, 2012 12:32:40 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:40,236 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+Oct 06, 2012 12:32:40 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:40,247 [Thread-1] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Oct 06, 2012 12:32:40 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:40,252 [Thread-1] WARN  org.apache.hadoop.mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+Oct 06, 2012 12:32:40 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:40,308 [Thread-1] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+Oct 06, 2012 12:32:40 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:40,308 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+Oct 06, 2012 12:32:40 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:40,316 [Thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+Oct 06, 2012 12:32:40 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:40,550 [Thread-2] INFO  org.apache.hadoop.util.ProcessTree - setsid exited with exit code 0
+Oct 06, 2012 12:32:40 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:40,556 [Thread-2] INFO  org.apache.hadoop.mapred.Task -  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@4b11df
+Oct 06, 2012 12:32:40 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:40,617 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+Oct 06, 2012 12:32:40 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:40,619 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 06, 2012 12:32:40 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:40,620 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task attempt_local_0001_m_000000_0 is allowed to commit now
+Oct 06, 2012 12:32:40 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:40,623 [Thread-2] INFO  org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter - Saved output of task 'attempt_local_0001_m_000000_0' to /home/kaituo/code/pig3/trunk/PigmixRandomData/10/page_viewsX/pages625m1
+Oct 06, 2012 12:32:40 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:40,738 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_local_0001
+Oct 06, 2012 12:32:40 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:40,738 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+Oct 06, 2012 12:32:43 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:43,517 [Thread-2] INFO  org.apache.hadoop.mapred.LocalJobRunner - 
+Oct 06, 2012 12:32:43 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:43,518 [Thread-2] INFO  org.apache.hadoop.mapred.Task - Task 'attempt_local_0001_m_000000_0' done.
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:45,745 [main] WARN  org.apache.pig.tools.pigstats.PigStatsUtil - Failed to get RunningJob for job job_local_0001
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:45,747 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:45,747 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Detected Local mode. Stats reported below may be incomplete
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:45,749 [main] INFO  org.apache.pig.tools.pigstats.SimplePigStats - Script Statistics: 
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>1.0.0	0.9.2	kaituo	2012-10-06 12:32:40	2012-10-06 12:32:45	UNKNOWN
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Success!
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job Stats (time in seconds):
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>JobId	Alias	Feature	Outputs
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001	A	MAP_ONLY	/home/kaituo/code/pig3/trunk/PigmixRandomData/10/page_viewsX/pages625m1,
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Input(s):
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully read records from: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/page_views/pages625m1"
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Output(s):
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Successfully stored records in: "/home/kaituo/code/pig3/trunk/PigmixRandomData/10/page_viewsX/pages625m1"
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>Job DAG:
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>job_local_0001
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.util.StreamGobbler run
+FINE: OUTPUT>2012-10-06 12:32:45,753 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+Oct 06, 2012 12:32:45 PM edu.umass.cs.pig.test.pigmix.DataGeneration logErrororOutput
+FINE: ExitValue: 0

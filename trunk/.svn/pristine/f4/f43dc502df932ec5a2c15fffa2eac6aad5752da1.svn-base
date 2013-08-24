@@ -1,0 +1,313 @@
+package edu.umass.cs.pig.test.pigmix;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Properties;
+import java.util.logging.FileHandler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
+
+import org.apache.pig.ExecType;
+import org.apache.pig.backend.executionengine.ExecException;
+import org.apache.pig.impl.PigContext;
+
+import edu.umass.cs.pig.test.util.RFile;
+import edu.umass.cs.pig.test.util.StreamGobbler;
+
+public class DataGeneration {
+	static PigContext pigContext = new PigContext(ExecType.LOCAL, new Properties());
+
+	public static Logger logger = Logger.getLogger("MyLog");
+	public static FileHandler fh;
+	
+	{
+		try {
+			pigContext.connect();
+		} catch (ExecException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public DataGeneration() {
+		try {
+			RFile.deleteIfExists("MyLogFile.log");
+	        fh = new FileHandler("MyLogFile.log", true);
+	        logger.addHandler(fh);
+			logger.setLevel(Level.FINE);
+			SimpleFormatter formatter = new SimpleFormatter();
+			fh.setFormatter(formatter);
+			fh.setLevel(Level.FINE);
+        } catch (SecurityException e) {
+	        // TODO Auto-generated catch block
+	        e.printStackTrace();
+        } catch (IOException e) {
+	        // TODO Auto-generated catch block
+	        e.printStackTrace();
+        }
+	}
+	
+	private void logErrororOutput(Process proc) {
+        // any error message?
+        StreamGobbler errorGobbler = new StreamGobbler(proc.getErrorStream(), "OUTPUT", logger);            
+        
+        // any output?
+        StreamGobbler outputGobbler = new StreamGobbler(proc.getInputStream(), "OUTPUT", logger);
+            
+        // kick them off
+        errorGobbler.start();
+        outputGobbler.start();
+                                
+        // any error???
+        int exitVal;
+        try {
+	        exitVal = proc.waitFor();
+	        logger.log(Level.FINE, "ExitValue: " + exitVal);
+        } catch (InterruptedException e) {
+	        // TODO Auto-generated catch block
+	        e.printStackTrace();
+        }
+        
+    }
+	
+	private void writeScalabilityData(String dataOrig, String dataOut, String PIG_FILE) {
+		int n = 501;
+
+		String abody = "";
+		for (int i = 0; i < n; i++) {
+			if (i > 0)
+				abody = abody + ", ";
+			abody = abody + "c" + i + ": int";
+		}
+
+//		String cbody = "";
+//		for (int j = 0; j < n; j++) {
+//			if (j > 0)
+//				cbody = cbody + ", ";
+//			cbody = cbody + "SUM(A.c" + j + ") as c" + j;
+//		}
+//
+//		String dbody = "";
+//		for (int k = 0; k < n; k++) {
+//			if (k > 0)
+//				dbody = dbody + " and ";
+//			dbody = dbody + "c" + k + " > 100";
+//		}
+		
+		try {
+			PrintWriter w = new PrintWriter(new FileWriter(PIG_FILE));
+	        w.println("A = load '" + dataOrig.toString()
+					+ "' using PigStorage('\u0001') as (name: chararray, " + abody + ");");
+	        w.println("B = foreach A generate name, c0, c1;");
+	        w.println("store B into '" + dataOut + "';");
+	        w.close();
+	        
+	        Process pp = Runtime.getRuntime().exec("java -Xmx256m -cp /home/kaituo/Downloads/pig-0.9.2/pig-0.9.2.jar org.apache.pig.Main -x local " + PIG_FILE.toString());
+	        logErrororOutput(pp);
+		} catch(IOException io) {
+			io.printStackTrace();
+		} 
+		
+	}
+	
+//	private static void writePage_ViewsData(String dataOrig, String dataOut, String PIG_FILE) {
+//		try {
+//			PrintWriter w = new PrintWriter(new FileWriter(PIG_FILE));
+//			w.println("register pigperf.jar;");
+//	        w.println("A = load " + dataOrig.toString()
+//					+ " using org.apache.pig.test.udf.storefunc.PigPerformanceLoader() as (user, action, timespent, query_term, ip_addr, timestamp, estimated_revenue, page_info, page_links);");  
+//	        //as (user: chararray, action:int, timespent:int, query_term:chararray, ip_addr:long, timestamp:long, estimated_revenue:double, page_info:map[], page_links:bag{t:(p:map[])} );");
+//	        w.println("B = limit A " + MIN + ";");
+//	        w.println("store B into '" + dataOut + "' using PigStorage('\u0001');");
+//	        w.close();
+//	        
+//	        Process pp = Runtime.getRuntime().exec("java -Xmx256m -cp /home/kaituo/Downloads/pig-0.9.2/pig-0.9.2.jar:/home/kaituo/code/pig3/trunk/pigperf.jar org.apache.pig.Main -x local " + PIG_FILE.toString());
+//	        logErrororOutput(pp);
+//		} catch(IOException io) {
+//			io.printStackTrace();
+//		} 
+//		
+//	}
+	
+//	private static void writePower_UsersData(String dataOrig, String dataOut, String PIG_FILE) {
+//		try {
+//			PrintWriter w = new PrintWriter(new FileWriter(PIG_FILE));
+//			w.println("register pigperf.jar;");
+//	        w.println("A = load " + dataOrig.toString()
+//					+ " using PigStorage('\u0001') as (user, action, timespent, query_term, ip_addr, timestamp, estimated_revenue, page_info, page_links);");  
+//	        //as (user: chararray, action:int, timespent:int, query_term:chararray, ip_addr:long, timestamp:long, estimated_revenue:double, page_info:map[], page_links:bag{t:(p:map[])} );");
+//	        w.println("B = limit A " + MIN + ";");
+//	        w.println("store B into '" + dataOut + "' using PigStorage('\u0001');");
+//	        w.close();
+//	        
+//	        Process pp = Runtime.getRuntime().exec("java -Xmx256m -cp /home/kaituo/Downloads/pig-0.9.2/pig-0.9.2.jar:/home/kaituo/code/pig3/trunk/pigperf.jar org.apache.pig.Main -x local " + PIG_FILE.toString());
+//	        logErrororOutput(pp);
+//		} catch(IOException io) {
+//			io.printStackTrace();
+//		} 
+//	}
+	
+	private void writeData12(String dataOrig, String dataOut,
+			String PIG_FILE) {
+		try {
+			PrintWriter w = new PrintWriter(new FileWriter(PIG_FILE));
+			w.println("register /home/kaituo/code/pigmix/pigperf.jar;");
+			w.println("A = load '"
+					+ dataOrig.toString()
+					+ "' using org.apache.pig.test.udf.storefunc.PigPerformanceLoader() as (user: chararray, action:int, timespent:int, query_term:chararray, ip_addr:long, timestamp:long,estimated_revenue:double, page_info:map[], page_links:bag{t:(p:map[])});");
+			// as (user: chararray, action:int, timespent:int,
+			// query_term:chararray, ip_addr:long, timestamp:long,
+			// estimated_revenue:double, page_info:map[],
+			// page_links:bag{t:(p:map[])} );");
+			w.println("B = foreach A generate user, action, timespent, query_term, estimated_revenue;");
+			w.println("store B into '" + dataOut + "';");
+			w.close();
+
+			Process pp = Runtime
+					.getRuntime()
+					.exec("java -Xmx256m -cp /home/kaituo/Downloads/pig-0.9.2/pig-0.9.2.jar:/home/kaituo/code/pig3/trunk/pigperf.jar org.apache.pig.Main -x local "
+							+ PIG_FILE.toString());
+			logErrororOutput(pp);
+		} catch (IOException io) {
+			io.printStackTrace();
+		}
+	}
+	
+	private void writeData14(String dataOrig, String dataOut,
+			String PIG_FILE) {
+		try {
+			PrintWriter w = new PrintWriter(new FileWriter(PIG_FILE));
+			w.println("register /home/kaituo/code/pigmix/pigperf.jar;");
+		    w.println("alpha = load '" + dataOrig.toString() + "' using PigStorage('\u0001') as (name: chararray, phone: chararray, address: chararray, city: chararray, state: chararray, zip: int);");
+
+			w.println("a1 = order alpha by name;");
+			w.println("store a1 into '" + dataOut + "';");
+			w.close();
+
+			Process pp = Runtime
+					.getRuntime()
+					.exec("java -Xmx256m -cp /home/kaituo/Downloads/pig-0.9.2/pig-0.9.2.jar:/home/kaituo/code/pig3/trunk/pigperf.jar org.apache.pig.Main -x local "
+							+ PIG_FILE.toString());
+			logErrororOutput(pp);
+		} catch (IOException io) {
+			io.printStackTrace();
+		}
+	}
+	
+	private void writeData17(String dataOrig, String dataOut,
+			String PIG_FILE) {
+		try {
+			PrintWriter w = new PrintWriter(new FileWriter(PIG_FILE));
+			w.println("register /home/kaituo/code/pigmix/pigperf.jar;");
+		    w.println("A = load '" + dataOrig.toString() + "' using PigStorage('\u0001') as (user, action, timespent, query_term, ip_addr, timestamp,estimated_revenue, page_info, page_links);");
+		    w.println("B = foreach A generate user, action, timespent, query_term, ip_addr, timestamp, estimated_revenue, page_info, page_links, user as user1, action as action1, timespent as timespent1, query_term as query_term1, ip_addr as ip_addr1, timestamp as timestamp1, estimated_revenue as estimated_revenue1, page_info as page_info1, page_links as page_links1, user as user2, action as action2, timespent as timespent2, query_term as query_term2, ip_addr as ip_addr2, timestamp as timestamp2, estimated_revenue as estimated_revenue2, page_info as page_info2, page_links as page_links2;");
+			w.println("store B into '" + dataOut + "' using PigStorage('\u0001');");
+			w.close();
+
+			Process pp = Runtime
+					.getRuntime()
+					.exec("java -Xmx256m -cp /home/kaituo/Downloads/pig-0.9.2/pig-0.9.2.jar:/home/kaituo/code/pig3/trunk/pigperf.jar org.apache.pig.Main -x local "
+							+ PIG_FILE.toString());
+			logErrororOutput(pp);
+		} catch (IOException io) {
+			io.printStackTrace();
+		}
+	}
+	
+	private void writepower_users_sample(String dataOrig, String dataOut,
+			String PIG_FILE) {
+		try {
+			PrintWriter w = new PrintWriter(new FileWriter(PIG_FILE));
+			w.println("register /home/kaituo/code/pigmix/pigperf.jar;");
+		    w.println("A = load '" + dataOrig.toString() + "' using PigStorage('\u0001') as (name: chararray, phone: chararray, address: chararray, city: chararray, state: chararray, zip: int);");
+		    w.println("B = sample A 0.5;");
+			w.println("store B into '" + dataOut + "' using PigStorage('\u0001');");
+			w.close();
+
+			Process pp = Runtime
+					.getRuntime()
+					.exec("java -Xmx256m -cp /home/kaituo/Downloads/pig-0.9.2/pig-0.9.2.jar:/home/kaituo/code/pig3/trunk/pigperf.jar org.apache.pig.Main -x local "
+							+ PIG_FILE.toString());
+			logErrororOutput(pp);
+		} catch (IOException io) {
+			io.printStackTrace();
+		}
+	}
+	
+	private void writePage_ViewsData(String dataOrig, String dataOut,
+			String PIG_FILE) {
+		try {
+			PrintWriter w = new PrintWriter(new FileWriter(PIG_FILE));
+			w.println("register /home/kaituo/code/pigmix/pigperf.jar;");
+			w.println("A = load '"
+					+ dataOrig.toString()
+					+ "' using org.apache.pig.test.udf.storefunc.PigPerformanceLoader() as (user, action, timespent, query_term, ip_addr, timestamp, estimated_revenue, page_info, page_links);");
+			// as (user: chararray, action:int, timespent:int,
+			// query_term:chararray, ip_addr:long, timestamp:long,
+			// estimated_revenue:double, page_info:map[],
+			// page_links:bag{t:(p:map[])} );");
+			w.println("store A into '" + dataOut
+					+ "' using PigStorage('\u0001');");
+			w.close();
+
+			Process pp = Runtime
+					.getRuntime()
+					.exec("java -Xmx256m -cp /home/kaituo/Downloads/pig-0.9.2/pig-0.9.2.jar:/home/kaituo/code/pig3/trunk/pigperf.jar org.apache.pig.Main -x local "
+							+ PIG_FILE.toString());
+			logErrororOutput(pp);
+		} catch (IOException io) {
+			io.printStackTrace();
+		}
+
+	}
+	
+	public static void main(String[] args) {
+	    String widerow, widerowX, page_views, page_viewsX, power_usersX, usersX, data12X, data14X, power_users_sampleX, widegroupbydataX;
+	    String pScalability, pPower_users_sample, pData12, pData14, pData17, pPage_view;
+	    
+	    pScalability =  "/home/kaituo/code/pig3/trunk/scripts/pScalability.pig";
+		pData12 = "/home/kaituo/code/pig3/trunk/scripts/pData12.pig";
+		pData14 = "/home/kaituo/code/pig3/trunk/scripts/pData14.pig";
+		pData17 = "/home/kaituo/code/pig3/trunk/scripts/pData17.pig";
+		pPower_users_sample = "/home/kaituo/code/pig3/trunk/scripts/pPower_users_sample.pig";
+		pPage_view = "/home/kaituo/code/pig3/trunk/scripts/pPage_view.pig";
+
+		page_views = "/home/kaituo/code/pig3/trunk/PigmixRandomData/100/page_views/pages625m9";
+		power_usersX = "/home/kaituo/code/pig3/trunk/PigmixRandomData/100/power_usersX/power_users100m9";
+		usersX = "/home/kaituo/code/pig3/trunk/PigmixRandomData/100/usersX/users100m9";
+		widerow = "/home/kaituo/code/pig3/trunk/PigmixRandomData/100/widerow/widerow10m9";
+
+		widerowX = "/home/kaituo/code/pig3/trunk/PigmixRandomData/100/widerowX/scalabilityData9";
+		data12X = "/home/kaituo/code/pig3/trunk/PigmixRandomData/100/data12X/data12N9";
+		data14X = "/home/kaituo/code/pig3/trunk/PigmixRandomData/100/data14X/data14N9";
+		power_users_sampleX = "/home/kaituo/code/pig3/trunk/PigmixRandomData/100/power_users_sampleX/power_users_sample9";
+		widegroupbydataX = "/home/kaituo/code/pig3/trunk/PigmixRandomData/100/widegroupbydataX/widegroupbydata9";
+		page_viewsX = "/home/kaituo/code/pig3/trunk/PigmixRandomData/100/page_viewsX/pages625m9";
+		
+		RFile.createRFile(pScalability);
+		RFile.createRFile(pPower_users_sample);
+		RFile.createRFile(pData12);
+		RFile.createRFile(pData14);
+		RFile.createRFile(pData17);
+		RFile.createRFile(pPage_view);
+		
+		RFile.deleteIfExists(widerowX);
+		RFile.deleteIfExists(data12X);
+		RFile.deleteIfExists(data14X);
+		RFile.deleteIfExists(widegroupbydataX);
+		RFile.deleteIfExists(power_users_sampleX);
+		RFile.deleteIfExists(page_viewsX);
+		
+		DataGeneration d = new DataGeneration();
+
+		d.writeScalabilityData(widerow, widerowX, pScalability);
+		d.writeData12(page_views, data12X, pData12);
+		d.writeData14(usersX, data14X, pData14);
+		d.writeData17(page_views, widegroupbydataX, pData17);
+		d.writepower_users_sample(power_usersX, power_users_sampleX, pPower_users_sample);
+		d.writePage_ViewsData(page_views, page_viewsX, pPage_view);
+	}
+
+}

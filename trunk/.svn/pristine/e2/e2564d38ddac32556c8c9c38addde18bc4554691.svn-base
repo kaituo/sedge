@@ -1,0 +1,8 @@
+SELECT top 10 objID, field, ra, dec, run from PhotoObj
+WHERE (ABS(CAST((BINARY_CHECKSUM(objID, NEWID())) AS int)) % 100) < 10
+
+SELECT top 10 objID, field, ra, dec, run from PhotoObj
+WHERE (ABS(CAST((BINARY_CHECKSUM(*) * RAND()) AS int)) % 100) < 10
+
+SELECT top 10 objID, r, extinction_r FROM Galaxy 
+WHERE (ABS(CAST((BINARY_CHECKSUM(*) * RAND()) AS int)) % 100) < 10

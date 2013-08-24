@@ -1,0 +1,20 @@
+widerowX : /home/kaituo/code/pig3/trunk/PigmixRandomData/10/widerowX/scalabilityData0
+page_viewsX : /home/kaituo/code/pig3/trunk/PigmixRandomData/10/page_viewsX/pages625m0
+power_usersX : /home/kaituo/code/pig3/trunk/PigmixRandomData/10/power_usersX/power_users100m0
+usersX: /home/kaituo/code/pig3/trunk/PigmixRandomData/10/usersX/users100m0
+data12X: /home/kaituo/code/pig3/trunk/PigmixRandomData/10/data12X/data12N0
+users_sortedX: /home/kaituo/code/pig3/trunk/PigmixRandomData/10/data14X/data14N0
+
+Test data created.
+13/05/02 21:59:03 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+testScalability
+13/05/02 21:59:03 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///
+13/05/02 21:59:04 WARN pig.PigServer: int is implicitly cast to long under GreaterThanExpression Operator
+13/05/02 21:59:04 WARN pig.PigServer: int is implicitly cast to long under GreaterThanExpression Operator
+13/05/02 21:59:04 WARN pig.PigServer: int is implicitly cast to long under GreaterThanExpression Operator
+13/05/02 21:59:04 WARN pig.PigServer: int is implicitly cast to long under GreaterThanExpression Operator
+13/05/02 21:59:04 WARN pig.PigServer: int is implicitly cast to long under GreaterThanExpression Operator
+13/05/02 21:59:04 WARN pig.PigServer: int is implicitly cast to long under GreaterThanExpression Operator
+13/05/02 21:59:04 WARN pig.PigServer: int is implicitly cast to long under GreaterThanExpression Operator
+13/05/02 21:59:04 WARN pig.PigServer: int is implicitly cast to long under GreaterThanExpression Operator
+13/05/02 21:59:04 INFO executionengine.HExecutionEngine: Connecting to hadoop file system at: file:///

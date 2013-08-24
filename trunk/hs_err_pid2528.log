@@ -1,0 +1,769 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x64fdfd0a, pid=2528, tid=3063442240
+#
+# JRE version: 7.0_06
+# Java VM: OpenJDK Server VM (23.2-b09 mixed mode linux-x86 )
+# Problematic frame:
+# C  [libz3.so+0x59dd0a]  unsigned int ast_array_hash<sort>(sort* const*, unsigned int, unsigned int)+0x19a
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please include
+# instructions on how to reproduce the bug and visit:
+#   http://icedtea.classpath.org/bugzilla
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0xb6808800):  JavaThread "main" [_thread_in_native, id=2534, stack(0xb6936000,0xb6987000)]
+
+siginfo:si_signo=SIGSEGV: si_errno=0, si_code=1 (SEGV_MAPERR), si_addr=0x0000000c
+
+Registers:
+EAX=0xbd2a6510, EBX=0x65f51d0c, ECX=0x00000001, EDX=0x00000000
+ESP=0xb6984ec0, EBP=0x65f345bc, ESI=0x65f51cec, EDI=0x65f51d0c
+EIP=0x64fdfd0a, EFLAGS=0x00210246, CR2=0x0000000c
+
+Top of Stack: (sp=0xb6984ec0)
+0xb6984ec0:   65f51d0c 65f51cec 65f59b88 64fced7e
+0xb6984ed0:   65f51d0c 00000001 bd2a6510 b6984fe8
+0xb6984ee0:   b6984fc0 00000000 65f51cec 64fcfa50
+0xb6984ef0:   65f51cec 42ee4115 b6984f78 66e47344
+0xb6984f00:   b6984f80 65f22e9c 00000000 00000000
+0xb6984f10:   00000005 00000000 00000001 65f22d40
+0xb6984f20:   b6db8718 b6806510 b381698e 00000000
+0xb6984f30:   00000001 66e55d21 b68078a0 b6808a98 
+
+Instructions: (pc=0x64fdfd0a)
+0x64fdfcea:   08 31 c1 29 ca 89 d0 c1 e0 10 31 c8 29 d0 c1 e2
+0x64fdfcfa:   0a 31 d0 5b 5e 5f c3 8d b4 26 00 00 00 00 8b 17
+0x64fdfd0a:   8b 4a 0c 89 c2 89 c8 29 ca c1 e0 08 31 c2 29 d1
+0x64fdfd1a:   89 c8 c1 e0 10 31 d0 29 c8 c1 e1 0a 31 c8 5b 5e 
+
+Register to memory mapping:
+
+EAX=0xbd2a6510 is an unknown value
+EBX=0x65f51d0c is an unknown value
+ECX=0x00000001 is an unknown value
+EDX=0x00000000 is an unknown value
+ESP=0xb6984ec0 is pointing into the stack for thread: 0xb6808800
+EBP=0x65f345bc is an unknown value
+ESI=0x65f51cec is an unknown value
+EDI=0x65f51d0c is an unknown value
+
+
+Stack: [0xb6936000,0xb6987000],  sp=0xb6984ec0,  free space=315k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libz3.so+0x59dd0a]  unsigned int ast_array_hash<sort>(sort* const*, unsigned int, unsigned int)+0x19a
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  edu.umass.cs.z3.Z3JNI.Z3_mk_func_decl(JJJJJ)J+0
+j  edu.umass.cs.z3.Z3.Z3_mk_func_decl(Ledu/umass/cs/z3/SWIGTYPE_p__Z3_context;Ledu/umass/cs/z3/SWIGTYPE_p__Z3_symbol;JLedu/umass/cs/z3/SWIGTYPE_p_p__Z3_sort;Ledu/umass/cs/z3/SWIGTYPE_p__Z3_sort;)Ledu/umass/cs/z3/SWIGTYPE_p__Z3_func_decl;+19
+j  edu.umass.cs.pig.z3.Z3Context.mk_func_decl(Ledu/umass/cs/z3/SWIGTYPE_p__Z3_symbol;JLedu/umass/cs/z3/SWIGTYPE_p_p__Z3_sort;Ledu/umass/cs/z3/SWIGTYPE_p__Z3_sort;)Ledu/umass/cs/z3/SWIGTYPE_p__Z3_func_decl;+16
+j  edu.umass.cs.pig.z3.Z3Context.mk_func_decl2(Ledu/umass/cs/z3/SWIGTYPE_p__Z3_symbol;Ledu/umass/cs/z3/SWIGTYPE_p__Z3_sort;[Ledu/umass/cs/z3/SWIGTYPE_p__Z3_sort;)Ledu/umass/cs/z3/SWIGTYPE_p__Z3_func_decl;+49
+j  edu.umass.cs.userfunc.UninterpretedMaker.toUninterpFunc()Ledu/umass/cs/z3/SWIGTYPE_p__Z3_ast;+34
+j  edu.umass.cs.pig.vm.ConstraintSolver.GenerateMatchingTupleHelper(Lorg/apache/pig/newplan/logical/expression/UserFuncExpression;Z)Ledu/umass/cs/pig/ast/ConstraintResult;+76
+j  edu.umass.cs.pig.vm.ConstraintSolver.GenerateMatchingTupleHelper(Lorg/apache/pig/newplan/logical/expression/BinaryExpression;Z)Ledu/umass/cs/pig/ast/ConstraintResult;+229
+j  edu.umass.cs.pig.vm.ConstraintSolver.GenerateMatchingTupleHelper(Lorg/apache/pig/newplan/Operator;Z)Ledu/umass/cs/pig/ast/ConstraintResult;+15
+j  edu.umass.cs.pig.vm.ConstraintSolver.GenerateMatchingTuple(Lorg/apache/pig/newplan/logical/expression/LogicalExpressionPlan;Z)Ledu/umass/cs/pig/ast/ConstraintResult;+15
+j  edu.umass.cs.pig.vm.QueryManager.assertPathCondition(Ljava/util/ArrayList;)Ledu/umass/cs/pig/vm/AssertionResult;+47
+j  edu.umass.cs.pig.vm.QueryManager.solve(Ljava/util/ArrayList;)Ledu/umass/cs/pig/z3/ConstraintSolution;+18
+j  edu.umass.cs.pig.vm.ComputeSolution.compute(Ljava/util/ArrayList;Lorg/apache/pig/data/DataBag;Ledu/umass/cs/pig/vm/QueryManager;Lorg/apache/pig/newplan/logical/relational/LogicalSchema;Lorg/apache/pig/data/DataBag;Lorg/apache/pig/data/DataBag;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/List;)V+359
+j  org.apache.pig.pen.InvertConstraintVisitor.visit(Lorg/apache/pig/newplan/logical/relational/LOLoad;)V+171
+j  org.apache.pig.newplan.logical.relational.LOLoad.accept(Lorg/apache/pig/newplan/PlanVisitor;)V+26
+j  org.apache.pig.pen.util.PreOrderDepthFirstWalker.depthFirst(Lorg/apache/pig/newplan/Operator;Ljava/util/Collection;Ljava/util/Set;Lorg/apache/pig/newplan/PlanVisitor;)V+55
+j  org.apache.pig.pen.util.PreOrderDepthFirstWalker.depthFirst(Lorg/apache/pig/newplan/Operator;Ljava/util/Collection;Ljava/util/Set;Lorg/apache/pig/newplan/PlanVisitor;)V+93
+j  org.apache.pig.pen.util.PreOrderDepthFirstWalker.depthFirst(Lorg/apache/pig/newplan/Operator;Ljava/util/Collection;Ljava/util/Set;Lorg/apache/pig/newplan/PlanVisitor;)V+93
+j  org.apache.pig.pen.util.PreOrderDepthFirstWalker.depthFirst(Lorg/apache/pig/newplan/Operator;Ljava/util/Collection;Ljava/util/Set;Lorg/apache/pig/newplan/PlanVisitor;)V+93
+j  org.apache.pig.pen.util.PreOrderDepthFirstWalker.depthFirst(Lorg/apache/pig/newplan/Operator;Ljava/util/Collection;Ljava/util/Set;Lorg/apache/pig/newplan/PlanVisitor;)V+93
+j  org.apache.pig.pen.util.PreOrderDepthFirstWalker.walk(Lorg/apache/pig/newplan/PlanVisitor;)V+23
+j  org.apache.pig.newplan.PlanVisitor.visit()V+5
+j  org.apache.pig.pen.ExampleGenerator.getExamples2()Ljava/util/Map;+573
+j  org.apache.pig.PigServer.getExamples2(Ljava/lang/String;)Ljava/util/Map;+84
+j  edu.umass.cs.pig.test.pigmix.TestExGen4PigMixReal2.testScript5()V+126
+v  ~StubRoutines::call_stub
+j  sun.reflect.NativeMethodAccessorImpl.invoke0(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+0
+j  sun.reflect.NativeMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+87
+j  sun.reflect.DelegatingMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+6
+j  java.lang.reflect.Method.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+57
+j  org.junit.runners.model.FrameworkMethod$1.runReflectiveCall()Ljava/lang/Object;+15
+j  org.junit.internal.runners.model.ReflectiveCallable.run()Ljava/lang/Object;+1
+j  org.junit.runners.model.FrameworkMethod.invokeExplosively(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+10
+j  org.junit.internal.runners.statements.InvokeMethod.evaluate()V+12
+j  org.junit.internal.runners.statements.RunBefores.evaluate()V+49
+j  org.junit.internal.runners.statements.RunAfters.evaluate()V+18
+j  org.junit.runners.BlockJUnit4ClassRunner.runChild(Lorg/junit/runners/model/FrameworkMethod;Lorg/junit/runner/notification/RunNotifier;)V+31
+j  org.junit.runners.BlockJUnit4ClassRunner.runChild(Ljava/lang/Object;Lorg/junit/runner/notification/RunNotifier;)V+6
+j  org.junit.runners.ParentRunner.runChildren(Lorg/junit/runner/notification/RunNotifier;)V+29
+j  org.junit.runners.ParentRunner.access$000(Lorg/junit/runners/ParentRunner;Lorg/junit/runner/notification/RunNotifier;)V+2
+j  org.junit.runners.ParentRunner$1.evaluate()V+8
+j  org.junit.internal.runners.statements.RunBefores.evaluate()V+49
+j  org.junit.internal.runners.statements.RunAfters.evaluate()V+18
+j  org.junit.runners.ParentRunner.run(Lorg/junit/runner/notification/RunNotifier;)V+20
+j  org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(Lorg/eclipse/jdt/internal/junit/runner/TestExecution;)V+72
+j  org.eclipse.jdt.internal.junit.runner.TestExecution.run([Lorg/eclipse/jdt/internal/junit/runner/ITestReference;)V+17
+j  org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests([Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/jdt/internal/junit/runner/TestExecution;)V+61
+j  org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(Lorg/eclipse/jdt/internal/junit/runner/TestExecution;)V+10
+j  org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run()V+70
+j  org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main([Ljava/lang/String;)V+14
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x66f63c00 JavaThread "ReaderThread" [_thread_in_native, id=2548, stack(0x66e98000,0x66ee9000)]
+  0x67300800 JavaThread "Service Thread" daemon [_thread_blocked, id=2545, stack(0x6722e000,0x6727f000)]
+  0x679fec00 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=2544, stack(0x6727f000,0x67300000)]
+  0x679fcc00 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=2543, stack(0x6742e000,0x674af000)]
+  0x679fb000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=2542, stack(0x674af000,0x67500000)]
+  0x679b9000 JavaThread "Finalizer" daemon [_thread_blocked, id=2541, stack(0x6ad2e000,0x6ad7f000)]
+  0x679b6400 JavaThread "Reference Handler" daemon [_thread_blocked, id=2540, stack(0x6b02e000,0x6b07f000)]
+=>0xb6808800 JavaThread "main" [_thread_in_native, id=2534, stack(0xb6936000,0xb6987000)]
+
+Other Threads:
+  0x679b0c00 VMThread [stack: 0x67a4b000,0x67acc000] [id=2539]
+  0x67302400 WatcherThread [stack: 0x671ad000,0x6722e000] [id=2546]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 143744K, used 135981K [0x9e1c0000, 0xa7b40000, 0xb3710000)
+  eden space 131584K, 99% used [0x9e1c0000,0xa622baa0,0xa6240000)
+  from space 12160K, 36% used [0xa6f60000,0xa73bfcb8,0xa7b40000)
+  to   space 12800K, 0% used [0xa6240000,0xa6240000,0xa6ec0000)
+ ParOldGen       total 43712K, used 18950K [0x73710000, 0x761c0000, 0x9e1c0000)
+  object space 43712K, 43% used [0x73710000,0x74991ae0,0x761c0000)
+ PSPermGen       total 16384K, used 11927K [0x6b710000, 0x6c710000, 0x73710000)
+  object space 16384K, 72% used [0x6b710000,0x6c2b5dd8,0x6c710000)
+
+Card table byte_map: [0x6b4cf000,0x6b710000] byte_map_base: 0x6b173780
+
+Polling page: 0xb7727000
+
+Code Cache  [0xb37da000, 0xb3a1a000, 0xb67da000)
+ total_blobs=774 nmethods=598 adapters=128 free_code_cache=47467Kb largest_free_block=48571264
+
+Compilation events (10 events):
+Event: 5.068 Thread 0x679fcc00  610             java.io.ObjectStreamClass::hasWriteObjectData (5 bytes)
+Event: 5.068 Thread 0x679fcc00 nmethod 610 0xb397a208 code [0xb397a2e0, 0xb397a330]
+Event: 5.078 Thread 0x679fec00  611             java.lang.Integer::valueOf (54 bytes)
+Event: 5.079 Thread 0x679fec00 nmethod 611 0xb3981b48 code [0xb3981c40, 0xb3981d10]
+Event: 5.100 Thread 0x679fcc00  612             java.util.Collections::sort (52 bytes)
+Event: 5.113 Thread 0x679fec00  613             java.io.InputStream::<init> (5 bytes)
+Event: 5.113 Thread 0x679fec00 nmethod 613 0xb3981948 code [0xb3981a40, 0xb3981ab0]
+Event: 5.126 Thread 0x679fcc00 nmethod 612 0xb3985a88 code [0xb3985ca0, 0xb3986a00]
+Event: 5.136 Thread 0x679fec00  614             java.io.ObjectInputStream::access$500 (5 bytes)
+Event: 5.136 Thread 0x679fec00 nmethod 614 0xb39816c8 code [0xb39817c0, 0xb3981810]
+
+GC Heap History (10 events):
+Event: 1.128 GC heap before
+{Heap before GC invocations=2 (full 0):
+ PSYoungGen      total 19136K, used 19004K [0x9e1c0000, 0xa0720000, 0xb3710000)
+  eden space 16448K, 100% used [0x9e1c0000,0x9f1d0000,0x9f1d0000)
+  from space 2688K, 95% used [0x9f1d0000,0x9f44f068,0x9f470000)
+  to   space 2688K, 0% used [0xa0480000,0xa0480000,0xa0720000)
+ ParOldGen       total 43712K, used 68K [0x73710000, 0x761c0000, 0x9e1c0000)
+  object space 43712K, 0% used [0x73710000,0x73721010,0x761c0000)
+ PSPermGen       total 16384K, used 8687K [0x6b710000, 0x6c710000, 0x73710000)
+  object space 16384K, 53% used [0x6b710000,0x6bf8bd20,0x6c710000)
+Event: 1.136 GC heap after
+Heap after GC invocations=2 (full 0):
+ PSYoungGen      total 35584K, used 2683K [0x9e1c0000, 0xa0720000, 0xb3710000)
+  eden space 32896K, 0% used [0x9e1c0000,0x9e1c0000,0xa01e0000)
+  from space 2688K, 99% used [0xa0480000,0xa071eeb8,0xa0720000)
+  to   space 2688K, 0% used [0xa01e0000,0xa01e0000,0xa0480000)
+ ParOldGen       total 43712K, used 443K [0x73710000, 0x761c0000, 0x9e1c0000)
+  object space 43712K, 1% used [0x73710000,0x7377ecd0,0x761c0000)
+ PSPermGen       total 16384K, used 8687K [0x6b710000, 0x6c710000, 0x73710000)
+  object space 16384K, 53% used [0x6b710000,0x6bf8bd20,0x6c710000)
+}
+Event: 2.426 GC heap before
+{Heap before GC invocations=3 (full 0):
+ PSYoungGen      total 35584K, used 35579K [0x9e1c0000, 0xa0720000, 0xb3710000)
+  eden space 32896K, 100% used [0x9e1c0000,0xa01e0000,0xa01e0000)
+  from space 2688K, 99% used [0xa0480000,0xa071eeb8,0xa0720000)
+  to   space 2688K, 0% used [0xa01e0000,0xa01e0000,0xa0480000)
+ ParOldGen       total 43712K, used 443K [0x73710000, 0x761c0000, 0x9e1c0000)
+  object space 43712K, 1% used [0x73710000,0x7377ecd0,0x761c0000)
+ PSPermGen       total 16384K, used 11169K [0x6b710000, 0x6c710000, 0x73710000)
+  object space 16384K, 68% used [0x6b710000,0x6c1f8408,0x6c710000)
+Event: 2.444 GC heap after
+Heap after GC invocations=3 (full 0):
+ PSYoungGen      total 35584K, used 2681K [0x9e1c0000, 0xa2740000, 0xb3710000)
+  eden space 32896K, 0% used [0x9e1c0000,0x9e1c0000,0xa01e0000)
+  from space 2688K, 99% used [0xa01e0000,0xa047e7a0,0xa0480000)
+  to   space 2688K, 0% used [0xa24a0000,0xa24a0000,0xa2740000)
+ ParOldGen       total 43712K, used 4136K [0x73710000, 0x761c0000, 0x9e1c0000)
+  object space 43712K, 9% used [0x73710000,0x73b1a100,0x761c0000)
+ PSPermGen       total 16384K, used 11169K [0x6b710000, 0x6c710000, 0x73710000)
+  object space 16384K, 68% used [0x6b710000,0x6c1f8408,0x6c710000)
+}
+Event: 3.160 GC heap before
+{Heap before GC invocations=4 (full 0):
+ PSYoungGen      total 35584K, used 35577K [0x9e1c0000, 0xa2740000, 0xb3710000)
+  eden space 32896K, 100% used [0x9e1c0000,0xa01e0000,0xa01e0000)
+  from space 2688K, 99% used [0xa01e0000,0xa047e7a0,0xa0480000)
+  to   space 2688K, 0% used [0xa24a0000,0xa24a0000,0xa2740000)
+ ParOldGen       total 43712K, used 4136K [0x73710000, 0x761c0000, 0x9e1c0000)
+  object space 43712K, 9% used [0x73710000,0x73b1a100,0x761c0000)
+ PSPermGen       total 16384K, used 11604K [0x6b710000, 0x6c710000, 0x73710000)
+  object space 16384K, 70% used [0x6b710000,0x6c265190,0x6c710000)
+Event: 3.176 GC heap after
+Heap after GC invocations=4 (full 0):
+ PSYoungGen      total 68480K, used 2675K [0x9e1c0000, 0xa2740000, 0xb3710000)
+  eden space 65792K, 0% used [0x9e1c0000,0x9e1c0000,0xa2200000)
+  from space 2688K, 99% used [0xa24a0000,0xa273cd88,0xa2740000)
+  to   space 2688K, 0% used [0xa2200000,0xa2200000,0xa24a0000)
+ ParOldGen       total 43712K, used 8240K [0x73710000, 0x761c0000, 0x9e1c0000)
+  object space 43712K, 18% used [0x73710000,0x73f1c3e0,0x761c0000)
+ PSPermGen       total 16384K, used 11604K [0x6b710000, 0x6c710000, 0x73710000)
+  object space 16384K, 70% used [0x6b710000,0x6c265190,0x6c710000)
+}
+Event: 3.790 GC heap before
+{Heap before GC invocations=5 (full 0):
+ PSYoungGen      total 68480K, used 68467K [0x9e1c0000, 0xa2740000, 0xb3710000)
+  eden space 65792K, 100% used [0x9e1c0000,0xa2200000,0xa2200000)
+  from space 2688K, 99% used [0xa24a0000,0xa273cd88,0xa2740000)
+  to   space 2688K, 0% used [0xa2200000,0xa2200000,0xa24a0000)
+ ParOldGen       total 43712K, used 8240K [0x73710000, 0x761c0000, 0x9e1c0000)
+  object space 43712K, 18% used [0x73710000,0x73f1c3e0,0x761c0000)
+ PSPermGen       total 16384K, used 11731K [0x6b710000, 0x6c710000, 0x73710000)
+  object space 16384K, 71% used [0x6b710000,0x6c284cb0,0x6c710000)
+Event: 3.826 GC heap after
+Heap after GC invocations=5 (full 0):
+ PSYoungGen      total 68480K, used 2672K [0x9e1c0000, 0xa7c80000, 0xb3710000)
+  eden space 65792K, 0% used [0x9e1c0000,0x9e1c0000,0xa2200000)
+  from space 2688K, 99% used [0xa2200000,0xa249c2b8,0xa24a0000)
+  to   space 13440K, 0% used [0xa6f60000,0xa6f60000,0xa7c80000)
+ ParOldGen       total 43712K, used 18950K [0x73710000, 0x761c0000, 0x9e1c0000)
+  object space 43712K, 43% used [0x73710000,0x74991ae0,0x761c0000)
+ PSPermGen       total 16384K, used 11731K [0x6b710000, 0x6c710000, 0x73710000)
+  object space 16384K, 71% used [0x6b710000,0x6c284cb0,0x6c710000)
+}
+Event: 4.363 GC heap before
+{Heap before GC invocations=6 (full 0):
+ PSYoungGen      total 68480K, used 68464K [0x9e1c0000, 0xa7c80000, 0xb3710000)
+  eden space 65792K, 100% used [0x9e1c0000,0xa2200000,0xa2200000)
+  from space 2688K, 99% used [0xa2200000,0xa249c2b8,0xa24a0000)
+  to   space 13440K, 0% used [0xa6f60000,0xa6f60000,0xa7c80000)
+ ParOldGen       total 43712K, used 18950K [0x73710000, 0x761c0000, 0x9e1c0000)
+  object space 43712K, 43% used [0x73710000,0x74991ae0,0x761c0000)
+ PSPermGen       total 16384K, used 11805K [0x6b710000, 0x6c710000, 0x73710000)
+  object space 16384K, 72% used [0x6b710000,0x6c2974f0,0x6c710000)
+Event: 4.389 GC heap after
+Heap after GC invocations=6 (full 0):
+ PSYoungGen      total 143744K, used 4479K [0x9e1c0000, 0xa7b40000, 0xb3710000)
+  eden space 131584K, 0% used [0x9e1c0000,0x9e1c0000,0xa6240000)
+  from space 12160K, 36% used [0xa6f60000,0xa73bfcb8,0xa7b40000)
+  to   space 12800K, 0% used [0xa6240000,0xa6240000,0xa6ec0000)
+ ParOldGen       total 43712K, used 18950K [0x73710000, 0x761c0000, 0x9e1c0000)
+  object space 43712K, 43% used [0x73710000,0x74991ae0,0x761c0000)
+ PSPermGen       total 16384K, used 11805K [0x6b710000, 0x6c710000, 0x73710000)
+  object space 16384K, 72% used [0x6b710000,0x6c2974f0,0x6c710000)
+}
+
+Deoptimization events (10 events):
+Event: 3.058 Thread 0xb6808800 Uncommon trap -34 fr.pc 0xb383034c
+Event: 3.191 Thread 0xb6808800 Uncommon trap -83 fr.pc 0xb38b6b80
+Event: 3.447 Thread 0xb6808800 Uncommon trap -28 fr.pc 0xb39106c8
+Event: 3.564 Thread 0xb6808800 Uncommon trap -34 fr.pc 0xb383034c
+Event: 3.586 Thread 0xb6808800 Uncommon trap -34 fr.pc 0xb383034c
+Event: 3.725 Thread 0xb6808800 Uncommon trap -42 fr.pc 0xb39262f0
+Event: 3.725 Thread 0xb6808800 Uncommon trap -42 fr.pc 0xb39262f0
+Event: 3.726 Thread 0xb6808800 Uncommon trap -42 fr.pc 0xb39262f0
+Event: 3.726 Thread 0xb6808800 Uncommon trap -42 fr.pc 0xb39262f0
+Event: 4.983 Thread 0xb6808800 Uncommon trap -34 fr.pc 0xb390d4fc
+
+Internal exceptions (10 events):
+Event: 4.705 Thread 0xb6808800 Threw 0xa1512920 at /builddir/build/BUILD/java-1.7.0-openjdk/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1166
+Event: 4.705 Thread 0xb6808800 Threw 0xa1514f20 at /builddir/build/BUILD/java-1.7.0-openjdk/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1166
+Event: 4.768 Thread 0xb6808800 Threw 0xa1e7ec60 at /builddir/build/BUILD/java-1.7.0-openjdk/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1166
+Event: 4.778 Thread 0xb6808800 Threw 0xa201f2d0 at /builddir/build/BUILD/java-1.7.0-openjdk/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1166
+Event: 4.778 Thread 0xb6808800 Threw 0xa2023360 at /builddir/build/BUILD/java-1.7.0-openjdk/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1166
+Event: 4.779 Thread 0xb6808800 Threw 0xa2027390 at /builddir/build/BUILD/java-1.7.0-openjdk/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1166
+Event: 5.057 Thread 0xb6808800 Threw 0xa4fc9670 at /builddir/build/BUILD/java-1.7.0-openjdk/openjdk/hotspot/src/share/vm/prims/jni.cpp:1631
+Event: 5.130 Thread 0xb6808800 Threw 0xa604bc28 at /builddir/build/BUILD/java-1.7.0-openjdk/openjdk/hotspot/src/share/vm/prims/jni.cpp:1631
+Event: 5.138 Thread 0xb6808800 Threw 0xa610c528 at /builddir/build/BUILD/java-1.7.0-openjdk/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1166
+Event: 5.164 Thread 0xb6808800 Threw 0xa6114818 at /builddir/build/BUILD/java-1.7.0-openjdk/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1166
+
+Events (10 events):
+Event: 4.778 loading class 0x65f61258
+Event: 4.778 loading class 0x65f61258 done
+Event: 4.779 loading class 0x65d1d330
+Event: 4.779 loading class 0x65d1d330 done
+Event: 4.983 Thread 0xb6808800 DEOPT PACKING pc=0xb390d4fc sp=0xb69854b0
+Event: 4.983 Thread 0xb6808800 DEOPT UNPACKING pc=0xb3807efc sp=0xb69854a0 mode 2
+Event: 5.138 loading class 0x65f69e40
+Event: 5.138 loading class 0x65f69e40 done
+Event: 5.164 loading class 0x65f189b0
+Event: 5.164 loading class 0x65f189b0 done
+
+
+Dynamic libraries:
+08048000-08049000 r-xp 00000000 fd:01 1966751    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/bin/java
+08049000-0804a000 rw-p 00000000 fd:01 1966751    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/bin/java
+0927d000-092dc000 rw-p 00000000 00:00 0          [heap]
+42eda000-42ef9000 r-xp 00000000 fd:01 136060     /usr/lib/ld-2.15.so
+42ef9000-42efa000 r--p 0001e000 fd:01 136060     /usr/lib/ld-2.15.so
+42efa000-42efb000 rw-p 0001f000 fd:01 136060     /usr/lib/ld-2.15.so
+42efd000-430a8000 r-xp 00000000 fd:01 136128     /usr/lib/libc-2.15.so
+430a8000-430a9000 ---p 001ab000 fd:01 136128     /usr/lib/libc-2.15.so
+430a9000-430ab000 r--p 001ab000 fd:01 136128     /usr/lib/libc-2.15.so
+430ab000-430ac000 rw-p 001ad000 fd:01 136128     /usr/lib/libc-2.15.so
+430ac000-430af000 rw-p 00000000 00:00 0 
+430b1000-430c7000 r-xp 00000000 fd:01 136204     /usr/lib/libpthread-2.15.so
+430c7000-430c8000 r--p 00015000 fd:01 136204     /usr/lib/libpthread-2.15.so
+430c8000-430c9000 rw-p 00016000 fd:01 136204     /usr/lib/libpthread-2.15.so
+430c9000-430cb000 rw-p 00000000 00:00 0 
+430cd000-430d0000 r-xp 00000000 fd:01 136169     /usr/lib/libdl-2.15.so
+430d0000-430d1000 r--p 00002000 fd:01 136169     /usr/lib/libdl-2.15.so
+430d1000-430d2000 rw-p 00003000 fd:01 136169     /usr/lib/libdl-2.15.so
+430d4000-430db000 r-xp 00000000 fd:01 136931     /usr/lib/librt-2.15.so
+430db000-430dc000 r--p 00006000 fd:01 136931     /usr/lib/librt-2.15.so
+430dc000-430dd000 rw-p 00007000 fd:01 136931     /usr/lib/librt-2.15.so
+430df000-430f4000 r-xp 00000000 fd:01 139264     /usr/lib/libz.so.1.2.5
+430f4000-430f5000 rw-p 00014000 fd:01 139264     /usr/lib/libz.so.1.2.5
+430f7000-43103000 r-xp 00000000 fd:01 1966564    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/i386/jli/libjli.so
+43103000-43104000 rw-p 0000b000 fd:01 1966564    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/i386/jli/libjli.so
+435b1000-435cd000 r-xp 00000000 fd:01 136386     /usr/lib/libgcc_s-4.7.2-20120921.so.1
+435cd000-435ce000 rw-p 0001b000 fd:01 136386     /usr/lib/libgcc_s-4.7.2-20120921.so.1
+43b33000-43c13000 r-xp 00000000 fd:01 136401     /usr/lib/libstdc++.so.6.0.17
+43c13000-43c17000 r--p 000e0000 fd:01 136401     /usr/lib/libstdc++.so.6.0.17
+43c17000-43c18000 rw-p 000e4000 fd:01 136401     /usr/lib/libstdc++.so.6.0.17
+43c18000-43c1f000 rw-p 00000000 00:00 0 
+44169000-44178000 r-xp 00000000 fd:01 157834     /usr/lib/libgomp.so.1.0.0
+44178000-44179000 rw-p 0000e000 fd:01 157834     /usr/lib/libgomp.so.1.0.0
+64900000-649ff000 rw-p 00000000 00:00 0 
+649ff000-64a00000 ---p 00000000 00:00 0 
+64a42000-65bdb000 r-xp 00000000 fd:02 7607783    /home/kaituo/code/pig3/trunk/libz3.so
+65bdb000-65bdc000 r--p 01199000 fd:02 7607783    /home/kaituo/code/pig3/trunk/libz3.so
+65bdc000-65bdd000 rw-p 0119a000 fd:02 7607783    /home/kaituo/code/pig3/trunk/libz3.so
+65bdd000-65c00000 rw-p 00000000 00:00 0 
+65c00000-65cea000 rw-p 00000000 00:00 0 
+65cea000-65d00000 ---p 00000000 00:00 0 
+65d00000-65da6000 rw-p 00000000 00:00 0 
+65da6000-65e00000 ---p 00000000 00:00 0 
+65e00000-65efe000 rw-p 00000000 00:00 0 
+65efe000-65f00000 ---p 00000000 00:00 0 
+65f00000-65fff000 rw-p 00000000 00:00 0 
+65fff000-66000000 ---p 00000000 00:00 0 
+66000000-660fc000 rw-p 00000000 00:00 0 
+660fc000-66100000 ---p 00000000 00:00 0 
+66100000-66200000 rw-p 00000000 00:00 0 
+66200000-66300000 rw-p 00000000 00:00 0 
+66400000-66500000 rw-p 00000000 00:00 0 
+66600000-666ff000 rw-p 00000000 00:00 0 
+666ff000-66700000 ---p 00000000 00:00 0 
+66700000-66800000 rw-p 00000000 00:00 0 
+66900000-669fd000 rw-p 00000000 00:00 0 
+669fd000-66a00000 ---p 00000000 00:00 0 
+66a00000-66b00000 rw-p 00000000 00:00 0 
+66b00000-66bfd000 rw-p 00000000 00:00 0 
+66bfd000-66c00000 ---p 00000000 00:00 0 
+66c00000-66ce9000 rw-p 00000000 00:00 0 
+66ce9000-66d00000 ---p 00000000 00:00 0 
+66d00000-66df8000 rw-p 00000000 00:00 0 
+66df8000-66e00000 ---p 00000000 00:00 0 
+66e46000-66e68000 r-xp 00000000 fd:02 7607784    /home/kaituo/code/pig3/trunk/libz3wrap.so
+66e68000-66e69000 rw-p 00022000 fd:02 7607784    /home/kaituo/code/pig3/trunk/libz3wrap.so
+66e69000-66e6e000 r--s 000a0000 fd:01 1972257    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/jsse.jar
+66e6e000-66e71000 r--s 00014000 fd:01 1972255    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/jce.jar
+66e71000-66e72000 r-xp 00000000 fd:01 1972214    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/i386/libjaas_unix.so
+66e72000-66e73000 rw-p 00000000 fd:01 1972214    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/i386/libjaas_unix.so
+66e73000-66e7b000 r-xp 00000000 fd:01 1972225    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/i386/libmanagement.so
+66e7b000-66e7c000 rw-p 00007000 fd:01 1972225    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/i386/libmanagement.so
+66e7c000-66e86000 r--s 00263000 fd:01 1972270    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/resources.jar
+66e86000-66e97000 r-xp 00000000 fd:01 1972228    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/i386/libnio.so
+66e97000-66e98000 rw-p 00011000 fd:01 1972228    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/i386/libnio.so
+66e98000-66e9b000 ---p 00000000 00:00 0 
+66e9b000-66ee9000 rw-p 00000000 00:00 0          [stack:2548]
+66ee9000-66eff000 r-xp 00000000 fd:01 1972227    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/i386/libnet.so
+66eff000-66f00000 rw-p 00016000 fd:01 1972227    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/i386/libnet.so
+66f00000-66ffd000 rw-p 00000000 00:00 0 
+66ffd000-67000000 ---p 00000000 00:00 0 
+67001000-67010000 r--s 000ba000 fd:02 7604714    /home/kaituo/code/pig3/trunk/lib/trove-2.1.0.jar
+67010000-67014000 r--s 0002a000 fd:02 8786570    /home/kaituo/code/pig3/trunk/lib/commons-io-2.4.jar
+67014000-6702b000 r--s 00123000 fd:02 7604716    /home/kaituo/code/pig3/trunk/lib/commons-math3-3.0.jar
+6702b000-6702e000 r--s 00010000 fd:02 7604715    /home/kaituo/code/pig3/trunk/lib/z3.jar
+6702e000-67031000 r--s 0001b000 fd:02 6816935    /home/kaituo/Downloads/eclipse/plugins/org.junit_3.8.2.v3_8_2_v20100427-1100/junit.jar
+67031000-67038000 r--s 0003d000 fd:02 7606277    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/hamcrest-all-1.3.0RC2.jar
+67038000-67041000 r--s 0008a000 fd:02 7606324    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/zookeeper-3.3.3.jar
+67041000-67042000 r--s 00003000 fd:02 7606306    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/xmlenc-0.52.jar
+67042000-67045000 r--s 00022000 fd:02 7606340    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/stringtemplate-3.2.1.jar
+67045000-67047000 r--s 000f2000 fd:02 7606296    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/snappy-java-1.0.3.2.jar
+67047000-67048000 r--s 00002000 fd:02 7606341    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/slf4j-log4j12-1.6.1.jar
+67048000-6704a000 r--s 00005000 fd:02 7606332    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/slf4j-api-1.6.1.jar
+6704a000-6704d000 r--s 0001e000 fd:02 7606281    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/servlet-api-2.5-6.1.14.jar
+6704d000-6704f000 r--s 0001f000 fd:02 7606300    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/servlet-api-2.5-20081211.jar
+6704f000-67051000 r--s 00006000 fd:02 7606290    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/paranamer-2.3.jar
+67051000-67053000 r--s 0000e000 fd:02 7606321    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/oro-2.0.8.jar
+67053000-67062000 r--s 000b1000 fd:02 7606334    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/netty-3.2.2.Final.jar
+67062000-6706f000 r--s 0008f000 fd:02 7606295    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/mina-core-2.0.0-M5.jar
+6706f000-67078000 r--s 0006d000 fd:02 7606289    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/log4j-1.2.16.jar
+67078000-670da000 r--s 005e9000 fd:02 7606275    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/jython-2.5.0.jar
+670da000-670e0000 r--s 0002b000 fd:02 7606319    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/junit-4.5.jar
+670e0000-670e3000 r--s 0001b000 fd:02 7606303    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/junit-3.8.1.jar
+670e3000-670e6000 r--s 0001e000 fd:02 7606330    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/jsp-api-2.1-6.1.14.jar
+670e6000-670f7000 r--s 000ea000 fd:02 7606308    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/jsp-2.1-6.1.14.jar
+670f7000-670fa000 r--s 00029000 fd:02 7606293    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/jsch-0.1.38.jar
+670fa000-67103000 r--s 000cc000 fd:02 7606312    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/js-1.7R2.jar
+67103000-67112000 r--s 00074000 fd:02 7606274    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/joda-time-1.6.jar
+67112000-67119000 r--s 0007d000 fd:02 7606317    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/jetty-6.1.26.jar
+67119000-6711f000 r--s 00057000 fd:02 7606307    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/jets3t-0.7.1.jar
+6711f000-67129000 r--s 00066000 fd:02 7606285    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/jersey-core-1.8.jar
+67129000-6712e000 r--s 0005e000 fd:02 7606280    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/jasper-compiler-5.5.12.jar
+6712e000-6713a000 r--s 0008d000 fd:02 7606284    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/jackson-mapper-asl-1.7.3.jar
+6713a000-67143000 r--s 000a4000 fd:02 7606286    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/hsqldb-1.8.0.10.jar
+67143000-67179000 r--s 00316000 fd:02 7606276    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/hive-exec-0.8.0.jar
+67179000-671ad000 r--s 0035e000 fd:02 7606301    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/hadoop-core-1.0.0.jar
+671ad000-671ae000 ---p 00000000 00:00 0 
+671ae000-6722e000 rw-p 00000000 00:00 0          [stack:2546]
+6722e000-67231000 ---p 00000000 00:00 0 
+67231000-6727f000 rw-p 00000000 00:00 0          [stack:2545]
+6727f000-67282000 ---p 00000000 00:00 0 
+67282000-67300000 rw-p 00000000 00:00 0          [stack:2544]
+67300000-67400000 rw-p 00000000 00:00 0 
+67400000-67402000 r--s 00014000 fd:02 7606304    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/jline-0.9.94.jar
+67402000-67406000 r--s 00028000 fd:02 7606320    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/jetty-util-6.1.26.jar
+67406000-67423000 r--s 00204000 fd:02 7606273    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/hbase-0.90.0.jar
+67423000-6742e000 r--s 000cf000 fd:02 7606323    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/hbase-0.90.0-tests.jar
+6742e000-67431000 ---p 00000000 00:00 0 
+67431000-674af000 rw-p 00000000 00:00 0          [stack:2543]
+674af000-674b2000 ---p 00000000 00:00 0 
+674b2000-67500000 rw-p 00000000 00:00 0          [stack:2542]
+67500000-67700000 r--p 00000000 fd:01 161903     /usr/lib/locale/locale-archive
+67700000-677f9000 rw-p 00000000 00:00 0 
+677f9000-67800000 ---p 00000000 00:00 0 
+67800000-67821000 rw-p 00000000 00:00 0 
+67821000-67900000 ---p 00000000 00:00 0 
+67900000-67a00000 rw-p 00000000 00:00 0 
+67a00000-67a04000 r--s 00032000 fd:02 7606291    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/jdeb-0.8.jar
+67a04000-67a09000 r--s 00044000 fd:02 7606316    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/javacc.jar
+67a09000-67a2b000 r--s 00248000 fd:02 7606279    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/hadoop-test-1.0.0.jar
+67a2b000-67a4b000 r--s 00173000 fd:02 7606278    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/guava-11.0.jar
+67a4b000-67a4c000 ---p 00000000 00:00 0 
+67a4c000-67b14000 rw-p 00000000 00:00 0          [stack:2539]
+67b14000-67cc0000 r--s 03e64000 fd:01 1972272    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/rt.jar
+67cc0000-6ac00000 rw-p 00000000 00:00 0 
+6ac00000-6acfb000 rw-p 00000000 00:00 0 
+6acfb000-6ad00000 ---p 00000000 00:00 0 
+6ad02000-6ad07000 r--s 00044000 fd:02 7606298    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/javacc-4.2.jar
+6ad07000-6ad0b000 r--s 0002f000 fd:02 7606287    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/jackson-core-asl-1.7.3.jar
+6ad0b000-6ad2e000 r--s 00344000 fd:02 7606314    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/core-3.1.1.jar
+6ad2e000-6ad31000 ---p 00000000 00:00 0 
+6ad31000-6ad7f000 rw-p 00000000 00:00 0          [stack:2541]
+6ad7f000-6ad80000 ---p 00000000 00:00 0 
+6ad80000-6ae00000 rw-p 00000000 00:00 0          [stack:2538]
+6ae00000-6ae21000 rw-p 00000000 00:00 0 
+6ae21000-6af00000 ---p 00000000 00:00 0 
+6af00000-6af21000 rw-p 00000000 00:00 0 
+6af21000-6b000000 ---p 00000000 00:00 0 
+6b001000-6b003000 r--s 00011000 fd:02 7606318    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/jasper-runtime-5.5.12.jar
+6b003000-6b008000 r--s 00028000 fd:02 7606299    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/httpcore-4.1.jar
+6b008000-6b010000 r--s 0004e000 fd:02 7606294    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/httpclient-4.1.jar
+6b010000-6b011000 r--s 00007000 fd:02 7606313    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/ftpserver-deprecated-1.0.0-M2.jar
+6b011000-6b017000 r--s 0003d000 fd:02 7606339    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/ftpserver-core-1.0.0.jar
+6b017000-6b01c000 r--s 00028000 fd:02 7606336    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/commons-net-1.4.1.jar
+6b01c000-6b020000 r--s 0003c000 fd:02 7606333    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/commons-lang-2.4.jar
+6b020000-6b02e000 r--s 0007f000 fd:02 7606315    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/commons-collections-3.2.1.jar
+6b02e000-6b031000 ---p 00000000 00:00 0 
+6b031000-6b07f000 rw-p 00000000 00:00 0          [stack:2540]
+6b07f000-6b080000 ---p 00000000 00:00 0 
+6b080000-6b100000 rw-p 00000000 00:00 0          [stack:2537]
+6b100000-6b121000 rw-p 00000000 00:00 0 
+6b121000-6b200000 ---p 00000000 00:00 0 
+6b200000-6b205000 r--s 00040000 fd:02 7606328    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/commons-httpclient-3.0.1.jar
+6b205000-6b209000 r--s 0002f000 fd:02 7606297    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/commons-beanutils-core-1.8.0.jar
+6b209000-6b20e000 r--s 0002a000 fd:02 7606338    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/commons-beanutils-1.7.0.jar
+6b20e000-6b214000 r--s 0003b000 fd:02 7606292    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/avro-1.5.3.jar
+6b214000-6b219000 r--s 00027000 fd:02 7606283    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/automaton-1.11-8.jar
+6b219000-6b21d000 r--s 00025000 fd:02 7606322    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/antlr-runtime-3.4.jar
+6b21d000-6b228000 r--s 00105000 fd:02 7606309    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/antlr-3.4.jar
+6b228000-6b237000 r--s 000ee000 fd:02 7606282    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/ant-1.6.5.jar
+6b237000-6b238000 ---p 00000000 00:00 0 
+6b238000-6b2b8000 rw-p 00000000 00:00 0          [stack:2536]
+6b2b8000-6b2b9000 ---p 00000000 00:00 0 
+6b2b9000-6b341000 rw-p 00000000 00:00 0          [stack:2535]
+6b341000-6b379000 rw-p 00000000 00:00 0 
+6b379000-6b38f000 rw-p 00000000 00:00 0 
+6b38f000-6b4cf000 rw-p 00000000 00:00 0 
+6b4cf000-6b4d7000 rw-p 00000000 00:00 0 
+6b4d7000-6b50f000 rw-p 00000000 00:00 0 
+6b50f000-6b525000 rw-p 00000000 00:00 0 
+6b525000-6b664000 rw-p 00000000 00:00 0 
+6b664000-6b6b2000 rw-p 00000000 00:00 0 
+6b6b2000-6b70f000 rw-p 00000000 00:00 0 
+6b70f000-6c710000 rw-p 00000000 00:00 0 
+6c710000-73710000 rw-p 00000000 00:00 0 
+73710000-761c0000 rw-p 00000000 00:00 0 
+761c0000-9e1c0000 rw-p 00000000 00:00 0 
+9e1c0000-a7b40000 rw-p 00000000 00:00 0 
+a7b40000-a7c80000 ---p 00000000 00:00 0 
+a7c80000-b3710000 rw-p 00000000 00:00 0 
+b3710000-b3712000 r--s 00004000 fd:02 7606337    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/ftplet-api-1.0.0.jar
+b3712000-b3714000 r--s 0000d000 fd:02 7606302    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/commons-logging-1.1.1.jar
+b3714000-b371a000 r--s 00043000 fd:02 7606310    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/commons-configuration-1.6.jar
+b371a000-b3723000 rw-p 00000000 00:00 0 
+b3723000-b37da000 rw-p 00000000 00:00 0 
+b37da000-b3a1a000 rwxp 00000000 00:00 0 
+b3a1a000-b67da000 rw-p 00000000 00:00 0 
+b67da000-b67e5000 r-xp 00000000 fd:01 156771     /usr/lib/libnss_files-2.15.so
+b67e5000-b67e6000 r--p 0000a000 fd:01 156771     /usr/lib/libnss_files-2.15.so
+b67e6000-b67e7000 rw-p 0000b000 fd:01 156771     /usr/lib/libnss_files-2.15.so
+b67e7000-b67e8000 r--s 00002000 fd:02 7606327    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/kfs-0.3.jar
+b67e8000-b67eb000 r--s 00019000 fd:02 7606305    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/commons-el-1.0.jar
+b67eb000-b67ef000 r--s 00036000 fd:02 7606325    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/ST4-4.0.4.jar
+b67ef000-b67f8000 r--s 00066000 fd:01 1972158    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/ext/gnome-java-bridge.jar
+b67f8000-b6800000 rw-s 00000000 fd:01 394229     /tmp/hsperfdata_kaituo/2528
+b6800000-b68fd000 rw-p 00000000 00:00 0 
+b68fd000-b6900000 ---p 00000000 00:00 0 
+b6900000-b6904000 r--s 00020000 fd:02 7606311    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/commons-digester-1.8.jar
+b6904000-b6906000 r--s 0000d000 fd:02 7606329    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/commons-codec-1.4.jar
+b6906000-b690e000 r-xp 00000000 fd:01 1972238    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/i386/libzip.so
+b690e000-b690f000 rw-p 00008000 fd:01 1972238    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/i386/libzip.so
+b690f000-b6935000 r-xp 00000000 fd:01 1972215    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/i386/libjava.so
+b6935000-b6936000 rw-p 00026000 fd:01 1972215    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/i386/libjava.so
+b6936000-b6939000 ---p 00000000 00:00 0 
+b6939000-b6987000 rw-p 00000000 00:00 0          [stack:2534]
+b6987000-b69b0000 r-xp 00000000 fd:01 136350     /usr/lib/libm-2.15.so
+b69b0000-b69b1000 r--p 00028000 fd:01 136350     /usr/lib/libm-2.15.so
+b69b1000-b69b2000 rw-p 00029000 fd:01 136350     /usr/lib/libm-2.15.so
+b69b2000-b72a3000 r-xp 00000000 fd:01 1972242    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/i386/server/libjvm.so
+b72a3000-b72fe000 rw-p 008f0000 fd:01 1972242    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/i386/server/libjvm.so
+b72fe000-b771b000 rw-p 00000000 00:00 0 
+b771b000-b771c000 r--s 00003000 fd:02 7606335    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/json-simple-1.1.jar
+b771c000-b771e000 r--s 00009000 fd:02 7606326    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/commons-cli-1.2.jar
+b771e000-b7723000 r--s 00068000 fd:02 7606331    /home/kaituo/code/pig3/trunk/build/ivy/lib/Pig/antlr-2.7.7.jar
+b7723000-b7726000 r--s 0000f000 fd:01 1972161    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/ext/pulse-java.jar
+b7726000-b7727000 rw-p 00000000 00:00 0 
+b7727000-b7728000 r--p 00000000 00:00 0 
+b7728000-b7733000 r-xp 00000000 fd:01 1972237    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/i386/libverify.so
+b7733000-b7734000 rw-p 0000a000 fd:01 1972237    /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.6/jre/lib/i386/libverify.so
+b7734000-b7735000 rw-p 00000000 00:00 0 
+b7735000-b7736000 r-xp 00000000 00:00 0          [vdso]
+bfea6000-bfec8000 rw-p 00000000 00:00 0          [stack]
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 
+java_command: org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 54130 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -classNames edu.umass.cs.pig.test.pigmix.TestExGen4PigMixReal2
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.5
+PATH=/home/kaituo/perl5/bin:/home/kaituo/perl5/perlbrew/bin:/home/kaituo/perl5/perlbrew/perls/perl-5.16.0/bin:/usr/lib/ccache:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/home/kaituo/.local/bin:/home/kaituo/bin:/home/kaituo/Downloads/pig-0.9.2/bin
+USERNAME=kaituo
+LD_LIBRARY_PATH=.
+SHELL=/bin/bash
+DISPLAY=:0.0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x729e90], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x729e90], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x5d35f0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: [libjvm.so+0x5d35f0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGXFSZ: [libjvm.so+0x5d35f0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x5d35f0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x5d3490], sa_mask[0]=0x00000004, sa_flags=0x10000004
+SIGHUP: [libjvm.so+0x5d38b0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGINT: [libjvm.so+0x5d38b0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGTERM: [libjvm.so+0x5d38b0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGQUIT: [libjvm.so+0x5d38b0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+
+
+---------------  S Y S T E M  ---------------
+
+OS:Fedora release 17 (Beefy Miracle)
+
+uname:Linux 3.5.4-1.fc17.i686.PAE #1 SMP Mon Sep 17 15:19:42 UTC 2012 i686
+libc:glibc 2.15 NPTL 2.15 
+rlimit: STACK 8192k, CORE 0k, NPROC 1024, NOFILE 4096, AS infinity
+load average:0.08 0.03 0.05
+
+/proc/meminfo:
+MemTotal:        6067140 kB
+MemFree:         4173916 kB
+Buffers:          209520 kB
+Cached:           882732 kB
+SwapCached:            0 kB
+Active:          1239728 kB
+Inactive:         498756 kB
+Active(anon):     647332 kB
+Inactive(anon):     1028 kB
+Active(file):     592396 kB
+Inactive(file):   497728 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+HighTotal:       5241780 kB
+HighFree:        3692948 kB
+LowTotal:         825360 kB
+LowFree:          480968 kB
+SwapTotal:       5177340 kB
+SwapFree:        5177340 kB
+Dirty:               256 kB
+Writeback:             0 kB
+AnonPages:        581084 kB
+Mapped:            97528 kB
+Shmem:              2124 kB
+Slab:             105840 kB
+SReclaimable:      76780 kB
+SUnreclaim:        29060 kB
+KernelStack:        2448 kB
+PageTables:         7328 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     8210908 kB
+Committed_AS:    1913452 kB
+VmallocTotal:     122880 kB
+VmallocUsed:       27116 kB
+VmallocChunk:      92660 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:    380928 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       10232 kB
+DirectMap2M:      897024 kB
+
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 37 stepping 5, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht, tsc, tscinvbit
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 37
+model name	: Intel(R) Core(TM) i5 CPU       M 450  @ 2.40GHz
+stepping	: 5
+microcode	: 0x3
+cpu MHz		: 2400.000
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fdiv_bug	: no
+hlt_bug		: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology nonstop_tsc aperfmperf pni dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt lahf_lm ida arat dtherm tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4787.82
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 37
+model name	: Intel(R) Core(TM) i5 CPU       M 450  @ 2.40GHz
+stepping	: 5
+microcode	: 0x3
+cpu MHz		: 1199.000
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 2
+cpu cores	: 2
+apicid		: 4
+initial apicid	: 4
+fdiv_bug	: no
+hlt_bug		: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology nonstop_tsc aperfmperf pni dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt lahf_lm ida arat dtherm tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4787.82
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 37
+model name	: Intel(R) Core(TM) i5 CPU       M 450  @ 2.40GHz
+stepping	: 5
+microcode	: 0x3
+cpu MHz		: 1333.000
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 1
+initial apicid	: 1
+fdiv_bug	: no
+hlt_bug		: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology nonstop_tsc aperfmperf pni dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt lahf_lm ida arat dtherm tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4787.82
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 37
+model name	: Intel(R) Core(TM) i5 CPU       M 450  @ 2.40GHz
+stepping	: 5
+microcode	: 0x3
+cpu MHz		: 1199.000
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 2
+cpu cores	: 2
+apicid		: 5
+initial apicid	: 5
+fdiv_bug	: no
+hlt_bug		: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology nonstop_tsc aperfmperf pni dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt lahf_lm ida arat dtherm tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 4787.82
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 6067140k(4173916k free), swap 5177340k(5177340k free)
+
+vm_info: OpenJDK Server VM (23.2-b09) for linux-x86 JRE (1.7.0_06-icedtea-mockbuild_2012_08_31_14_28-b00), built on Aug 31 2012 14:34:19 by "mockbuild" with gcc 4.7.0 20120507 (Red Hat 4.7.0-5)
+
+time: Fri Oct 12 15:35:44 2012
+elapsed time: 5 seconds
+

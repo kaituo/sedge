@@ -1,0 +1,76 @@
+#-----------------------------------------------
+# New Logical Plan:
+#-----------------------------------------------
+D: (Name: LOFilter Schema: group#49:chararray,xx#77:long,yy#80:long)
+|   |
+|   (Name: And Type: boolean Uid: 87)
+|   |
+|   |---(Name: GreaterThan Type: boolean Uid: 83)
+|   |   |
+|   |   |---xx:(Name: Project Type: long Uid: 77 Input: 0 Column: 1)
+|   |   |
+|   |   |---(Name: Cast Type: long Uid: 81)
+|   |       |
+|   |       |---(Name: Constant Type: int Uid: 81)
+|   |
+|   |---(Name: GreaterThan Type: boolean Uid: 86)
+|       |
+|       |---yy:(Name: Project Type: long Uid: 80 Input: 0 Column: 2)
+|       |
+|       |---(Name: Cast Type: long Uid: 84)
+|           |
+|           |---(Name: Constant Type: int Uid: 84)
+|
+|---C: (Name: LOForEach Schema: group#49:chararray,xx#77:long,yy#80:long)
+    |   |
+    |   (Name: LOGenerate[false,false,false] Schema: group#49:chararray,xx#77:long,yy#80:long)
+    |   |   |
+    |   |   group:(Name: Project Type: chararray Uid: 49 Input: 0 Column: (*))
+    |   |   |
+    |   |   (Name: UserFunc(org.apache.pig.builtin.LongSum) Type: long Uid: 77)
+    |   |   |
+    |   |   |---(Name: Dereference Type: bag Uid: 76 Column:[1])
+    |   |       |
+    |   |       |---A:(Name: Project Type: bag Uid: 73 Input: 1 Column: (*))
+    |   |   |
+    |   |   (Name: UserFunc(org.apache.pig.builtin.LongSum) Type: long Uid: 80)
+    |   |   |
+    |   |   |---(Name: Dereference Type: bag Uid: 79 Column:[2])
+    |   |       |
+    |   |       |---A:(Name: Project Type: bag Uid: 73 Input: 2 Column: (*))
+    |   |
+    |   |---(Name: LOInnerLoad[0] Schema: group#49:chararray)
+    |   |
+    |   |---A: (Name: LOInnerLoad[1] Schema: name#49:chararray,x#50:int,y#51:int)
+    |   |
+    |   |---A: (Name: LOInnerLoad[1] Schema: name#49:chararray,x#50:int,y#51:int)
+    |
+    |---B: (Name: LOCogroup Schema: group#49:chararray,A#73:bag{#96:tuple(name#49:chararray,x#50:int,y#51:int)})
+        |   |
+        |   name:(Name: Project Type: chararray Uid: 49 Input: 0 Column: 0)
+        |
+        |---A: (Name: LOForEach Schema: name#49:chararray,x#50:int,y#51:int)
+            |   |
+            |   (Name: LOGenerate[false,false,false] Schema: name#49:chararray,x#50:int,y#51:int)
+            |   |   |
+            |   |   (Name: Cast Type: chararray Uid: 49)
+            |   |   |
+            |   |   |---name:(Name: Project Type: bytearray Uid: 49 Input: 0 Column: (*))
+            |   |   |
+            |   |   (Name: Cast Type: int Uid: 50)
+            |   |   |
+            |   |   |---x:(Name: Project Type: bytearray Uid: 50 Input: 1 Column: (*))
+            |   |   |
+            |   |   (Name: Cast Type: int Uid: 51)
+            |   |   |
+            |   |   |---y:(Name: Project Type: bytearray Uid: 51 Input: 2 Column: (*))
+            |   |
+            |   |---(Name: LOInnerLoad[0] Schema: name#49:bytearray)
+            |   |
+            |   |---(Name: LOInnerLoad[1] Schema: x#50:bytearray)
+            |   |
+            |   |---(Name: LOInnerLoad[2] Schema: y#51:bytearray)
+            |
+            |---A: (Name: LOLoad Schema: name#49:bytearray,x#50:bytearray,y#51:bytearray)RequiredFields:null
+
+

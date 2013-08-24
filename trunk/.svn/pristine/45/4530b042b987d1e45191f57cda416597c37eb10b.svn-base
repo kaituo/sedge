@@ -1,0 +1,45 @@
+package edu.umass.cs.pig.dataflow;
+
+import java.io.Serializable;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+import edu.umass.cs.pig.vm.PathList;
+
+public class Relation implements Serializable {
+	/** Parent of relation. **/
+	  public PathList parent;
+
+	  /** Child of relation. **/
+	  public PathList child;
+	  
+	  /** Map from parent vars to matching child vars. */
+	  public Map<VarInfo,VarInfo> parent_to_child_map;
+
+	  /** Map from child vars to matching parent vars. */
+	  public Map<VarInfo,VarInfo> child_to_parent_map;
+
+	  
+	  
+	  public Relation(PathList parent, PathList child) {
+
+		    this.parent = parent;
+		    this.child = child;
+		    parent_to_child_map = new LinkedHashMap<VarInfo,VarInfo>();
+		    child_to_parent_map = new LinkedHashMap<VarInfo,VarInfo>();
+		    
+		    connect();
+		  }
+	  
+	  /**
+	   * Adds this relation to its child's parent list and its parent's
+	   * children list.
+	   */
+	  private void connect() {
+	    assert !child.parents.contains(this);
+	    assert !parent.children.contains(this);
+	    child.parents.add(this);
+	    parent.children.add(this);
+	  }
+
+}

@@ -1,0 +1,386 @@
+package org.apache.pig.test;
+
+import static org.junit.Assert.assertTrue;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Map;
+import java.util.Properties;
+import java.util.Random;
+import java.util.UUID;
+
+import org.apache.pig.ExecType;
+import org.apache.pig.PigServer;
+import org.apache.pig.backend.executionengine.ExecException;
+import org.apache.pig.data.DataBag;
+import org.apache.pig.impl.PigContext;
+import org.apache.pig.newplan.Operator;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+
+public class TestExampleGenerator3 {
+	
+	static PigContext pigContext = new PigContext(ExecType.LOCAL, new Properties());
+
+//  private OSValidator z3 = OSValidator.get();
+//  private Z3Context z4 = Z3Context.get();
+  static int MAX = 100;
+  static int MIN = 10;
+  static String A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T;
+  static int start = 0;
+  static  File fileA, fileB, fileC, fileD, fileE, fileF, fileG, fileH, fileI, fileJ, fileK, fileL, fileM, fileN, fileO, fileP, fileQ, fileR, fileS, fileT;
+  
+  {
+      try {
+          pigContext.connect();
+      } catch (ExecException e) {
+          // TODO Auto-generated catch block
+          e.printStackTrace();
+      }
+  }
+
+  @BeforeClass
+  public static void oneTimeSetup() throws Exception {
+     
+
+      fileA = File.createTempFile("dataA", ".dat");
+      fileB = File.createTempFile("dataB", ".dat");
+      fileC = File.createTempFile("dataC", ".dat");
+      fileD = File.createTempFile("dataD", ".dat");
+      fileE = File.createTempFile("dataE", ".dat");
+      fileF = File.createTempFile("dataF", ".dat");
+      fileG = File.createTempFile("dataG", ".dat");
+      fileH = File.createTempFile("dataH", ".dat");
+      fileI = File.createTempFile("dataI", ".dat");
+      fileJ = File.createTempFile("dataJ", ".dat");
+      fileK = File.createTempFile("dataK", ".dat");
+      fileL = File.createTempFile("dataL", ".dat");
+      fileM = File.createTempFile("dataM", ".dat");
+      fileN = File.createTempFile("dataN", ".dat");
+      fileO = File.createTempFile("dataO", ".dat");
+      fileP = File.createTempFile("dataP", ".dat");
+      fileQ = File.createTempFile("dataQ", ".dat");
+      fileR = File.createTempFile("dataR", ".dat");
+      fileS = File.createTempFile("dataS", ".dat");
+      fileT = File.createTempFile("dataT", ".dat");
+      
+      writeData(fileA);
+      writeData(fileB);
+      writeData2(fileC);
+      writeData3(fileD);
+      writeData3(fileE);
+      writeData4(fileF);
+      writeData4(fileG);
+      writeData5(fileH);
+      writeData6(fileI);
+      writeData8(fileJ);
+      writeData7(fileK);
+      writeData9(fileL);
+      writeData7(fileM);
+      writeData10(fileN);
+      writeData11(fileO);
+      writeData12(fileP);
+      writeData13(fileQ);
+      writeData14(fileR);
+      writeData15(fileS);
+      writeData16(fileT);
+
+      fileA.deleteOnExit();
+      fileB.deleteOnExit();
+      fileC.deleteOnExit();
+      fileD.deleteOnExit();
+      fileE.deleteOnExit();
+      fileF.deleteOnExit();
+      fileG.deleteOnExit();
+      fileH.deleteOnExit();
+      fileI.deleteOnExit();
+      fileJ.deleteOnExit();
+      fileK.deleteOnExit();
+      fileL.deleteOnExit();
+      fileM.deleteOnExit();
+      fileN.deleteOnExit();
+      fileO.deleteOnExit();
+      fileP.deleteOnExit();
+      fileQ.deleteOnExit();
+      fileR.deleteOnExit();
+      fileS.deleteOnExit();
+      fileT.deleteOnExit();
+      
+      A = "'" + fileA.getPath() + "'";
+      B = "'" + fileB.getPath() + "'";
+      C = "'" + fileC.getPath() + "'";
+      D = "'" + fileD.getPath() + "'";
+      E = "'" + fileE.getPath() + "'";
+      F = "'" + fileF.getPath() + "'";
+      G = "'" + fileG.getPath() + "'";
+      H = "'" + fileH.getPath() + "'";
+      I = "'" + fileI.getPath() + "'";
+      J = "'" + fileJ.getPath() + "'";
+      K = "'" + fileK.getPath() + "'";
+      L = "'" + fileL.getPath() + "'";
+      M = "'" + fileM.getPath() + "'";
+      N = "'" + fileN.getPath() + "'";
+      O = "'" + fileO.getPath() + "'";
+      P = "'" + fileP.getPath() + "'";
+      Q = "'" + fileQ.getPath() + "'";
+      R = "'" + fileR.getPath() + "'";
+      S = "'" + fileS.getPath() + "'";
+      T = "'" + fileT.getPath() + "'";
+      System.out.println("A : " + A + "\n" + "B : " + B + "\n" + "C : " + C + "\n" + "D : " + D + "\n" + "E : " + E + "\n" + "F : " + F + "\n" + "G : " + G + "\n" + "H : " + H + "\n" + "I : " + I + "\n" + "J : " + J + "\n" +  "K : " + K + "\n" +  "L : " + L + "\n" +  "M : " + M + "\n" +  "N : " + N + "\n" +  "O : " + O + "\n" +  "P : " + P + "\n" +  "Q : " + Q + "\n" +  "R : " + R + "\n" +  "S : " + S + "\n" +  "T : " + T + "\n");
+      System.out.println("Test data created.");
+  }
+  
+  private static void writeData(File dataFile) throws Exception {
+      // File dataFile = File.createTempFile(name, ".dat");
+      FileOutputStream dat = new FileOutputStream(dataFile);
+
+      Random rand = new Random();
+
+      for (int i = 0; i < MIN; i++)
+          dat.write((rand.nextInt(10) + "\t" + rand.nextInt(10) + "\n")
+                  .getBytes());
+
+      dat.close();
+  }
+  
+  private static void writeData2(File dataFile) throws Exception {
+      // File dataFile = File.createTempFile(name, ".dat");
+      FileOutputStream dat = new FileOutputStream(dataFile);
+
+      Random rand = new Random();
+
+      for (int i = 0; i < MIN; i++)
+          dat.write((rand.nextInt(100) + "\t" + rand.nextInt(100) + "\n")
+                  .getBytes());
+
+      dat.close();
+  }
+  
+  private static void writeData3(File dataFile) throws Exception {
+      // File dataFile = File.createTempFile(name, ".dat");
+	  start = 0;
+      FileOutputStream dat = new FileOutputStream(dataFile);
+
+      for (int i = 0; i < MIN; i++)
+          dat.write((start++ + "\t" + start++ + "\n")
+                  .getBytes());
+
+      dat.close();
+  }
+  
+  private static void writeData4(File dataFile) throws Exception {
+	  FileOutputStream dat = new FileOutputStream(dataFile);
+
+      Random rand = new Random();
+
+      for (int i = 0; i < MIN; i++)
+          dat.write(( UUID.randomUUID().toString() + "\t" + rand.nextInt(10) + "\t" + rand.nextInt(10) + "\n")
+                  .getBytes());
+
+      
+//      dat.write(( "John" + "\t" + -100 + "\t" + -100 + "\n")
+//              .getBytes());
+//      dat.write(( "John" + "\t" + 2 + "\t" + 2 + "\n")
+//              .getBytes());
+//      dat.write(( "John" + "\t" + 100 + "\t" + 100 + "\n")
+//              .getBytes());
+
+      dat.close();
+  }
+  
+  private static void writeData5(File dataFile) throws Exception {
+	  FileOutputStream dat = new FileOutputStream(dataFile);
+
+      Random rand = new Random();
+
+      for (int i = 0; i < MIN; i++)
+          dat.write(( rand.nextFloat() + "\t" + 10*rand.nextFloat() + "\n")
+                  .getBytes());
+
+      dat.close();
+  }
+  
+  private static void writeData6(File dataFile) throws Exception {
+	  FileOutputStream dat = new FileOutputStream(dataFile);
+
+      Random rand = new Random();
+
+      for (int i = 0; i < MIN; i++)
+          dat.write(( rand.nextDouble() + "\t" + 10*rand.nextDouble() + "\n")
+                  .getBytes());
+
+      dat.close();
+  }
+  
+  private static void writeData7(File dataFile) throws Exception {
+	  FileOutputStream dat = new FileOutputStream(dataFile);
+
+      for (int i = 0; i < MIN; i++)
+          dat.write(( UUID.randomUUID().toString() + "\n")
+                  .getBytes());
+
+      dat.close();
+  }
+  
+  private static void writeData8(File dataFile) throws Exception {
+	  FileOutputStream dat = new FileOutputStream(dataFile);
+
+      Random rand = new Random();
+
+      for (int i = 0; i < MIN; i++)
+          dat.write(( UUID.randomUUID().toString() + "\t" + rand.nextDouble() + "\n")
+                  .getBytes());
+
+      dat.close();
+  }
+  
+  private static void writeData9(File dataFile) throws Exception {
+	  FileOutputStream dat = new FileOutputStream(dataFile);
+
+      for (int i = 0; i < MIN; i++)
+          dat.write(( UUID.randomUUID().toString() + "\t" + UUID.randomUUID().toString() + "\n")
+                  .getBytes());
+
+      dat.close();
+  }
+  
+  private static void writeData10(File dataFile) throws Exception {
+	  FileOutputStream dat = new FileOutputStream(dataFile);
+
+      Random rand = new Random();
+
+      for (int i = 0; i < MIN; i++)
+          dat.write(( UUID.randomUUID().toString() + "\t" + UUID.randomUUID().toString() + "\t"  + rand.nextInt(10) + "\t" + UUID.randomUUID().toString() + "\t" + UUID.randomUUID().toString() + "\t" + UUID.randomUUID().toString() + "\t" + UUID.randomUUID().toString() + "\n")
+                  .getBytes());
+
+      dat.close();
+  }
+  
+  private static void writeData11(File dataFile) throws Exception {
+	  FileOutputStream dat = new FileOutputStream(dataFile);
+
+      Random rand = new Random();
+
+      for (int i = 0; i < MIN; i++)
+          dat.write(( UUID.randomUUID().toString() + "\t" + rand.nextInt() + "\n")
+                  .getBytes());
+
+      dat.close();
+  }
+  
+  private static void writeData12(File dataFile) throws Exception {
+	  FileOutputStream dat = new FileOutputStream(dataFile);
+
+      Random rand = new Random();
+
+      for (int i = 0; i < MIN; i++)
+          dat.write(( UUID.randomUUID().toString() + "\t" + rand.nextInt() + "\t" + rand.nextDouble() + "\n")
+                  .getBytes());
+
+      dat.close();
+  }
+  
+  private static void writeData13(File dataFile) throws Exception {
+	  FileOutputStream dat = new FileOutputStream(dataFile);
+
+      Random rand = new Random();
+
+      for (int i = 0; i < MIN; i++)
+          dat.write(( UUID.randomUUID().toString() + "\t" + UUID.randomUUID().toString() + "\t" + rand.nextInt() + "\t" + UUID.randomUUID().toString() + "\t" + UUID.randomUUID().toString() + "\t" + rand.nextInt() + "\t" + rand.nextDouble() + "\t" + UUID.randomUUID().toString() + "\t" + UUID.randomUUID().toString() + "\n")
+                  .getBytes());
+
+      dat.close();
+  }
+  
+  private static void writeData14(File dataFile) throws Exception {
+	  FileOutputStream dat = new FileOutputStream(dataFile);
+
+      Random rand = new Random();
+
+      for (int i = 0; i < MIN; i++)
+          dat.write(( UUID.randomUUID().toString() + "\t" + UUID.randomUUID().toString() + "\t" + rand.nextInt() + "\t" + UUID.randomUUID().toString() + "\t" + rand.nextDouble() + "\n" )
+                  .getBytes());
+
+      dat.close();
+  }
+  
+  private static void writeData15(File dataFile) throws Exception {
+	  FileOutputStream dat = new FileOutputStream(dataFile);
+
+      Random rand = new Random();
+
+      for (int i = 0; i < MIN; i++)
+          dat.write(( UUID.randomUUID().toString() + "\t" + UUID.randomUUID().toString() + "\t" + rand.nextDouble()  + "\t" + rand.nextInt() + "\n" )
+                  .getBytes());
+
+      dat.close();
+  }
+  
+  private static void writeData16(File dataFile) throws Exception {
+	  FileOutputStream dat = new FileOutputStream(dataFile);
+
+      Random rand = new Random();
+
+      for (int i = 0; i < 1; i++)
+          dat.write(( UUID.randomUUID().toString() + "\t" + UUID.randomUUID().toString() + "\t" + rand.nextInt() + "\t" + UUID.randomUUID().toString() 
+        		  + "\t" + UUID.randomUUID().toString() + "\t" + UUID.randomUUID().toString() + "\t" + rand.nextDouble() 
+        		  + "\t" + UUID.randomUUID().toString() + "\t"  + UUID.randomUUID().toString() + "\t"
+        		  + UUID.randomUUID().toString() + "\t" + UUID.randomUUID().toString() + "\t"
+        		  + rand.nextInt() + "\t" + UUID.randomUUID().toString() + "\t" + UUID.randomUUID().toString()
+        		  + "\t" + UUID.randomUUID().toString() + "\t" + rand.nextDouble() + "\t" + UUID.randomUUID().toString() + "\t" + UUID.randomUUID().toString()
+        		  + "\t" + UUID.randomUUID().toString() + "\t" + UUID.randomUUID().toString() + "\t" + rand.nextInt() 
+        		  + "\t" + UUID.randomUUID().toString() + "\t" + UUID.randomUUID().toString() + "\t" + UUID.randomUUID().toString() + "\t" 
+        		  + rand.nextDouble() + "\t" + UUID.randomUUID().toString() + "\t"  + UUID.randomUUID().toString() + "\n")
+                  .getBytes());
+
+      dat.close();
+  }
+  
+  
+  /**
+   * register pigperf.jar;
+A = load '/user/pig/tests/data/pigmix/widegroupbydata' using org.apache.pig.test.udf.storefunc.PigPerformanceLoader()
+    as (user, action, timespent, query_term, ip_addr, timestamp,
+        estimated_revenue, page_info, page_links, user_1, action_1, timespent_1, query_term_1, ip_addr_1, timestamp_1,
+        estimated_revenue_1, page_info_1, page_links_1, user_2, action_2, timespent_2, query_term_2, ip_addr_2, timestamp_2,
+        estimated_revenue_2, page_info_2, page_links_2);
+B = group A by (user, action, timespent, query_term, ip_addr, timestamp,
+        estimated_revenue, user_1, action_1, timespent_1, query_term_1, ip_addr_1, timestamp_1,
+        estimated_revenue_1, user_2, action_2, timespent_2, query_term_2, ip_addr_2, timestamp_2,
+        estimated_revenue_2) parallel 40;
+C = foreach B generate SUM(A.timespent), SUM(A.timespent_1), SUM(A.timespent_2), AVG(A.estimated_revenue), AVG(A.estimated_revenue_1), AVG(A.estimated_revenue_2);
+store C into 'L17out';
+
+A = load '/tmp/dataT6191247744761404992.dat' using PigStorage() as (user : chararray, action : chararray, timespent : int, query_term : chararray, ip_addr : chararray, timestamp : chararray,estimated_revenue : double, page_info : chararray, page_links : chararray, user_1 : chararray, action_1 : chararray, timespent_1 : int, query_term_1 : chararray, ip_addr_1 : chararray, timestamp_1 : chararray,estimated_revenue_1 : double, page_info_1 : chararray, page_links_1 : chararray, user_2 : chararray, action_2 : chararray, timespent_2 : int, query_term_2 : chararray, ip_addr_2 : chararray, timestamp_2 : chararray,estimated_revenue_2 : double, page_info_2 : chararray, page_links_2 : chararray);
+B = group A by (user, action, timespent, query_term, ip_addr, timestamp,estimated_revenue, user_1, action_1, timespent_1, query_term_1, ip_addr_1, timestamp_1,estimated_revenue_1, user_2, action_2, timespent_2, query_term_2, ip_addr_2, timestamp_2,estimated_revenue_2);
+C = foreach B generate SUM(A.timespent), SUM(A.timespent_1), SUM(A.timespent_2), AVG(A.estimated_revenue), AVG(A.estimated_revenue_1), AVG(A.estimated_revenue_2);
+   * @throws Exception
+   */
+  @Test
+  public void testFilter8() throws Exception {
+
+  	PigServer pigserver = new PigServer(pigContext);
+
+      String query = "A = load " + I
+              + " using PigStorage() as (x : double, y : double);\n";
+      pigserver.registerQuery(query);
+      System.out.print(query);
+      query = "B = filter A by org.apache.pig.piggybank.evaluation.math.POW(x, y) > 3.0;\n";
+      pigserver.registerQuery(query);
+      System.out.print(query);
+      Map<Operator, DataBag> derivedData = pigserver.getExamples2("B");
+      assertTrue(derivedData != null);
+//      float yy = new org.apache.pig.piggybank.evaluation.math.POW();
+  }// 
+  
+  public static void main(String[] args) {
+	  int index = 0;
+
+      for (int i = 0; i < 2; ++i) {
+              index += (1 << i);
+              System.out.println(index);
+      }
+  }
+}
