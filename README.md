@@ -30,9 +30,10 @@ Installation
 
 3. Unpack the tarball.
 
-    % tar zxvf sedge-binary-\<version\>.tar.gz
+    % tar zxvf sedge-binary-&lt;version&gt;.tar.gz
 
-*SEDGE* is installed in a directory called sedge-binary-\<version\>.tar.gz in the SEDGEDIR directory.
+    *SEDGE* is installed in a directory called sedge-binary-&lt;version&gt;.tar.gz in the SEDGEDIR directory.
+
 4. You must install the JDK in your operating system. The Java 7 is recommended. 
 5. Update the environment variable CLASSPATH and LD_LIBRARY_PATH.
 ```bash
