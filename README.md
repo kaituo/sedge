@@ -26,13 +26,13 @@ Download pre-compiled binaries and all required third-party libraries for Linux 
 Installation
 ------------
 1. Download the binary. 
-2. Change directory to the location where you would like *SEDGE* to be installed. We'll call this the SEDGEDIR directory. Move the .tar.gz archive binary to the SEDGEDIR directory.
+2. Change directory to the location where you would like *SEDGE* to be installed. We'll call this location the SEDGEDIR directory. Move the .tar.gz archive binary to the SEDGEDIR directory.
 
 3. Unpack the tarball.
 
-    % tar zxvf sedge-binary-<version>.tar.gz
+    % tar zxvf sedge-binary-\<version\>.tar.gz
 
-*SEDGE* is installed in a directory called sedge-binary-<version> in the SEDGEDIR directory.
+*SEDGE* is installed in a directory called sedge-binary-\<version\>.tar.gz in the SEDGEDIR directory.
 4. You must install the JDK in your operating system. The Java 7 is recommended. 
 5. Update the environment variable CLASSPATH and LD_LIBRARY_PATH.
 ```bash
