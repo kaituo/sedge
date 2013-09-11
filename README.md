@@ -111,7 +111,7 @@ You will see some output like this:
 -------------------------------------------------------------------------------
 ```
 
-To generate example data for a Pig script containing user-defined function (UDF), the UDF needs to be in the classpath.  You can learn how to write Pig's UDF [here](http://pig.apache.org/docs/r0.7.0/udf.html).  The following code shows our JUnit test method [testFilter2](https://docs.google.com/file/d/0B2eUVi06EB0oaURTcjRBTTQxb00/edit?usp=sharing) containing a FILTER using [UDF edu.umass.cs.pig.test.HASH](https://docs.google.com/file/d/0B2eUVi06EB0oS1J3QkhTZVpZX0k/edit?usp=sharing).  *SEDGE* can generates a tuple that passes the FILTER and one that does not pass.
+To generate example data for a Pig script containing user-defined function (UDF), the UDF needs to be in the classpath.  You can learn how to write Pig's UDF [here](http://pig.apache.org/docs/r0.7.0/udf.html).  The following code shows our JUnit test method [testFilter2](https://docs.google.com/file/d/0B2eUVi06EB0oVm54MVdUWWVCQzQ/edit?usp=sharing) containing a FILTER using [UDF edu.umass.cs.pig.test.HASH](https://docs.google.com/file/d/0B2eUVi06EB0oS1J3QkhTZVpZX0k/edit?usp=sharing).  *SEDGE* can generates a tuple that passes the FILTER and one that does not pass.
 
 ```java
 @Test
@@ -126,7 +126,7 @@ To generate example data for a Pig script containing user-defined function (UDF)
         pigserver.registerQuery(query);
         
 
-        Map<Operator, DataBag> derivedData = pigserver.getExamples("B");
+        Map<Operator, DataBag> derivedData = pigserver.getExamples2("B");
         assertTrue(derivedData != null);
     }
 ```
